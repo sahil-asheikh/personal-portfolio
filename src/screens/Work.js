@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import { BsChevronDown } from 'react-icons/bs';
 import ProjectItem from '../components/ProjectsItem';
+import Contact from '../components/Contact';
 
 const StyledApp = styled.div``;
 
@@ -16,34 +17,34 @@ const Work = () => {
       projectId: 1,
       imageSrc:
         'https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
+      title: 'Kanban-Board - Project Management Tool',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Android Application',
+      type: 'Web Application',
     },
     {
       projectId: 2,
       imageSrc:
         'https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600',
-      title: 'Project Title',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Company Landing Page',
-    },
-    {
-      projectId: 3,
-      imageSrc:
-        'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
+      title: 'Landing Page for a Burger Shop',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
       type: 'Product Landing Page',
     },
     {
+      projectId: 3,
+      imageSrc:
+        'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      title: 'Digital Portfolio for Miss. Ishika Rangari',
+      description:
+        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
+      type: 'Web Portfolio',
+    },
+    {
       projectId: 4,
       imageSrc:
         'https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
+      title: 'Digital Portfolio for Mr. Mustaquim Khan',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
       type: 'Web Portfolio',
@@ -52,42 +53,52 @@ const Work = () => {
       projectId: 5,
       imageSrc:
         'https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Android Application',
-    },
-    {
-      projectId: 6,
-      imageSrc:
-        'https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600',
-      title: 'Project Title',
+      title: 'Company Portfolio for Content Champion',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
       type: 'Company Landing Page',
     },
     {
+      projectId: 6,
+      imageSrc:
+        'https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Koding-Street (Hosting Management Module)',
+      description:
+        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
+      type: 'Web Application',
+    },
+    {
       projectId: 7,
       imageSrc:
         'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
+      title: 'Covians (Data Sharing Module App)',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Product Landing Page',
+      type: 'Android Application',
     },
     {
       projectId: 8,
       imageSrc:
         'https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
+      title: 'Burger 34 an E-commerce Application',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Web Portfolio',
+      type: 'E-Commerce Application',
+    },
+    {
+      projectId: 9,
+      imageSrc:
+        'https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      title: 'WingzApp - RTMNU University Library',
+      description:
+        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
+      type: 'Android Applicaiton',
     },
   ];
 
   const [theme, setTheme] = useState('');
   const [toMain, setToMain] = useState('');
+  const [toContact, setToContact] = useState('');
   const themeToggler = () => {
     if (theme === 'light') {
       localStorage.setItem('currentTheme', 'dark');
@@ -114,15 +125,21 @@ const Work = () => {
     setDefaultTheme();
     setCurrentTheme();
     setToMain(document.getElementById('main'));
+    setToContact(document.getElementById('contact'));
+    window.scrollTo(0, 0);
   }, []);
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
       <StyledApp>
-        <Header themeToggler={themeToggler} theme={theme} />
+        <Header
+          themeToggler={themeToggler}
+          theme={theme}
+          toContact={toContact}
+        />
         <ScrollToTop theme={theme} />
-        <Box>
+        <Box mx={{ base: 2, md: 10 }}>
           <Stack
             direction={{ base: 'column', md: 'row' }}
             width={{ base: 'full', md: 'auto' }}
@@ -169,30 +186,34 @@ const Work = () => {
               </a>
             </Text>
           </Stack>
+          {/* </Box> */}
+          <section id="main">
+            <SimpleGrid
+              columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+              gap={{ base: '', md: 0 }}
+              // mx={{ base: 2, md: 10 }}
+              my={20}
+              pt={20}
+            >
+              {allProjectDetails.map((projectItem, index) => (
+                <Box my={3} mx={{ base: 3, md: 0, lg: 0, xl: 0 }}>
+                  <ProjectItem
+                    key={index}
+                    theme={theme}
+                    projectId={projectItem.projectId}
+                    imageSrc={projectItem.imageSrc}
+                    title={projectItem.title}
+                    description={projectItem.description}
+                    type={projectItem.type}
+                  />
+                </Box>
+              ))}
+            </SimpleGrid>
+          </section>
+          <section id="contact">
+            <Contact theme={theme} />
+          </section>
         </Box>
-        <section id="main">
-          <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
-            gap={{ base: '', md: 0 }}
-            mx={{ base: 2, md: 10 }}
-            my={20}
-            pt={20}
-          >
-            {allProjectDetails.map((projectItem, index) => (
-              <Box my={3} mx={{ base: 3, md: 0, lg: 0, xl: 0 }}>
-                <ProjectItem
-                  key={index}
-                  theme={theme}
-                  projectId={projectItem.projectId}
-                  imageSrc={projectItem.imageSrc}
-                  title={projectItem.title}
-                  description={projectItem.description}
-                  type={projectItem.type}
-                />
-              </Box>
-            ))}
-          </SimpleGrid>
-        </section>
         <Footer theme={theme} />
       </StyledApp>
     </ThemeProvider>
