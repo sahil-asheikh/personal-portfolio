@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "8.1.x",
-    "npm": "5.0.x"
+    "node": "16.16.0",
+    "npm": "8.15.1"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.6",
