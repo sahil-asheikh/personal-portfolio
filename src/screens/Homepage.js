@@ -10,13 +10,13 @@ import Skills from '../components/Skills';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import Contact from '../components/Contact';
-import ProjectInfo from './ProjectInfo';
 
 const StyledApp = styled.div``;
 
 const Homepage = () => {
   const [theme, setTheme] = useState('');
   const [toMain, setToMain] = useState('');
+  const [toContact, setToContact] = useState('');
   const themeToggler = () => {
     if (theme === 'light') {
       localStorage.setItem('currentTheme', 'dark');
@@ -43,13 +43,18 @@ const Homepage = () => {
     setDefaultTheme();
     setCurrentTheme();
     setToMain(document.getElementById('main'));
+    setToContact(document.getElementById('contact'));
   }, []);
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
       <StyledApp>
-        <Header themeToggler={themeToggler} theme={theme} />
+        <Header
+          themeToggler={themeToggler}
+          theme={theme}
+          toContact={toContact}
+        />
         <Home theme={theme} toMain={toMain} />
         <Box mx={{ base: 2, md: 10 }}>
           <ScrollToTop theme={theme} />
@@ -57,7 +62,9 @@ const Homepage = () => {
             <Clients theme={theme} />
             <Skills theme={theme} />
             <Projects theme={theme} />
-            <Contact theme={theme} />
+            <section id="contact">
+              <Contact theme={theme} />
+            </section>
           </section>
         </Box>
         <Footer theme={theme} />

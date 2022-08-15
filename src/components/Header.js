@@ -4,13 +4,11 @@ import { Text, Flex, Box, Stack } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = ({ themeToggler, theme }) => {
+const Header = ({ themeToggler, theme, toContact }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleToggle = () => (isOpen ? onClose() : onOpen());
   const currentUrl = window.location.href;
   const pageName = currentUrl.substring(currentUrl.lastIndexOf('/') + 1);
-  console.log(currentUrl);
-  console.log(pageName);
 
   return (
     <>
@@ -21,7 +19,7 @@ const Header = ({ themeToggler, theme }) => {
         position="fixed"
         top={0}
         width="100%"
-        bg={theme === 'light' ? '#F2F2F2' : '#0B0F13'}
+        // bg={theme === 'light' ? '#F2F2F2' : '#0B0F13'}
         opacity={0.9}
       >
         <Flex
@@ -83,7 +81,20 @@ const Header = ({ themeToggler, theme }) => {
               _hover={{ color: '#27AE60' }}
               color={pageName === 'Contact' ? '#27AE60' : ''}
             >
-              <Link to={'/Contact'}>Contact</Link>
+              {/* <Link to={'/Contact'}>Contact</Link> */}
+              <a
+                href="/"
+                onClick={e => {
+                  e.preventDefault();
+                  toContact &&
+                    toContact.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    });
+                }}
+              >
+                Contact
+              </a>
             </Text>
           </Stack>
           <IconButton

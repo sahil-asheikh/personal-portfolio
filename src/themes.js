@@ -23,4 +23,28 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
     scroll-behavior: smooth;
   }
+  input{
+    background: transparent;
+    color: ${({ theme }) => theme.text};
+    padding: 2px 5px;
+    border:0;
+    outline:0;
+    shadow: none;
+  }
+  input:focus {
+    outline:none!important;
+    shadow: none;
+  }
+  textarea{
+    background: transparent;
+    color: ${({ theme }) => theme.text};
+    padding: 0px 5px;
+    border:0;
+    outline:0;
+    shadow: none;
+  }
+  textarea:focus {
+    outline:none!important;
+    shadow: none;
+  }
   `;

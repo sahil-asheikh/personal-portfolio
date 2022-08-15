@@ -10,34 +10,34 @@ const Projects = ({ theme }) => {
       projectId: 1,
       imageSrc:
         'https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
+      title: 'Kanban-Board - Project Management Tool',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Android Application',
+      type: 'Web Application',
     },
     {
       projectId: 2,
       imageSrc:
         'https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600',
-      title: 'Project Title',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Company Landing Page',
-    },
-    {
-      projectId: 3,
-      imageSrc:
-        'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
+      title: 'Landing Page for a Burger Shop',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
       type: 'Product Landing Page',
     },
     {
+      projectId: 3,
+      imageSrc:
+        'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      title: 'Digital Portfolio for Miss. Ishika Rangari',
+      description:
+        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
+      type: 'Web Portfolio',
+    },
+    {
       projectId: 4,
       imageSrc:
         'https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Project Title',
+      title: 'Digital Portfolio for Mr. Mustaquim Khan',
       description:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
       type: 'Web Portfolio',

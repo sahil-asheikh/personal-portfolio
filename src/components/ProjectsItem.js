@@ -27,25 +27,25 @@ const ProjectItem = ({
         p={3}
         overflow={'hidden'}
       >
-        <Box mt={-6} mx={-6} mb={6}>
+        <Box mt={-6} mx={-6} mb={3}>
           <Image src={imageSrc} layout={'fill'} />
         </Box>
         <Stack>
           <Link to={'/ProjectInfo/' + projectId}>
-            <Text fontWeight={'semibold'} fontSize={'18px'}>
+            <Text fontWeight={'semibold'} fontSize={'16px'}>
               {title} &nbsp;
               <ExternalLinkIcon w={'14px'} h={'14px'} />
             </Text>
           </Link>
-          <Text
+          {/* <Text
             color={'gray'}
             fontSize={'16px'}
             textAlign={'justify'}
             fontWeight={'light'}
           >
             {description}
-          </Text>
-          <Text fontWeight={'semibold'} fontSize={'14px'} fontStyle={'italic'}>
+          </Text> */}
+          <Text fontWeight={'thin'} fontSize={'12px'} fontStyle={'italic'}>
             #{type}
           </Text>
         </Stack>
