@@ -62,8 +62,8 @@ const Homepage = () => {
       <StyledApp>
         <GlobalStyles />
         <Header
-          // themeToggler={themeToggler}
-          themeToggler={themeReset}
+          themeToggler={themeToggler}
+          // themeToggler={themeReset}
           theme={theme}
           toContact={toContact}
         />
