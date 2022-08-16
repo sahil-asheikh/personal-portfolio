@@ -156,8 +156,8 @@ const Work = () => {
                 fontFamily={'Montserrat'}
                 color={'grey'}
               >
-                All my projects in one place{' '}
-                <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
+                All my projects in one place
+                <Text as={'p'}></Text>
                 <Text
                   as={'span'}
                   fontWeight={'bold'}
