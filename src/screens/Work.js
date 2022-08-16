@@ -9,7 +9,10 @@ import { BsChevronDown } from 'react-icons/bs';
 import ProjectItem from '../components/ProjectsItem';
 import Contact from '../components/Contact';
 
-const StyledApp = styled.div``;
+const StyledApp = styled.div`
+  background: ${({ theme }) => theme.body};
+  color: ${({ theme }) => theme.text};
+`;
 
 const Work = () => {
   const allProjectDetails = [
@@ -100,32 +103,29 @@ const Work = () => {
   const [toMain, setToMain] = useState('');
   const [toContact, setToContact] = useState('');
   const themeToggler = () => {
-    if (theme === 'light') {
-      localStorage.setItem('currentTheme', 'dark');
-      setTheme('dark');
-    } else {
+    if (theme === 'dark') {
       localStorage.setItem('currentTheme', 'light');
       setTheme('light');
+    } else {
+      localStorage.setItem('currentTheme', 'dark');
+      setTheme('dark');
     }
     setCurrentTheme();
   };
 
   const setCurrentTheme = () => {
-    setTheme(localStorage.getItem('currentTheme'));
-  };
-
-  const setDefaultTheme = () => {
     if (
-      localStorage.getItem('currentTheme') == null ||
+      localStorage.getItem('currentTheme') === null ||
       localStorage.getItem('currentTheme') === ''
     ) {
       localStorage.setItem('currentTheme', 'dark');
       setTheme('dark');
+    } else {
+      setTheme(localStorage.getItem('currentTheme'));
     }
   };
 
   useEffect(() => {
-    setDefaultTheme();
     setCurrentTheme();
     setToMain(document.getElementById('main'));
     setToContact(document.getElementById('contact'));

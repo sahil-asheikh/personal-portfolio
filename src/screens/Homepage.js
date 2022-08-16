@@ -36,20 +36,17 @@ const Homepage = () => {
       localStorage.getItem('currentTheme') === null ||
       localStorage.getItem('currentTheme') === ''
     ) {
-      console.log('before' + localStorage.getItem('currentTheme'));
       localStorage.setItem('currentTheme', 'dark');
       setTheme('dark');
-      console.log(localStorage.getItem('currentTheme'));
     } else {
       setTheme(localStorage.getItem('currentTheme'));
-      console.log(localStorage.getItem('currentTheme'));
     }
   };
 
-  const themeReset = () => {
-    localStorage.clear();
-    console.log('reset-complete');
-  };
+  // const themeReset = () => {
+  //   localStorage.clear();
+  //   console.log('reset-complete');
+  // };
 
   useEffect(() => {
     setCurrentTheme();
@@ -63,7 +60,6 @@ const Homepage = () => {
         <GlobalStyles />
         <Header
           themeToggler={themeToggler}
-          // themeToggler={themeReset}
           theme={theme}
           toContact={toContact}
         />
