@@ -11,7 +11,10 @@ import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import Contact from '../components/Contact';
 
-const StyledApp = styled.div``;
+const StyledApp = styled.div`
+  background: ${({ theme }) => theme.body};
+  color: ${({ theme }) => theme.text};
+`;
 
 const Homepage = () => {
   const [theme, setTheme] = useState('dark');
@@ -48,8 +51,8 @@ const Homepage = () => {
       <StyledApp>
         <GlobalStyles />
         <Header
-          // themeToggler={themeToggler}
-          themeToggler={themeReset}
+          themeToggler={themeToggler}
+          // themeToggler={themeReset}
           theme={theme}
           toContact={toContact}
         />
