@@ -96,14 +96,16 @@ const Work = () => {
     },
   ];
 
-  const [theme, setTheme] = useState('');
+  const [theme, setTheme] = useState('dark');
   const [toMain, setToMain] = useState('');
   const [toContact, setToContact] = useState('');
   const themeToggler = () => {
     if (theme === 'light') {
       localStorage.setItem('currentTheme', 'dark');
+      setTheme('dark');
     } else {
       localStorage.setItem('currentTheme', 'light');
+      setTheme('light');
     }
     setCurrentTheme();
   };
@@ -118,6 +120,7 @@ const Work = () => {
       localStorage.getItem('currentTheme') === ''
     ) {
       localStorage.setItem('currentTheme', 'dark');
+      setTheme('dark');
     }
   };
 
