@@ -21,18 +21,29 @@ const Homepage = () => {
   const [toMain, setToMain] = useState('');
   const [toContact, setToContact] = useState('');
   const themeToggler = () => {
-    if (theme === 'light') {
-      localStorage.setItem('currentTheme', 'dark');
-      setTheme('dark');
-    } else {
+    if (theme === 'dark') {
       localStorage.setItem('currentTheme', 'light');
       setTheme('light');
+    } else {
+      localStorage.setItem('currentTheme', 'dark');
+      setTheme('dark');
     }
     setCurrentTheme();
   };
 
   const setCurrentTheme = () => {
-    setTheme(localStorage.getItem('currentTheme'));
+    if (
+      localStorage.getItem('currentTheme') === null ||
+      localStorage.getItem('currentTheme') === ''
+    ) {
+      console.log('before' + localStorage.getItem('currentTheme'));
+      localStorage.setItem('currentTheme', 'dark');
+      setTheme('dark');
+      console.log(localStorage.getItem('currentTheme'));
+    } else {
+      setTheme(localStorage.getItem('currentTheme'));
+      console.log(localStorage.getItem('currentTheme'));
+    }
   };
 
   const themeReset = () => {
@@ -51,8 +62,8 @@ const Homepage = () => {
       <StyledApp>
         <GlobalStyles />
         <Header
-          themeToggler={themeToggler}
-          // themeToggler={themeReset}
+          // themeToggler={themeToggler}
+          themeToggler={themeReset}
           theme={theme}
           toContact={toContact}
         />
