@@ -32,18 +32,12 @@ const Homepage = () => {
     setTheme(localStorage.getItem('currentTheme'));
   };
 
-  const setDefaultTheme = () => {
-    if (
-      localStorage.getItem('currentTheme') == null ||
-      localStorage.getItem('currentTheme') === ''
-    ) {
-      localStorage.setItem('currentTheme', 'dark');
-      setTheme('dark');
-    }
+  const themeReset = () => {
+    localStorage.clear();
+    console.log('reset-complete');
   };
 
   useEffect(() => {
-    setDefaultTheme();
     setCurrentTheme();
     setToMain(document.getElementById('main'));
     setToContact(document.getElementById('contact'));
@@ -51,10 +45,11 @@ const Homepage = () => {
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <GlobalStyles />
       <StyledApp>
+        <GlobalStyles />
         <Header
-          themeToggler={themeToggler}
+          // themeToggler={themeToggler}
+          themeToggler={themeReset}
           theme={theme}
           toContact={toContact}
         />

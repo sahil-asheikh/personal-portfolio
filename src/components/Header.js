@@ -99,7 +99,7 @@ const Header = ({ themeToggler, theme, toContact }) => {
           </Stack>
           <IconButton
             onClick={themeToggler}
-            bg={theme}
+            bg={'transparent'}
             _hover={'none'}
             _active={'none'}
           >
