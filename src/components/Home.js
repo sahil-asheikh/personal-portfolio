@@ -19,7 +19,7 @@ const Home = ({ theme, toMain }) => {
             fontFamily={'Montserrat'}
             color={'grey'}
           >
-            I’m a developer specialising in{' '}
+            I’m a developer specializing in{' '}
             <Text
               as={'span'}
               fontWeight={'bold'}

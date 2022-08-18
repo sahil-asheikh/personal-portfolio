@@ -46,7 +46,7 @@ const Projects = ({ theme }) => {
   return (
     <div>
       <Box fontFamily={'Montserrat'}>
-        <Box my={20}>
+        <Box mt={20}>
           <SimpleGrid
             columns={{ base: 1, md: 2 }}
             gap={{ base: '', md: 6 }}

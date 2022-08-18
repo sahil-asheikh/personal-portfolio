@@ -7,8 +7,10 @@ const SkillsItem = ({ theme, skillImage, skilTitle, subSkills }) => {
       my={3}
       mx={{ base: 3, md: 1, lg: 1, xl: 1 }}
       bg={theme === 'light' ? '#FFFFFF' : '#1A2026'}
-      transition="all .25s ease-in-out"
-      _hover={{ transform: 'translate3d(0px, -15px, 0px)' }}
+      _hover={{
+        transition: 'all .25s ease-in-out',
+        transform: 'translate3d(0px, -15px, 0px)',
+      }}
     >
       <Box
         as="div"

@@ -23,7 +23,7 @@ const ProjectItem = ({
         maxW={'445px'}
         w={'full'}
         boxShadow={'2xl'}
-        rounded={'md'}
+        rounded={'sm'}
         p={3}
         overflow={'hidden'}
       >

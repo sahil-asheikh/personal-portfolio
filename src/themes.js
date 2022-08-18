@@ -27,8 +27,9 @@ export const GlobalStyles = createGlobalStyle`
     background: transparent;
     color: ${({ theme }) => theme.text};
     padding: 2px 5px;
-    border:0;
-    outline:0;
+    border-bottom: 1px solid ${({ theme }) => theme.text};
+    width: 100%;
+    outline: 0;
     shadow: none;
   }
   input:focus {
@@ -39,7 +40,8 @@ export const GlobalStyles = createGlobalStyle`
     background: transparent;
     color: ${({ theme }) => theme.text};
     padding: 0px 5px;
-    border:0;
+    border-bottom: 1px solid ${({ theme }) => theme.text};
+    width: 100%;
     outline:0;
     shadow: none;
   }

@@ -31,7 +31,7 @@ const Footer = ({ theme }) => {
             color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
           >
             <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
-            <Link href="/" _hover={{ color: '#0072b1' }}>
+            <Link href="/" _hover={{ color: '#27AE60' }}>
               Sahil Sheikh{' '}
             </Link>
           </Text>

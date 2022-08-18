@@ -19,7 +19,7 @@ const Header = ({ themeToggler, theme, toContact }) => {
         position="fixed"
         top={0}
         width="100%"
-        // bg={theme === 'light' ? '#F2F2F2' : '#0B0F13'}
+        bg={theme === 'light' ? '#F2F2F2' : '#0B0F13'}
         opacity={0.9}
       >
         <Flex
