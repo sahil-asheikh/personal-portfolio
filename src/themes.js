@@ -3,12 +3,14 @@ import { createGlobalStyle } from 'styled-components';
 export const lightTheme = {
   body: '#F2F2F2',
   text: '#000000',
+  borderColor: 'rgb(0, 0, 0, 0.7)',
   bgSecondary: '#F5F5F5',
 };
 
 export const darkTheme = {
   body: '#0B0F13',
   text: '#FFFFFF',
+  borderColor: 'rgb(255, 255, 255, 0.7)',
   bgSecondary: '#2D2D2D',
 };
 
@@ -27,7 +29,7 @@ export const GlobalStyles = createGlobalStyle`
     background: transparent;
     color: ${({ theme }) => theme.text};
     padding: 2px 5px;
-    border-bottom: 1px solid ${({ theme }) => theme.text};
+    border-bottom: 1px solid ${({ theme }) => theme.borderColor};
     width: 100%;
     outline: 0;
     shadow: none;
@@ -40,7 +42,7 @@ export const GlobalStyles = createGlobalStyle`
     background: transparent;
     color: ${({ theme }) => theme.text};
     padding: 0px 5px;
-    border-bottom: 1px solid ${({ theme }) => theme.text};
+    border-bottom: 1px solid ${({ theme }) => theme.borderColor};
     width: 100%;
     outline:0;
     shadow: none;
