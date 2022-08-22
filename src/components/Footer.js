@@ -47,7 +47,7 @@ const Footer = ({ theme }) => {
             }}
           >
             <Link
-              href="https://linkedin.com/in/sahil-asheikh"
+              href="https://www.linkedin.com/in/sahilsk-dev/"
               _hover={{ color: '#0072b1' }}
               target={'_blank'}
             >
@@ -63,7 +63,7 @@ const Footer = ({ theme }) => {
             </Link>{' '}
             &nbsp;&nbsp;&nbsp;
             <Link
-              href="https://instagram.com/sahil_asheikh"
+              href="https://instagram.com/sahilsk_dev"
               _hover={{ color: '#bc2a8d' }}
               target={'_blank'}
             >

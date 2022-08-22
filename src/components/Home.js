@@ -5,7 +5,7 @@ import '@fontsource/montserrat';
 
 const Home = ({ theme, toMain }) => {
   return (
-    <Box>
+    <Box fontFamily={'Montserrat'}>
       <Stack
         direction={{ base: 'column', md: 'row' }}
         width={{ base: 'full', md: 'auto' }}

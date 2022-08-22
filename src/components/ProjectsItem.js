@@ -17,6 +17,7 @@ const ProjectItem = ({
       w={{ base: '', md: '80%' }}
       mx={'auto'}
       mt={3}
+      fontFamily={'Montserrat'}
     >
       <Box
         bg={theme === 'light' ? '#FFFFFF' : '#1A2026'}

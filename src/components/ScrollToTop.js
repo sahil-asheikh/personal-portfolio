@@ -28,6 +28,7 @@ const ScrollToTop = ({ theme }) => {
           background-color="#333"
           position="fixed"
           width="95%"
+          fontFamily={'Montserrat'}
         >
           <Button
             onClick={() => {

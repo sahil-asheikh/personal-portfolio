@@ -14,6 +14,7 @@ const Header = ({ themeToggler, theme, toContact }) => {
     <>
       <Box
         px={3}
+        mx={{ base: 0, md: 7, lg: 7, xl: 7 }}
         overflow="hidden"
         background-color="#333"
         position="fixed"
@@ -81,7 +82,6 @@ const Header = ({ themeToggler, theme, toContact }) => {
               _hover={{ color: '#27AE60' }}
               color={pageName === 'Contact' ? '#27AE60' : ''}
             >
-              {/* <Link to={'/Contact'}>Contact</Link> */}
               <a
                 href="/"
                 onClick={e => {

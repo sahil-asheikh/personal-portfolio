@@ -6,6 +6,7 @@ const SkillsItem = ({ theme, skillImage, skilTitle, subSkills }) => {
       as="div"
       my={3}
       mx={{ base: 3, md: 1, lg: 1, xl: 1 }}
+      fontFamily={'Montserrat'}
       bg={theme === 'light' ? '#FFFFFF' : '#1A2026'}
       _hover={{
         transition: 'all .25s ease-in-out',

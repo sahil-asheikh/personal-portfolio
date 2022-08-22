@@ -142,7 +142,7 @@ const Work = () => {
           toContact={toContact}
         />
         <ScrollToTop theme={theme} />
-        <Box mx={{ base: 2, md: 10 }}>
+        <Box mx={{ base: 2, md: 10 }} fontFamily={'Montserrat'}>
           <Stack
             direction={{ base: 'column', md: 'row' }}
             width={{ base: 'full', md: 'auto' }}
@@ -189,12 +189,10 @@ const Work = () => {
               </a>
             </Text>
           </Stack>
-          {/* </Box> */}
           <section id="main">
             <SimpleGrid
               columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
               gap={{ base: '', md: 0 }}
-              // mx={{ base: 2, md: 10 }}
               my={20}
               pt={20}
             >
