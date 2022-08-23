@@ -70,29 +70,36 @@ const ProjectClientInfo = ({ projectSrc, theme }) => {
           </Text>
         </Box>
       </SimpleGrid>
-      <Box
-        mx={{ base: 3, md: 6, lg: 6, xl: 6 }}
-        mt={6}
-        mb={10}
-        w={{ base: '', md: '50%', lg: '50%', xl: '50%' }}
-      >
-        <Text fontSize={'14px'}>
-          Check out the{' '}
-          <Link
-            href={projectSrc.projectLiveUrl}
-            fontWeight={'bold'}
-            target={'_blank'}
-            _hover={'none'}
-          >
-            live website
-          </Link>
-          .
-        </Text>
-        <Text fontSize={'14px'}>
-          Note: The website may not look exactly the same on the live version
-          due to incremental QoL and other updates due to business requirements.
-        </Text>
-      </Box>
+      {projectSrc.projectLiveUrl === '' ||
+      projectSrc.projectLiveUrl === null ||
+      projectSrc.projectLiveUrl.length === 0 ? (
+        ''
+      ) : (
+        <Box
+          mx={{ base: 3, md: 6, lg: 6, xl: 6 }}
+          mt={6}
+          mb={10}
+          w={{ base: '', md: '50%', lg: '50%', xl: '50%' }}
+        >
+          <Text fontSize={'14px'}>
+            Check out the{' '}
+            <Link
+              href={projectSrc.projectLiveUrl}
+              fontWeight={'bold'}
+              target={'_blank'}
+              _hover={'none'}
+            >
+              live website
+            </Link>
+            .
+          </Text>
+          <Text fontSize={'14px'}>
+            Note: The website may not look exactly the same on the live version
+            due to incremental QoL and other updates due to business
+            requirements.
+          </Text>
+        </Box>
+      )}
     </Box>
   );
 };

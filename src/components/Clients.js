@@ -1,17 +1,9 @@
 import { Box, Image, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
-import MicrosoftLogo from '../images/clients/MicrosoftLogo.png';
-import GoogleLogo from '../images/clients/GoogleLogo.png';
+import ClientImages from '../dataJson/clientJson.json';
 
 const Clients = ({ theme }) => {
-  const clientImages = [
-    MicrosoftLogo,
-    GoogleLogo,
-    MicrosoftLogo,
-    GoogleLogo,
-    MicrosoftLogo,
-    GoogleLogo,
-  ];
+  const clientImages = ClientImages;
 
   return (
     <Box fontFamily={'Montserrat'}>
@@ -43,8 +35,17 @@ const Clients = ({ theme }) => {
         >
           {clientImages.map((clientImage, index) => (
             <>
-              {clientImage === null ? (
-                <Text></Text>
+              {clientImage === '' ||
+              clientImage.length === 0 ||
+              clientImage === null ? (
+                <Text
+                  display={{
+                    base: 'none',
+                    md: 'block',
+                    lg: 'block',
+                    xl: 'block',
+                  }}
+                ></Text>
               ) : (
                 <Image
                   key={index}
@@ -53,8 +54,6 @@ const Clients = ({ theme }) => {
                   w={{ base: '70%', md: '70%' }}
                   mx={'auto'}
                   my={3}
-                  // filter={{ base: '', md: 'grayscale(100%)' }}
-                  // _hover={{ filter: 'none' }}
                 />
               )}
             </>

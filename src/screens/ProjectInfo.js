@@ -9,6 +9,7 @@ import Contact from '../components/Contact';
 import { useParams } from 'react-router-dom';
 import CoverImage from '../components/CoverImage';
 import ProjectClientInfo from '../components/ProjectClientInfo';
+import ProjectJson from '../dataJson/projectJson.json';
 
 const StyledApp = styled.div`
   background: ${({ theme }) => theme.body};
@@ -17,43 +18,7 @@ const StyledApp = styled.div`
 
 const ProjectInfo = () => {
   const { projectId } = useParams({});
-  const projectSrc = {
-    imgCover:
-      'https://images.pexels.com/photos/1233258/pexels-photo-1233258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    title: 'Landing Page for a Burger Shop',
-    projectLiveUrl: 'https://www.linkedin.com/in/sahilsk-dev/',
-    posted: 'Feb 2022',
-    views: '1159 views',
-    avgRead: '2 min read',
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    projectImages: [
-      {
-        title: 'Image Title Enter Here',
-        imgUrl:
-          'https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      },
-      {
-        title: 'Image Title Enter Here',
-        imgUrl:
-          'https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      },
-      {
-        title: 'Image Title Enter Here',
-        imgUrl:
-          'https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      },
-      {
-        title: 'Image Title Enter Here',
-        imgUrl:
-          'https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      },
-    ],
-    client: "Burger's Way Pvt. Ltd.",
-    timeline: 'January 2022 - February 2022',
-    works: ['UI/UX Designing', 'Brand Landing Page', 'Product Landing Pages'],
-    tools: ['HTML, CSS, JavaScript', 'Bootstrap', 'Material UI'],
-  };
+  const projectSrc = ProjectJson;
   const [theme, setTheme] = useState('dark');
   const [toContact, setToContact] = useState('');
   const themeToggler = () => {

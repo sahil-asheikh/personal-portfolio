@@ -1,0 +1,32 @@
+    [
+  {
+    "logo": "https://drive.google.com/uc?export=view&id=1rHOIFC5sLWM2wjaOSNP3UlLkjBzUxfbJ",
+    "skillTitle": "Web Designing and Development",
+    "subSkills": "HTML, CSS, Bootstrap, JavaScript"
+  },
+  {
+    "logo": "https://drive.google.com/uc?export=view&id=1TdG92KIey0CF1mM7wQbPYekXuPJ1xkQG",
+    "skillTitle": "Cross Platform App Development",
+    "subSkills": "Android, React Native, Dart, Flutter"
+  },
+  {
+    "logo": "https://drive.google.com/uc?export=view&id=1u-OKBePqXkBlEhTHIBGCUrLgklkaCgAF",
+    "skillTitle": "Frontend Development Framework",
+    "subSkills": "React.Js, Chakr-UI, Tailwind CSS"
+  },
+  {
+    "logo": "https://drive.google.com/uc?export=view&id=1e6BcME0ntXiPfIBVMN9f_qM-tCloNu1T",
+    "skillTitle": "Backend Development Framework",
+    "subSkills": "Java, JDBC, Servlet, JSP, JSTL"
+  },
+  {
+    "logo": "https://drive.google.com/uc?export=view&id=11V8dfgDJpYVIOHUN3YOaq4V0AD4ZA08C",
+    "skillTitle": "REST-API Development Framework",
+    "subSkills": "Spring, Hibernate, Spring Boot"
+  },
+  {
+    "logo": "https://drive.google.com/uc?export=view&id=1twP3vTFGpYt91o4KT5kMOPUACGFYLmjy",
+    "skillTitle": "Database Management System",
+    "subSkills": "SQL, MySQL, Oracle, Firebase"
+  }
+]
