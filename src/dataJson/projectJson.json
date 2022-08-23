@@ -2,31 +2,31 @@
   "projectId": 1,
   "imgCover": "https://drive.google.com/uc?export=view&id=1xuWiyO_7FWIQYciKmuASNLH6RF8Jx9Bi",
   "title": "Landing Page for a Burger Shop",
-  "projectLiveUrl": "https://www.linkedin.com/in/sahilsk-dev/",
-  "posted": "Feb 2022",
+  "projectLiveUrl": "",
+  "posted": "Dec 2021",
   "views": "1159 views",
   "avgRead": "2 min read",
-  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "description": "Designed and developed a landing page for a Burger Shop who wants to display their product details on the landing page.\nThe client wants a minimal design with a BIG image of a burger on the top, so I displayed a big burger image on the top inside an egg-shaped vessel.\nAlso displayed their products under the products section and created a wonderful gallery of images under the photos section.",
   "projectImages": [
     {
-      "title": "Image Title Enter Here",
-      "imgUrl": "https://drive.google.com/uc?export=view&id=11Bz33IadbQ7zdTdHGZvd6BuK8bovTb4m"
+      "title": "Hero section of the landing page",
+      "imgUrl": "https://drive.google.com/uc?export=view&id=1TGqij4TXWel10NB1OJaRJpwbRIFYiF9O"
     },
     {
-      "title": "Image Title Enter Here",
-      "imgUrl": "https://drive.google.com/uc?export=view&id=11Bz33IadbQ7zdTdHGZvd6BuK8bovTb4m"
+      "title": "Client's testimonials section with hover effect",
+      "imgUrl": "https://drive.google.com/uc?export=view&id=1hnKIXQ54ALS7AKxRKBJ0wsjykjmK1SeT"
     },
     {
-      "title": "Image Title Enter Here",
-      "imgUrl": "https://drive.google.com/uc?export=view&id=11Bz33IadbQ7zdTdHGZvd6BuK8bovTb4m"
+      "title": "Burger Gallery with Newsletter section",
+      "imgUrl": "https://drive.google.com/uc?export=view&id=12GO6NlXA1smPtO90hVJ3tjSt-aZ__gWJ"
     },
     {
-      "title": "Image Title Enter Here",
-      "imgUrl": "https://drive.google.com/uc?export=view&id=11Bz33IadbQ7zdTdHGZvd6BuK8bovTb4m"
+      "title": "Bold amazing footer with contact form above",
+      "imgUrl": "https://drive.google.com/uc?export=view&id=1dicFv82D7fsC6cAzxYOFf70x-yn8FXER"
     }
   ],
-  "client": "Burger's Way Pvt. Ltd.",
-  "timeline": "January 2022 - February 2022",
+  "client": "Burger's Way (Burger Shop)",
+  "timeline": "November 2021 - December 2021",
   "works": ["UI/UX Designing", "Brand Landing Page", "Product Landing Pages"],
   "tools": ["HTML, CSS, JavaScript", "Bootstrap", "Material UI"]
 }
