@@ -14,8 +14,6 @@ const Header = ({ themeToggler, theme, toContact }) => {
   return (
     <>
       <Box
-        px={3}
-        mx={{ base: 0, md: 7, lg: 7, xl: 7 }}
         overflow="hidden"
         position="fixed"
         top={0}
@@ -30,7 +28,7 @@ const Header = ({ themeToggler, theme, toContact }) => {
           paddingY={3}
           fontFamily={'Montserrat'}
           overflow={'hidden'}
-          mx={{ base: 1, md: 6 }}
+          mx={{ base: 1, md: 16 }}
           top={0}
         >
           <Flex align="center" mr={5}>
@@ -67,14 +65,14 @@ const Header = ({ themeToggler, theme, toContact }) => {
             >
               <Link to={'/Work'}>Work</Link>
             </Text>
-            <Text
+            {/* <Text
               fontWeight={'semibold'}
               px={3}
               _hover={{ color: '#27AE60' }}
               color={pageName === 'About' ? '#27AE60' : ''}
             >
               <Link to={'/About'}>About</Link>
-            </Text>
+            </Text> */}
             <Text
               fontWeight={'semibold'}
               px={3}

@@ -32,5 +32,39 @@
     "projectLiveUrl": "",
     "works": ["UI/UX Designing", "Brand Landing Page", "Product Landing Pages"],
     "tools": ["HTML, CSS, JavaScript", "Bootstrap", "Material UI"]
+  },
+  {
+    "projectIndex": 1,
+    "title": "Custom designed personal portfolio",
+    "posted": "Jan 2022",
+    "views": "2615 views",
+    "avgRead": "2 min read",
+    "description": "Here is a sample of my work that I designed and developed for a college student. \nI designed a personal portfolio that mentioned about her, education history, skills, social links, every projects that she made, and more. \nAlso, designed a contact with a map integration, and developed a contact form that sent all the entered details to her telegram account with a minimal simple footer. \nHer demanded for a minimal design with slike pink shades includes dark theme, so here is the portfolio I designed for her.",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1uiErUMXsaaD9_BebpdrjK1V2VXSXb-_Z",
+    "imgCover": "https://drive.google.com/uc?export=view&id=1qWNakkEuGxLdHsC76yOs3xjsMVgNDi6o",
+    "projectImages": [
+      {
+        "title": "Hero section of the portfolio website",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=159syER_FAm2L7I6aTPIjCaEUW5yYOH8D"
+      },
+      {
+        "title": "Client's social media and project section",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1lh1CThb5XRGKENkdzed0_hZ1KOsHmuLS"
+      },
+      {
+        "title": "Minimal Footer section with map & contact form ",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1QJ_yyyNAtUC8yW6gdOpmIxgj3xTKaw-s"
+      },
+      {
+        "title": "Image of complete personal portfolio",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=191LIs-dkw7vgtAyb9HxcEQRhi2PUcpJY"
+      }
+    ],
+    "client": "Miss Dhanashree Maheshram",
+    "timeline": "January 2022",
+    "type": "Personal Portfolio",
+    "projectLiveUrl": "https://dhanashree-dm.github.io/",
+    "works": ["UI/UX Designing", "Portfolio Website"],
+    "tools": ["HTML, CSS, JavaScript", "Bootstrap"]
   }
 ]
