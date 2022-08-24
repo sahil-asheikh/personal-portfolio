@@ -17,8 +17,8 @@ const StyledApp = styled.div`
 `;
 
 const ProjectInfo = () => {
-  const { projectId } = useParams({});
-  const projectSrc = ProjectJson;
+  const { projectIndex } = useParams({});
+  const projectSrc = ProjectJson[projectIndex];
   const [theme, setTheme] = useState('dark');
   const [toContact, setToContact] = useState('');
   const themeToggler = () => {
@@ -60,7 +60,6 @@ const ProjectInfo = () => {
             theme={theme}
             toContact={toContact}
           />
-          {console.log(projectId)}
           <ScrollToTop theme={theme} />
           <Box
             mx={{ base: 2, md: 10 }}

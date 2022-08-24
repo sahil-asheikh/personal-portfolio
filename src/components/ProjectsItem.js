@@ -3,14 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 
-const ProjectItem = ({
-  theme,
-  projectId,
-  imageSrc,
-  title,
-  description,
-  type,
-}) => {
+const ProjectItem = ({ theme, projectIndex, imgThumbnail, title, type }) => {
   return (
     <Center
       py={{ base: 0, md: 6, lg: 6, xl: 6 }}
@@ -29,23 +22,15 @@ const ProjectItem = ({
         overflow={'hidden'}
       >
         <Box mt={-6} mx={-6} mb={3}>
-          <Image src={imageSrc} layout={'fill'} />
+          <Image w={'100%'} h={'100%'} src={imgThumbnail} layout={'fill'} />
         </Box>
         <Stack>
-          <Link to={'/ProjectInfo/' + projectId}>
+          <Link to={'/ProjectInfo/' + projectIndex}>
             <Text fontWeight={'semibold'} fontSize={'16px'}>
               {title} &nbsp;
               <ExternalLinkIcon w={'14px'} h={'14px'} />
             </Text>
           </Link>
-          {/* <Text
-            color={'gray'}
-            fontSize={'16px'}
-            textAlign={'justify'}
-            fontWeight={'light'}
-          >
-            {description}
-          </Text> */}
           <Text fontWeight={'thin'} fontSize={'12px'} fontStyle={'italic'}>
             #{type}
           </Text>

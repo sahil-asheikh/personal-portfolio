@@ -8,6 +8,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import { BsChevronDown } from 'react-icons/bs';
 import ProjectItem from '../components/ProjectsItem';
 import Contact from '../components/Contact';
+import AllProjectDetails from '../dataJson/projectJson.json';
 
 const StyledApp = styled.div`
   background: ${({ theme }) => theme.body};
@@ -15,89 +16,7 @@ const StyledApp = styled.div`
 `;
 
 const Work = () => {
-  const allProjectDetails = [
-    {
-      projectId: 1,
-      imageSrc:
-        'https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Kanban-Board - Project Management Tool',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Web Application',
-    },
-    {
-      projectId: 2,
-      imageSrc:
-        'https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600',
-      title: 'Landing Page for a Burger Shop',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Product Landing Page',
-    },
-    {
-      projectId: 3,
-      imageSrc:
-        'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Digital Portfolio for Miss. Ishika Rangari',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Web Portfolio',
-    },
-    {
-      projectId: 4,
-      imageSrc:
-        'https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Digital Portfolio for Mr. Mustaquim Khan',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Web Portfolio',
-    },
-    {
-      projectId: 5,
-      imageSrc:
-        'https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Company Portfolio for Content Champion',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Company Landing Page',
-    },
-    {
-      projectId: 6,
-      imageSrc:
-        'https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600',
-      title: 'Koding-Street (Hosting Management Module)',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Web Application',
-    },
-    {
-      projectId: 7,
-      imageSrc:
-        'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Covians (Data Sharing Module App)',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Android Application',
-    },
-    {
-      projectId: 8,
-      imageSrc:
-        'https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Burger 34 an E-commerce Application',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'E-Commerce Application',
-    },
-    {
-      projectId: 9,
-      imageSrc:
-        'https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'WingzApp - RTMNU University Library',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Android Applicaiton',
-    },
-  ];
+  const allProjectDetails = AllProjectDetails;
 
   const [theme, setTheme] = useState('dark');
   const [toMain, setToMain] = useState('');
@@ -201,10 +120,9 @@ const Work = () => {
                   <ProjectItem
                     key={index}
                     theme={theme}
-                    projectId={projectItem.projectId}
-                    imageSrc={projectItem.imageSrc}
+                    projectIndex={index}
+                    imgThumbnail={projectItem.imgThumbnail}
                     title={projectItem.title}
-                    description={projectItem.description}
                     type={projectItem.type}
                   />
                 </Box>

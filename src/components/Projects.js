@@ -3,46 +3,11 @@ import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectItem from './ProjectsItem';
+import AllProjectDetails from '../dataJson/projectJson.json';
 
 const Projects = ({ theme }) => {
-  const allProjectDetails = [
-    {
-      projectId: 1,
-      imageSrc:
-        'https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Kanban-Board - Project Management Tool',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Web Application',
-    },
-    {
-      projectId: 2,
-      imageSrc:
-        'https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600',
-      title: 'Landing Page for a Burger Shop',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Product Landing Page',
-    },
-    {
-      projectId: 3,
-      imageSrc:
-        'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Digital Portfolio for Miss. Ishika Rangari',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Web Portfolio',
-    },
-    {
-      projectId: 4,
-      imageSrc:
-        'https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      title: 'Digital Portfolio for Mr. Mustaquim Khan',
-      description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod.',
-      type: 'Web Portfolio',
-    },
-  ];
+  const allProjectDetails = AllProjectDetails;
+
   return (
     <div>
       <Box fontFamily={'Montserrat'}>
@@ -99,10 +64,9 @@ const Projects = ({ theme }) => {
                 <ProjectItem
                   key={index}
                   theme={theme}
-                  projectId={projectItem.projectId}
-                  imageSrc={projectItem.imageSrc}
+                  projectIndex={index}
+                  imgThumbnail={projectItem.imgThumbnail}
                   title={projectItem.title}
-                  description={projectItem.description}
                   type={projectItem.type}
                 />
               </Box>

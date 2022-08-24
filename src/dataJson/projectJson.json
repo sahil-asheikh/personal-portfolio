@@ -1,32 +1,36 @@
-{
-  "projectId": 1,
-  "imgCover": "https://drive.google.com/uc?export=view&id=1xuWiyO_7FWIQYciKmuASNLH6RF8Jx9Bi",
-  "title": "Landing Page for a Burger Shop",
-  "projectLiveUrl": "",
-  "posted": "Dec 2021",
-  "views": "1159 views",
-  "avgRead": "2 min read",
-  "description": "Designed and developed a landing page for a Burger Shop who wants to display their product details on the landing page.\nThe client wants a minimal design with a BIG image of a burger on the top, so I displayed a big burger image on the top inside an egg-shaped vessel.\nAlso displayed their products under the products section and created a wonderful gallery of images under the photos section.",
-  "projectImages": [
-    {
-      "title": "Hero section of the landing page",
-      "imgUrl": "https://drive.google.com/uc?export=view&id=1TGqij4TXWel10NB1OJaRJpwbRIFYiF9O"
-    },
-    {
-      "title": "Client's testimonials section with hover effect",
-      "imgUrl": "https://drive.google.com/uc?export=view&id=1hnKIXQ54ALS7AKxRKBJ0wsjykjmK1SeT"
-    },
-    {
-      "title": "Burger Gallery with Newsletter section",
-      "imgUrl": "https://drive.google.com/uc?export=view&id=12GO6NlXA1smPtO90hVJ3tjSt-aZ__gWJ"
-    },
-    {
-      "title": "Bold amazing footer with contact form above",
-      "imgUrl": "https://drive.google.com/uc?export=view&id=1dicFv82D7fsC6cAzxYOFf70x-yn8FXER"
-    }
-  ],
-  "client": "Burger's Way (Burger Shop)",
-  "timeline": "November 2021 - December 2021",
-  "works": ["UI/UX Designing", "Brand Landing Page", "Product Landing Pages"],
-  "tools": ["HTML, CSS, JavaScript", "Bootstrap", "Material UI"]
-}
+[
+  {
+    "projectIndex": 0,
+    "title": "Landing Page for a Burger Shop",
+    "posted": "Dec 2021",
+    "views": "1159 views",
+    "avgRead": "2 min read",
+    "description": "Designed and developed a landing page for a Burger Shop who wants to display their product details on the landing page.\nThe client wants a minimal design with a BIG image of a burger on the top, so I displayed a big burger image on the top inside an egg-shaped vessel.\nAlso displayed their products under the products section and created a wonderful gallery of images under the photos section.",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1rFLGB7QpY5Y0KCr-EZr0X0GaxQ_7kXre",
+    "imgCover": "https://drive.google.com/uc?export=view&id=1xuWiyO_7FWIQYciKmuASNLH6RF8Jx9Bi",
+    "projectImages": [
+      {
+        "title": "Hero section of the landing page",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1TGqij4TXWel10NB1OJaRJpwbRIFYiF9O"
+      },
+      {
+        "title": "Client's testimonials section with hover effect",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1hnKIXQ54ALS7AKxRKBJ0wsjykjmK1SeT"
+      },
+      {
+        "title": "Burger Gallery with Newsletter section",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=12GO6NlXA1smPtO90hVJ3tjSt-aZ__gWJ"
+      },
+      {
+        "title": "Bold amazing footer with contact form above",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1dicFv82D7fsC6cAzxYOFf70x-yn8FXER"
+      }
+    ],
+    "client": "Burger's Way (Burger Shop)",
+    "timeline": "November 2021 - December 2021",
+    "type": "Product Landing Page",
+    "projectLiveUrl": "",
+    "works": ["UI/UX Designing", "Brand Landing Page", "Product Landing Pages"],
+    "tools": ["HTML, CSS, JavaScript", "Bootstrap", "Material UI"]
+  }
+]
