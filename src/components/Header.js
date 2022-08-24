@@ -3,6 +3,7 @@ import { IconButton, useDisclosure } from '@chakra-ui/react';
 import { Text, Flex, Box, Stack } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ScrollIndicator from './ScrollIndicator';
 
 const Header = ({ themeToggler, theme, toContact }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -16,7 +17,6 @@ const Header = ({ themeToggler, theme, toContact }) => {
         px={3}
         mx={{ base: 0, md: 7, lg: 7, xl: 7 }}
         overflow="hidden"
-        background-color="#333"
         position="fixed"
         top={0}
         width="100%"
@@ -26,7 +26,6 @@ const Header = ({ themeToggler, theme, toContact }) => {
         <Flex
           as="nav"
           align="center"
-          // justify="space-between"
           wrap="wrap"
           paddingY={3}
           fontFamily={'Montserrat'}
@@ -106,6 +105,7 @@ const Header = ({ themeToggler, theme, toContact }) => {
             {theme === 'light' ? <MoonIcon /> : <SunIcon />}
           </IconButton>
         </Flex>
+        <ScrollIndicator />
       </Box>
     </>
   );

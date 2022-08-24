@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const lightTheme = {
   body: '#F2F2F2',
@@ -16,6 +16,7 @@ export const darkTheme = {
 
 export const GlobalStyles = createGlobalStyle`
   body {
+    overflow-y: scroll;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     height: 100vh;
@@ -24,6 +25,13 @@ export const GlobalStyles = createGlobalStyle`
     font-family: Montserrat, BlinkMacSystemFont, Helvetica, sans-serif;
     transition: all 0.25s linear;
     scroll-behavior: smooth;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  home {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   input{
     background: transparent;
@@ -52,3 +60,17 @@ export const GlobalStyles = createGlobalStyle`
     shadow: none;
   }
   `;
+
+export const Container = styled.div`
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+`;
+
+export const ProgressBar = styled.div`
+  height: 3px;
+  background-color: #27ae60;
+  border-radius: 5px;
+`;
