@@ -52,7 +52,7 @@
         "imgUrl": "https://drive.google.com/uc?export=view&id=1lh1CThb5XRGKENkdzed0_hZ1KOsHmuLS"
       },
       {
-        "title": "Minimal Footer section with map & contact form ",
+        "title": "Minimal Footer section with map & contacts",
         "imgUrl": "https://drive.google.com/uc?export=view&id=1QJ_yyyNAtUC8yW6gdOpmIxgj3xTKaw-s"
       },
       {
@@ -64,6 +64,40 @@
     "timeline": "January 2022",
     "type": "Personal Portfolio",
     "projectLiveUrl": "https://dhanashree-dm.github.io/",
+    "works": ["UI/UX Designing", "Portfolio Website"],
+    "tools": ["HTML, CSS, JavaScript", "Bootstrap"]
+  },
+  {
+    "projectIndex": 2,
+    "title": "Personal portfolio for a civil engineer",
+    "posted": "Feb 2022",
+    "views": "2366 views",
+    "avgRead": "2 min read",
+    "description": "The client wants a parallax design with a scrolling effect and his name on the top so I have designed this hero template for the client and below that rest information is mentioned. Also, the client wants the zig-zag pattern architecture for his portfolio so that users can read about the experience and also check the image side by side so according to that, I have designed this wonderful zig-zag pattern about section and experience with cards where all the services are mentioned that client provides. As per the compliment I have implemented the telegram bot that sends the contact information that users entered in the contact form directly to the client's telegram account.",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1VygaoANCOeQM_-fbfpcrdtQbTABOj2j8",
+    "imgCover": "https://drive.google.com/uc?export=view&id=1UL2i7z02k04n6Q-joktABUoml6Kcd4fM",
+    "projectImages": [
+      {
+        "title": "Hero section of the portfolio website",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1EYV7_2dK7LxN7w5BEEF_jtKEsxAsRbua"
+      },
+      {
+        "title": "Client's about, experience and project section",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1l3R29QqglGlutEwxMsfpHPzPX8RxHR32"
+      },
+      {
+        "title": "Minimal Footer section with contact & services",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1o2WoT4OfA482cLdrWi8SoeLXcwu7EBOe"
+      },
+      {
+        "title": "Image of complete personal portfolio",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1j75DHWwH0vYZW8soFk-o-c9XLJ1ln_YB"
+      }
+    ],
+    "client": "Mr. Mustaquim Khan",
+    "timeline": "Febuary 2022",
+    "type": "Personal Portfolio",
+    "projectLiveUrl": "",
     "works": ["UI/UX Designing", "Portfolio Website"],
     "tools": ["HTML, CSS, JavaScript", "Bootstrap"]
   }

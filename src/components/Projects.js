@@ -59,18 +59,22 @@ const Projects = ({ theme }) => {
             columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
             gap={{ base: '', md: 0 }}
           >
-            {allProjectDetails.map((projectItem, index) => (
-              <Box my={3} mx={{ base: 3, md: 0, lg: 0, xl: 0 }}>
-                <ProjectItem
-                  key={index}
-                  theme={theme}
-                  projectIndex={index}
-                  imgThumbnail={projectItem.imgThumbnail}
-                  title={projectItem.title}
-                  type={projectItem.type}
-                />
-              </Box>
-            ))}
+            {allProjectDetails.map((projectItem, index) =>
+              index <= 3 ? (
+                <Box my={3} mx={{ base: 3, md: 0, lg: 0, xl: 0 }}>
+                  <ProjectItem
+                    key={index}
+                    theme={theme}
+                    projectIndex={index}
+                    imgThumbnail={projectItem.imgThumbnail}
+                    title={projectItem.title}
+                    type={projectItem.type}
+                  />
+                </Box>
+              ) : (
+                <></>
+              )
+            )}
           </SimpleGrid>
           <Box
             textAlign={{ base: 'center', md: 'right' }}
