@@ -5,7 +5,7 @@ import { Box } from '@chakra-ui/react';
 import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '../themes';
 import Home from '../components/Home';
-import Clients from '../components/Clients';
+// import Clients from '../components/Clients';
 import Skills from '../components/Skills';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
