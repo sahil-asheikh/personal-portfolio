@@ -100,5 +100,39 @@
     "projectLiveUrl": "",
     "works": ["UI/UX Designing", "Portfolio Website"],
     "tools": ["HTML, CSS, JavaScript", "Bootstrap"]
+  },
+  {
+    "projectIndex": 2,
+    "title": "Portfolio Website for an Architect",
+    "posted": "Feb 2022",
+    "views": "8425 views",
+    "avgRead": "3 min read",
+    "description": "The client wants a minimal design with her basic details like BIG name of her and designation on the bottom of her name so I have designed this hero template for the client and below that rest information is mentioned. Implemented the skills bar as per the client's requirement and designed cards for the experiences and project view with services mentioned below. Also, the client wants to get all the notifications of the contact form on their telegram so I implemented a bot that redirected all the messages in the client's telegram account.",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1Ir8DJo4OFUbYb-fw4SCGe37APBDzoX1e",
+    "imgCover": "https://drive.google.com/uc?export=view&id=1P1bLYPSnrCPtEh0YTir4Cen3JH9vEjG5",
+    "projectImages": [
+      {
+        "title": "Hero section of the portfolio website",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1th95pGRaBSAAmEm8Fq11-fSJj1wvI9BQ"
+      },
+      {
+        "title": "Client's experience and project section",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1uowFJa8vfO1WJHVoJSTWAaPOLZpFfV8a"
+      },
+      {
+        "title": "Minimal Footer section with contact & services",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1q570T2tzQWn9u6afv39HL3kCoN97MuEB"
+      },
+      {
+        "title": "Image of complete personal portfolio",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1123QP0VuAqpgseDf6hQx6y8zY8Eg0QY6"
+      }
+    ],
+    "client": "Miss. Ishika Rangari",
+    "timeline": "Febuary 2022",
+    "type": "Personal Portfolio",
+    "projectLiveUrl": "",
+    "works": ["UI/UX Designing", "Portfolio Website"],
+    "tools": ["HTML, CSS, JavaScript", "Bootstrap"]
   }
 ]
