@@ -1,5 +1,39 @@
 [
   {
+    "projectIndex": 2,
+    "title": "Project/Task Management Tool",
+    "posted": "Aug 2022",
+    "views": "6670 views",
+    "avgRead": "3.4 min read",
+    "description": "Designed and developed the Kanban Board using Spring-Boot to develop the APIs and React.Js with Chakra-UI library to design the front end of the web application. Implemented an authentication system to manage the multiple user tasks and used the session to manage the user's login history with a unique user token. Tasks can be defined in 3 sections Not Started, On Progress, & Completed, and can manage with the drag and drop function, which helps to track the workflow.",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1dvsCk7BaCWURu6WuiXo1-9a-VYHKcUR4",
+    "imgCover": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
+    "projectImages": [
+      {
+        "title": "Login and Sign up page for the web application",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1V6Six4PHVHMETRorMbdC4BydbErcqva7"
+      },
+      {
+        "title": "Dashboard of the Task Manager",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx"
+      },
+      {
+        "title": "Create/Add and Update Task Modal UIUX",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=156wYZMa47eFDub-0RLKsPBkIY3yo-enq"
+      },
+      {
+        "title": "Task Details and Drag & Drop functionality",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1Z-mRHcLGRksAuNjgfMo7cpnr_KmY4LDy"
+      }
+    ],
+    "client": "Anonymous",
+    "timeline": "July 2022 - August 2022",
+    "type": "Web Application",
+    "projectLiveUrl": "https://kanban-reactbegawo.herokuapp.com/",
+    "works": ["Web Application", "API Development"],
+    "tools": ["React.Js, JavaScript", "Spring Boot, Java"]
+  },
+  {
     "projectIndex": 0,
     "title": "Landing Page for a Burger Shop",
     "posted": "Dec 2021",
