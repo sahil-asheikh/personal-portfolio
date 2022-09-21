@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
-import { Box, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Image,
+  List,
+  ListIcon,
+  ListItem,
+  SimpleGrid,
+  Text,
+} from '@chakra-ui/react';
 import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '../themes';
 import Footer from '../components/Footer';
@@ -10,6 +18,7 @@ import { useParams } from 'react-router-dom';
 import CoverImage from '../components/CoverImage';
 import ProjectClientInfo from '../components/ProjectClientInfo';
 import ProjectJson from '../dataJson/projectJson.json';
+import { CheckCircleIcon } from '@chakra-ui/icons';
 
 const StyledApp = styled.div`
   background: ${({ theme }) => theme.body};
@@ -70,13 +79,49 @@ const ProjectInfo = () => {
               <Box mx={{ base: 3, md: 6, lg: 6, xl: 6 }}>
                 <CoverImage projectSrc={projectSrc} theme={theme} />
                 <Box mt={16}>
-                  <Text fontSize={'22px'} mt={4} mb={2} fontWeight={'bold'}>
-                    Project Description,
-                  </Text>{' '}
-                  <Text textAlign={'justify'} fontSize={'16px'}>
-                    {projectSrc.description}
-                  </Text>{' '}
+                  {projectSrc.about.map((aboutItem, index) => (
+                    <Box index={index} my={10}>
+                      <Text fontSize={'22px'} mt={4} mb={2} fontWeight={'bold'}>
+                        {aboutItem.title}
+                      </Text>{' '}
+                      {aboutItem.description === '' ? (
+                        ''
+                      ) : (
+                        <Text textAlign={'justify'} fontSize={'16px'} my={5}>
+                          {aboutItem.description}
+                        </Text>
+                      )}
+                      {aboutItem.type === 'list' ? (
+                        <List spacing={3} mx={3}>
+                          {aboutItem.list.map((listItem, index) => (
+                            <ListItem index={index}>
+                              <ListIcon
+                                as={CheckCircleIcon}
+                                color="green.500"
+                              />
+                              {listItem}
+                            </ListItem>
+                          ))}
+                        </List>
+                      ) : (
+                        ''
+                      )}
+                      {aboutItem.imgUrl === '' ? (
+                        ''
+                      ) : (
+                        <Image
+                          mx={'auto'}
+                          rounded={'sm'}
+                          src={aboutItem.imgUrl}
+                          layout={'fill'}
+                        />
+                      )}
+                    </Box>
+                  ))}
                   <Box my={6}>
+                    <Text fontSize={'22px'} mt={4} mb={2} fontWeight={'bold'}>
+                      Product Design
+                    </Text>{' '}
                     <SimpleGrid
                       columns={{ base: 1, md: 1, lg: 2, xl: 2 }}
                       gap={{ base: '', md: 6 }}
@@ -106,9 +151,29 @@ const ProjectInfo = () => {
                       ))}
                     </SimpleGrid>
                   </Box>
+                  <Box my={10}>
+                    <Text fontSize={'22px'} mt={4} mb={2} fontWeight={'bold'}>
+                      {projectSrc.conclusionTitle}
+                    </Text>{' '}
+                    <Box
+                      borderLeftRadius={'5px'}
+                      bg={theme === 'light' ? '#000000' : '#FFFFFF'}
+                      me={2}
+                    >
+                      <Text
+                        textAlign={'justify'}
+                        fontSize={'16px'}
+                        my={5}
+                        bg={theme === 'light' ? '#F2F2F2' : '#0B0F13'}
+                        ms={2}
+                        ps={3}
+                      >
+                        {projectSrc.conclusionDescription}
+                      </Text>{' '}
+                    </Box>
+                  </Box>
                 </Box>
               </Box>
-              {/* <Text>ProjectInfo {projectId}</Text>{' '} */}
               <ProjectClientInfo projectSrc={projectSrc} theme={theme} />
             </section>
             <section id="contact">

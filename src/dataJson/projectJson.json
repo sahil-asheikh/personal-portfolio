@@ -2,171 +2,127 @@
   {
     "projectIndex": 2,
     "title": "Project/Task Management Tool",
-    "posted": "Aug 2022",
-    "views": "6670 views",
-    "avgRead": "3.4 min read",
+
     "description": "Designed and developed the Kanban Board using Spring-Boot to develop the APIs and React.Js with Chakra-UI library to design the front end of the web application. Implemented an authentication system to manage the multiple user tasks and used the session to manage the user's login history with a unique user token. Tasks can be defined in 3 sections Not Started, On Progress, & Completed, and can manage with the drag and drop function, which helps to track the workflow.",
     "imgThumbnail": "https://drive.google.com/uc?export=view&id=1dvsCk7BaCWURu6WuiXo1-9a-VYHKcUR4",
     "imgCover": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
+    "about": [
+      {
+        "title": "Introduction",
+        "type": "plain",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "title": "Overview",
+        "type": "plain",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "title": "Problem Statement",
+        "type": "list",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "list": [
+          "when an unknown printer took a galley of type and scrambled it to make",
+          "a type specimen book. It has survived not only five centuries, but also the",
+          "leap into electronic typesetting, remaining essentially unchanged. It was",
+          "popularised in the 1960s with the release of Letraset sheets"
+        ]
+      },
+      {
+        "title": "Development Process",
+        "type": "plain",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "title": "Research - about the product and company",
+        "type": "list",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "list": [
+          "when an unknown printer took a galley of type and scrambled it to make",
+          "a type specimen book. It has survived not only five centuries, but also the",
+          "leap into electronic typesetting, remaining essentially unchanged. It was",
+          "popularised in the 1960s with the release of Letraset sheets"
+        ]
+      },
+      {
+        "title": "Objectives of the company and product",
+        "type": "list",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "list": [
+          "when an unknown printer took a galley of type and scrambled it to make",
+          "a type specimen book. It has survived not only five centuries, but also the",
+          "leap into electronic typesetting, remaining essentially unchanged. It was",
+          "popularised in the 1960s with the release of Letraset sheets"
+        ]
+      },
+      {
+        "title": "Reviews",
+        "type": "plain",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "title": "Define",
+        "type": "plain",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "title": "Core Problems",
+        "type": "list",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "list": [
+          "when an unknown printer took a galley of type and scrambled it to make",
+          "a type specimen book. It has survived not only five centuries, but also the",
+          "leap into electronic typesetting, remaining essentially unchanged. It was",
+          "popularised in the 1960s with the release of Letraset sheets"
+        ]
+      },
+      {
+        "title": "Project Flow",
+        "type": "plain",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
+        "description": ""
+      },
+      {
+        "title": "Wireframe",
+        "type": "plain",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
+        "description": ""
+      }
+    ],
     "projectImages": [
       {
-        "title": "Login and Sign up page for the web application",
+        "title": "1. Login and Sign up page for the web application",
         "imgUrl": "https://drive.google.com/uc?export=view&id=1V6Six4PHVHMETRorMbdC4BydbErcqva7"
       },
       {
-        "title": "Dashboard of the Task Manager",
+        "title": "2. Dashboard of the Task Manager",
         "imgUrl": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx"
       },
       {
-        "title": "Create/Add and Update Task Modal UIUX",
+        "title": "3. Create/Add and Update Task Modal UIUX",
         "imgUrl": "https://drive.google.com/uc?export=view&id=156wYZMa47eFDub-0RLKsPBkIY3yo-enq"
       },
       {
-        "title": "Task Details and Drag & Drop functionality",
+        "title": "4. Task Details and Drag & Drop functionality",
         "imgUrl": "https://drive.google.com/uc?export=view&id=1Z-mRHcLGRksAuNjgfMo7cpnr_KmY4LDy"
       }
     ],
+    "conclusionTitle": "Conclusion",
+    "conclusionDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     "client": "Anonymous",
     "timeline": "July 2022 - August 2022",
     "type": "Web Application",
     "projectLiveUrl": "https://kanban-reactbegawo.herokuapp.com/",
     "works": ["Web Application", "API Development"],
     "tools": ["React.Js, JavaScript", "Spring Boot, Java"]
-  },
-  {
-    "projectIndex": 0,
-    "title": "Landing Page for a Burger Shop",
-    "posted": "Dec 2021",
-    "views": "1159 views",
-    "avgRead": "2 min read",
-    "description": "Designed and developed a landing page for a Burger Shop who wants to display their product details on the landing page.\nThe client wants a minimal design with a BIG image of a burger on the top, so I displayed a big burger image on the top inside an egg-shaped vessel.\nAlso displayed their products under the products section and created a wonderful gallery of images under the photos section.",
-    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1rFLGB7QpY5Y0KCr-EZr0X0GaxQ_7kXre",
-    "imgCover": "https://drive.google.com/uc?export=view&id=1xuWiyO_7FWIQYciKmuASNLH6RF8Jx9Bi",
-    "projectImages": [
-      {
-        "title": "Hero section of the landing page",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1TGqij4TXWel10NB1OJaRJpwbRIFYiF9O"
-      },
-      {
-        "title": "Client's testimonials section with hover effect",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1hnKIXQ54ALS7AKxRKBJ0wsjykjmK1SeT"
-      },
-      {
-        "title": "Burger Gallery with Newsletter section",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=12GO6NlXA1smPtO90hVJ3tjSt-aZ__gWJ"
-      },
-      {
-        "title": "Bold amazing footer with contact form above",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1dicFv82D7fsC6cAzxYOFf70x-yn8FXER"
-      }
-    ],
-    "client": "Burger's Way (Burger Shop)",
-    "timeline": "November 2021 - December 2021",
-    "type": "Product Landing Page",
-    "projectLiveUrl": "",
-    "works": ["UI/UX Designing", "Brand Landing Page", "Product Landing Pages"],
-    "tools": ["HTML, CSS, JavaScript", "Bootstrap", "Material UI"]
-  },
-  {
-    "projectIndex": 1,
-    "title": "Custom designed personal portfolio",
-    "posted": "Jan 2022",
-    "views": "2615 views",
-    "avgRead": "2 min read",
-    "description": "Here is a sample of my work that I designed and developed for a college student. \nI designed a personal portfolio that mentioned about her, education history, skills, social links, every projects that she made, and more. \nAlso, designed a contact with a map integration, and developed a contact form that sent all the entered details to her telegram account with a minimal simple footer. \nHer demanded for a minimal design with slike pink shades includes dark theme, so here is the portfolio I designed for her.",
-    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1uiErUMXsaaD9_BebpdrjK1V2VXSXb-_Z",
-    "imgCover": "https://drive.google.com/uc?export=view&id=1qWNakkEuGxLdHsC76yOs3xjsMVgNDi6o",
-    "projectImages": [
-      {
-        "title": "Hero section of the portfolio website",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=159syER_FAm2L7I6aTPIjCaEUW5yYOH8D"
-      },
-      {
-        "title": "Client's social media and project section",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1lh1CThb5XRGKENkdzed0_hZ1KOsHmuLS"
-      },
-      {
-        "title": "Minimal Footer section with map & contacts",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1QJ_yyyNAtUC8yW6gdOpmIxgj3xTKaw-s"
-      },
-      {
-        "title": "Image of complete personal portfolio",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=191LIs-dkw7vgtAyb9HxcEQRhi2PUcpJY"
-      }
-    ],
-    "client": "Miss Dhanashree Maheshram",
-    "timeline": "January 2022",
-    "type": "Personal Portfolio",
-    "projectLiveUrl": "https://dhanashree-dm.github.io/",
-    "works": ["UI/UX Designing", "Portfolio Website"],
-    "tools": ["HTML, CSS, JavaScript", "Bootstrap"]
-  },
-  {
-    "projectIndex": 2,
-    "title": "Personal portfolio for a civil engineer",
-    "posted": "Feb 2022",
-    "views": "2366 views",
-    "avgRead": "2 min read",
-    "description": "The client wants a parallax design with a scrolling effect and his name on the top so I have designed this hero template for the client and below that rest information is mentioned. Also, the client wants the zig-zag pattern architecture for his portfolio so that users can read about the experience and also check the image side by side so according to that, I have designed this wonderful zig-zag pattern about section and experience with cards where all the services are mentioned that client provides. As per the compliment I have implemented the telegram bot that sends the contact information that users entered in the contact form directly to the client's telegram account.",
-    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1VygaoANCOeQM_-fbfpcrdtQbTABOj2j8",
-    "imgCover": "https://drive.google.com/uc?export=view&id=1UL2i7z02k04n6Q-joktABUoml6Kcd4fM",
-    "projectImages": [
-      {
-        "title": "Hero section of the portfolio website",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1EYV7_2dK7LxN7w5BEEF_jtKEsxAsRbua"
-      },
-      {
-        "title": "Client's about, experience and project section",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1l3R29QqglGlutEwxMsfpHPzPX8RxHR32"
-      },
-      {
-        "title": "Minimal Footer section with contact & services",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1o2WoT4OfA482cLdrWi8SoeLXcwu7EBOe"
-      },
-      {
-        "title": "Image of complete personal portfolio",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1j75DHWwH0vYZW8soFk-o-c9XLJ1ln_YB"
-      }
-    ],
-    "client": "Mr. Mustaquim Khan",
-    "timeline": "Febuary 2022",
-    "type": "Personal Portfolio",
-    "projectLiveUrl": "",
-    "works": ["UI/UX Designing", "Portfolio Website"],
-    "tools": ["HTML, CSS, JavaScript", "Bootstrap"]
-  },
-  {
-    "projectIndex": 2,
-    "title": "Portfolio Website for an Architect",
-    "posted": "Feb 2022",
-    "views": "8425 views",
-    "avgRead": "3 min read",
-    "description": "The client wants a minimal design with her basic details like BIG name of her and designation on the bottom of her name so I have designed this hero template for the client and below that rest information is mentioned. Implemented the skills bar as per the client's requirement and designed cards for the experiences and project view with services mentioned below. Also, the client wants to get all the notifications of the contact form on their telegram so I implemented a bot that redirected all the messages in the client's telegram account.",
-    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1Ir8DJo4OFUbYb-fw4SCGe37APBDzoX1e",
-    "imgCover": "https://drive.google.com/uc?export=view&id=1P1bLYPSnrCPtEh0YTir4Cen3JH9vEjG5",
-    "projectImages": [
-      {
-        "title": "Hero section of the portfolio website",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1th95pGRaBSAAmEm8Fq11-fSJj1wvI9BQ"
-      },
-      {
-        "title": "Client's experience and project section",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1uowFJa8vfO1WJHVoJSTWAaPOLZpFfV8a"
-      },
-      {
-        "title": "Minimal Footer section with contact & services",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1q570T2tzQWn9u6afv39HL3kCoN97MuEB"
-      },
-      {
-        "title": "Image of complete personal portfolio",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1123QP0VuAqpgseDf6hQx6y8zY8Eg0QY6"
-      }
-    ],
-    "client": "Miss. Ishika Rangari",
-    "timeline": "Febuary 2022",
-    "type": "Personal Portfolio",
-    "projectLiveUrl": "",
-    "works": ["UI/UX Designing", "Portfolio Website"],
-    "tools": ["HTML, CSS, JavaScript", "Bootstrap"]
   }
 ]

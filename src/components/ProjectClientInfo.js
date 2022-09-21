@@ -1,3 +1,4 @@
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Box, Link, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 
@@ -89,7 +90,7 @@ const ProjectClientInfo = ({ projectSrc, theme }) => {
               target={'_blank'}
               _hover={'none'}
             >
-              live website
+              live demo <ExternalLinkIcon w={'14px'} h={'14px'} />
             </Link>
             .
           </Text>

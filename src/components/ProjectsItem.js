@@ -12,30 +12,30 @@ const ProjectItem = ({ theme, projectIndex, imgThumbnail, title, type }) => {
       mt={3}
       fontFamily={'Montserrat'}
     >
-      <Box
-        bg={theme === 'light' ? '#FFFFFF' : '#1A2026'}
-        maxW={'445px'}
-        w={'full'}
-        boxShadow={'2xl'}
-        rounded={'sm'}
-        p={3}
-        overflow={'hidden'}
-      >
-        <Box mt={-6} mx={-6} mb={3}>
-          <Image w={'100%'} h={'100%'} src={imgThumbnail} layout={'fill'} />
-        </Box>
-        <Stack>
-          <Link to={'/ProjectInfo/' + projectIndex}>
+      <Link to={'/ProjectInfo/' + projectIndex}>
+        <Box
+          bg={theme === 'light' ? '#FFFFFF' : '#1A2026'}
+          maxW={'445px'}
+          w={'full'}
+          boxShadow={'2xl'}
+          rounded={'sm'}
+          p={3}
+          overflow={'hidden'}
+        >
+          <Box mt={-6} mx={-6} mb={3}>
+            <Image w={'100%'} h={'100%'} src={imgThumbnail} layout={'fill'} />
+          </Box>
+          <Stack>
             <Text fontWeight={'semibold'} fontSize={'16px'}>
               {title} &nbsp;
               <ExternalLinkIcon w={'14px'} h={'14px'} />
             </Text>
-          </Link>
-          <Text fontWeight={'thin'} fontSize={'12px'} fontStyle={'italic'}>
-            #{type}
-          </Text>
-        </Stack>
-      </Box>
+            <Text fontWeight={'thin'} fontSize={'12px'} fontStyle={'italic'}>
+              #{type}
+            </Text>
+          </Stack>
+        </Box>
+      </Link>
     </Center>
   );
 };
