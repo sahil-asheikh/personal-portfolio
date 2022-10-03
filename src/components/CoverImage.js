@@ -35,7 +35,7 @@ const CoverImage = ({ projectSrc, theme }) => {
             {projectSrc.title}
           </Text>
           <Text color={'grey'}>
-            {projectSrc.posted} • {projectSrc.views} • {projectSrc.avgRead}
+            {projectSrc.posted} {projectSrc.views} {projectSrc.avgRead} &nbsp;
           </Text>
         </Box>
       </Box>

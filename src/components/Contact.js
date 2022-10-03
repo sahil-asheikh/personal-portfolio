@@ -30,17 +30,16 @@ const Contact = ({ theme }) => {
     });
 
   const [nameInput, setNameInput] = useState('');
-  const [phoneInput, setPhoneInput] = useState('');
+  const [phoneInput, setPhoneInput] = useState();
   const [emailInput, setEmailInput] = useState('');
   const [projectName, setProjectNameInput] = useState('');
   const [projectDescription, setProjectDescription] = useState('');
   const [projectType, setProjectType] = useState([]);
   const [projectBudget, setProjectBudget] = useState([]);
 
-  const stringContainsNumber = inputString => {
-    let string1 = String(inputString);
-    for (let i = 0; i < string1.length; i++) {
-      if (!isNaN(string1.charAt(i)) && !(string1.charAt(i) === ' ')) {
+  const stringContainsChar = inputString => {
+    for (let i = 0; i < inputString.length; i++) {
+      if (/[a-zA-Z]/i.test(inputString.charAt(i))) {
         return true;
       }
     }
@@ -50,9 +49,8 @@ const Contact = ({ theme }) => {
   const handlePhoneNumber = inputPhone => {
     if (/[a-zA-Z]/i.test(inputPhone.charAt(inputPhone.length - 1))) {
       alertToast('Only Number Accepted', 'warning');
-    } else {
-      setPhoneInput(inputPhone);
     }
+    setPhoneInput(inputPhone);
   };
 
   const handleProjectType = inputProjectType => {
@@ -94,7 +92,7 @@ const Contact = ({ theme }) => {
       alertToast('Invalid Name', 'warning');
     } else if (phoneInput === '' || phoneInput.length < 10) {
       onLoadingClose();
-      alertToast('Invalid Phone Number', 'warning');
+      alertToast('Invalid Number Length', 'warning');
     } else if (
       emailInput === '' ||
       emailInput.length < 3 ||
@@ -102,8 +100,9 @@ const Contact = ({ theme }) => {
     ) {
       onLoadingClose();
       alertToast('Invalid Email', 'warning');
-    } else if (stringContainsNumber(phoneInput)) {
+    } else if (stringContainsChar(phoneInput)) {
       onLoadingClose();
+      console.log(phoneInput);
       alertToast('Invalid Phone Number', 'warning');
     } else if (projectName === '' || projectName.length < 3) {
       onLoadingClose();

@@ -82,7 +82,7 @@ const ProjectClientInfo = ({ projectSrc, theme }) => {
           mb={10}
           w={{ base: '', md: '50%', lg: '50%', xl: '50%' }}
         >
-          <Text fontSize={'14px'}>
+          <Text fontSize={'16px'}>
             Check out the{' '}
             <Link
               href={projectSrc.projectLiveUrl}
@@ -94,7 +94,7 @@ const ProjectClientInfo = ({ projectSrc, theme }) => {
             </Link>
             .
           </Text>
-          <Text fontSize={'14px'}>
+          <Text fontSize={'16px'}>
             Note: The website may not look exactly the same on the live version
             due to incremental QoL and other updates due to business
             requirements.

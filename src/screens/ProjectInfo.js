@@ -76,7 +76,7 @@ const ProjectInfo = () => {
             fontFamily={'Montserrat'}
           >
             <section id="main">
-              <Box mx={{ base: 3, md: 6, lg: 6, xl: 6 }}>
+              <Box mx={{ base: 2, md: 10, lg: 20, xl: 40 }}>
                 <CoverImage projectSrc={projectSrc} theme={theme} />
                 <Box mt={16}>
                   {projectSrc.about.map((aboutItem, index) => (
@@ -173,8 +173,8 @@ const ProjectInfo = () => {
                     </Box>
                   </Box>
                 </Box>
+                <ProjectClientInfo projectSrc={projectSrc} theme={theme} />
               </Box>
-              <ProjectClientInfo projectSrc={projectSrc} theme={theme} />
             </section>
             <section id="contact">
               <Contact theme={theme} />
