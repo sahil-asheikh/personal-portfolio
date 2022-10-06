@@ -25,7 +25,7 @@ const Home = ({ theme, toMain }) => {
               fontWeight={'bold'}
               color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
             >
-              Web
+              Web, API
             </Text>{' '}
             and <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
             <Text

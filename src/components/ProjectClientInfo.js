@@ -89,6 +89,7 @@ const ProjectClientInfo = ({ projectSrc, theme }) => {
               fontWeight={'bold'}
               target={'_blank'}
               _hover={'none'}
+              color={'#27ae60'}
             >
               live demo <ExternalLinkIcon w={'14px'} h={'14px'} />
             </Link>

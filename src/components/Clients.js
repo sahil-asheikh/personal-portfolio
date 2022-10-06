@@ -22,9 +22,9 @@ const Clients = ({ theme }) => {
             fontWeight={'semibold'}
             color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
           >
-            the clients I have{' '}
+            the companies I have{' '}
             <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
-            developed for
+            worked with
           </Text>
         </Text>
         <SimpleGrid

@@ -157,7 +157,8 @@ const ProjectInfo = () => {
                     </Text>{' '}
                     <Box
                       borderLeftRadius={'5px'}
-                      bg={theme === 'light' ? '#000000' : '#FFFFFF'}
+                      // bg={theme === 'light' ? '#000000' : '#FFFFFF'}
+                      bg={'#27ae60'}
                       me={2}
                     >
                       <Text
