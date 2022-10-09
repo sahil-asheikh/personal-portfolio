@@ -8,7 +8,7 @@ const ProjectClientInfo = ({ projectSrc, theme }) => {
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
         gap={{ base: '', md: 6 }}
-        mx={{ base: 3, md: 6, lg: 6, xl: 6 }}
+        // mx={{ base: 3, md: 6, lg: 6, xl: 6 }}
       >
         <Box mt={3}>
           <Text color={'gray'} fontWeight={'bold'} fontSize={'20px'}>
@@ -77,7 +77,7 @@ const ProjectClientInfo = ({ projectSrc, theme }) => {
         ''
       ) : (
         <Box
-          mx={{ base: 3, md: 6, lg: 6, xl: 6 }}
+          // mx={{ base: 3, md: 6, lg: 6, xl: 6 }}
           mt={6}
           mb={10}
           w={{ base: '', md: '50%', lg: '50%', xl: '50%' }}

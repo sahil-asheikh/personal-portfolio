@@ -1,24 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
-import { Box, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { Box, Link, Stack, Text } from '@chakra-ui/react';
 import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '../themes';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import { BsChevronDown } from 'react-icons/bs';
-import ProjectItem from '../components/ProjectsItem';
-import AllProjectDetails from '../dataJson/projectJson.json';
+import Contact from '../components/Contact';
 
-const StyledApp = styled.div`
-  background: ${({ theme }) => theme.body};
-  color: ${({ theme }) => theme.text};
-`;
-
-const Work = () => {
-  const allProjectDetails = AllProjectDetails;
+const ContactPage = () => {
+  const StyledApp = styled.div`
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+  `;
 
   const [theme, setTheme] = useState('dark');
-  const [toMain, setToMain] = useState('');
   const themeToggler = () => {
     if (theme === 'dark') {
       localStorage.setItem('currentTheme', 'light');
@@ -44,7 +40,6 @@ const Work = () => {
 
   useEffect(() => {
     setCurrentTheme();
-    setToMain(document.getElementById('main'));
     window.scrollTo(0, 0);
   }, []);
 
@@ -68,8 +63,25 @@ const Work = () => {
                 fontFamily={'Montserrat'}
                 color={'grey'}
               >
-                This page includes most of the projects I have <br />
-                worked on thoughout my entire development career.
+                Feel free to send me an &nbsp;
+                <Link
+                  href="mailto: sahilasheikh.dev@gmail.com"
+                  style={{ color: '#4267B2', fontWeight: 'bold' }}
+                  _hover={{ textDecoration: 'none' }}
+                >
+                  Email
+                </Link>
+                &nbsp;or&nbsp;
+                <br />
+                <Link
+                  href="https://wa.me/+918766509387"
+                  style={{ color: '#27AE60', fontWeight: 'bold' }}
+                  _hover={{ textDecoration: 'none' }}
+                  target={'_blank'}
+                >
+                  WhatsApp
+                </Link>
+                &nbsp;me at any given time
               </Text>
               <Text
                 fontSize={{ base: '20px', md: '40px' }}
@@ -78,59 +90,37 @@ const Work = () => {
                 color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
                 mt={20}
               >
-                Recent Project
+                Start a Project
               </Text>
             </Box>
           </Stack>
-
-          {allProjectDetails.length === 0 ? (
-            ''
-          ) : (
-            <>
-              <Stack
-                direction={{ base: 'column', md: 'row' }}
-                width={{ base: 'full', md: 'auto' }}
-                alignItems="center"
+          <Stack
+            direction={{ base: 'column', md: 'row' }}
+            width={{ base: 'full', md: 'auto' }}
+            alignItems="center"
+          >
+            <Text mx={'auto'} my={[6, 4, 2]}>
+              <a
+                href="/"
+                onClick={e => {
+                  let hero = document.getElementById('main');
+                  e.preventDefault();
+                  hero &&
+                    hero.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    });
+                }}
               >
-                <Text mx={'auto'} my={[6, 4, 2]}>
-                  <a
-                    href="/"
-                    onClick={e => {
-                      e.preventDefault();
-                      toMain &&
-                        toMain.scrollIntoView({
-                          behavior: 'smooth',
-                          block: 'start',
-                        });
-                    }}
-                  >
-                    <BsChevronDown />
-                  </a>
-                </Text>
-              </Stack>
-              <section id="main">
-                <SimpleGrid
-                  columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
-                  gap={{ base: '', md: 0 }}
-                  my={20}
-                  pt={20}
-                >
-                  {allProjectDetails.map((projectItem, index) => (
-                    <Box my={3} mx={{ base: 3, md: 0, lg: 0, xl: 0 }}>
-                      <ProjectItem
-                        key={index}
-                        theme={theme}
-                        projectIndex={index}
-                        imgThumbnail={projectItem.imgThumbnail}
-                        title={projectItem.title}
-                        type={projectItem.type}
-                      />
-                    </Box>
-                  ))}
-                </SimpleGrid>
-              </section>
-            </>
-          )}
+                <BsChevronDown />
+              </a>
+            </Text>
+          </Stack>
+          <section id="main">
+            <Stack my={20} pt={20}>
+              <Contact theme={theme} />
+            </Stack>
+          </section>
         </Box>
         <Footer theme={theme} />
       </StyledApp>
@@ -138,4 +128,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default ContactPage;

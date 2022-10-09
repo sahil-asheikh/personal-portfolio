@@ -13,7 +13,6 @@ import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '../themes';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
-import Contact from '../components/Contact';
 import { useParams } from 'react-router-dom';
 import CoverImage from '../components/CoverImage';
 import ProjectClientInfo from '../components/ProjectClientInfo';
@@ -29,7 +28,6 @@ const ProjectInfo = () => {
   const { projectIndex } = useParams({});
   const projectSrc = ProjectJson[projectIndex];
   const [theme, setTheme] = useState('dark');
-  const [toContact, setToContact] = useState('');
   const themeToggler = () => {
     if (theme === 'dark') {
       localStorage.setItem('currentTheme', 'light');
@@ -55,7 +53,6 @@ const ProjectInfo = () => {
 
   useEffect(() => {
     setCurrentTheme();
-    setToContact(document.getElementById('contact'));
     window.scrollTo(0, 0);
   }, []);
 
@@ -67,7 +64,6 @@ const ProjectInfo = () => {
           <Header
             themeToggler={themeToggler}
             theme={theme}
-            toContact={toContact}
           />
           <ScrollToTop theme={theme} />
           <Box
@@ -176,9 +172,6 @@ const ProjectInfo = () => {
                 </Box>
                 <ProjectClientInfo projectSrc={projectSrc} theme={theme} />
               </Box>
-            </section>
-            <section id="contact">
-              <Contact theme={theme} />
             </section>
           </Box>
           <Footer theme={theme} />

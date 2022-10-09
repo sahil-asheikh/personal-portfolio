@@ -9,96 +9,102 @@ const Projects = ({ theme }) => {
   const allProjectDetails = AllProjectDetails;
 
   return (
-    <div>
-      <Box fontFamily={'Montserrat'}>
-        <Box mt={20}>
-          <SimpleGrid
-            columns={{ base: 1, md: 2 }}
-            gap={{ base: '', md: 6 }}
-            alignItems={'end'}
-          >
-            <Text
-              fontSize={'26px'}
-              fontWeight={'thin'}
-              letterSpacing={1.1}
-              color={'grey'}
-              textAlign={{ base: 'center', md: 'left' }}
-              mx={6}
-            >
-              Some of my projects -{' '}
-              <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
-              <Text
-                as={'span'}
-                fontWeight={'semibold'}
-                color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+    <>
+      {allProjectDetails.length === 0 ? (
+        ''
+      ) : (
+        <div>
+          <Box fontFamily={'Montserrat'}>
+            <Box mt={20}>
+              <SimpleGrid
+                columns={{ base: 1, md: 2 }}
+                gap={{ base: '', md: 6 }}
+                alignItems={'end'}
               >
-                Recent Work{' '}
-              </Text>
-            </Text>
-            <Box
-              textAlign={{ base: 'right', md: 'right' }}
-              mx={{ base: 1, md: 10 }}
-              display={{ base: 'none', md: 'block' }}
-            >
-              <Link to={'/Work'}>
                 <Text
-                  size={'sm'}
-                  bg={'none'}
-                  _hover={'none'}
-                  _active={'none'}
-                  mx={'auto'}
-                  color={'#27AE60'}
-                  fontWeight={'semibold'}
+                  fontSize={'26px'}
+                  fontWeight={'thin'}
+                  letterSpacing={1.1}
+                  color={'grey'}
+                  textAlign={{ base: 'center', md: 'left' }}
+                  mx={6}
                 >
-                  More Projects &nbsp; <ArrowRightIcon />
+                  Some of my projects -{' '}
+                  <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
+                  <Text
+                    as={'span'}
+                    fontWeight={'semibold'}
+                    color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+                  >
+                    Recent Work{' '}
+                  </Text>
                 </Text>
-              </Link>
-            </Box>
-          </SimpleGrid>
-          <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
-            gap={{ base: '', md: 0 }}
-          >
-            {allProjectDetails.map((projectItem, index) =>
-              index <= 3 ? (
-                <Box my={3} mx={{ base: 3, md: 0, lg: 0, xl: 0 }}>
-                  <ProjectItem
-                    key={index}
-                    theme={theme}
-                    projectIndex={index}
-                    imgThumbnail={projectItem.imgThumbnail}
-                    title={projectItem.title}
-                    type={projectItem.type}
-                  />
+                <Box
+                  textAlign={{ base: 'right', md: 'right' }}
+                  mx={{ base: 1, md: 10 }}
+                  display={{ base: 'none', md: 'block' }}
+                >
+                  <Link to={'/Work'}>
+                    <Text
+                      size={'sm'}
+                      bg={'none'}
+                      _hover={'none'}
+                      _active={'none'}
+                      mx={'auto'}
+                      color={'#27AE60'}
+                      fontWeight={'semibold'}
+                    >
+                      More Projects &nbsp; <ArrowRightIcon />
+                    </Text>
+                  </Link>
                 </Box>
-              ) : (
-                <></>
-              )
-            )}
-          </SimpleGrid>
-          <Box
-            textAlign={{ base: 'center', md: 'right' }}
-            mx={{ base: 1, md: 10 }}
-            display={{ base: 'block', md: 'none' }}
-          >
-            <Link to={'/Work'}>
-              <Text
-                size={'sm'}
-                bg={'none'}
-                _hover={'none'}
-                _active={'none'}
-                mx={'auto'}
-                mt={3}
-                color={'#27AE60'}
-                fontWeight={'semibold'}
+              </SimpleGrid>
+              <SimpleGrid
+                columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+                gap={{ base: '', md: 0 }}
               >
-                More Projects &nbsp; <ArrowRightIcon />
-              </Text>
-            </Link>
+                {allProjectDetails.map((projectItem, index) =>
+                  index <= 3 ? (
+                    <Box my={3} mx={{ base: 3, md: 0, lg: 0, xl: 0 }}>
+                      <ProjectItem
+                        key={index}
+                        theme={theme}
+                        projectIndex={index}
+                        imgThumbnail={projectItem.imgThumbnail}
+                        title={projectItem.title}
+                        type={projectItem.type}
+                      />
+                    </Box>
+                  ) : (
+                    <></>
+                  )
+                )}
+              </SimpleGrid>
+              <Box
+                textAlign={{ base: 'center', md: 'right' }}
+                mx={{ base: 1, md: 10 }}
+                display={{ base: 'block', md: 'none' }}
+              >
+                <Link to={'/Work'}>
+                  <Text
+                    size={'sm'}
+                    bg={'none'}
+                    _hover={'none'}
+                    _active={'none'}
+                    mx={'auto'}
+                    mt={3}
+                    color={'#27AE60'}
+                    fontWeight={'semibold'}
+                  >
+                    More Projects &nbsp; <ArrowRightIcon />
+                  </Text>
+                </Link>
+              </Box>
+            </Box>
           </Box>
-        </Box>
-      </Box>
-    </div>
+        </div>
+      )}
+    </>
   );
 };
 

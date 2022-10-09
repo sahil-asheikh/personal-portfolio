@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ScrollIndicator from './ScrollIndicator';
 
-const Header = ({ themeToggler, theme, toContact }) => {
+const Header = ({ themeToggler, theme }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleToggle = () => (isOpen ? onClose() : onOpen());
   const currentUrl = window.location.href;
@@ -79,19 +79,7 @@ const Header = ({ themeToggler, theme, toContact }) => {
               _hover={{ color: '#27AE60' }}
               color={pageName === 'Contact' ? '#27AE60' : ''}
             >
-              <a
-                href="/"
-                onClick={e => {
-                  e.preventDefault();
-                  toContact &&
-                    toContact.scrollIntoView({
-                      behavior: 'smooth',
-                      block: 'start',
-                    });
-                }}
-              >
-                Contact
-              </a>
+              <Link to="/Contact">Contact</Link>
             </Text>
           </Stack>
           <IconButton
