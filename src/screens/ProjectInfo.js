@@ -61,10 +61,7 @@ const ProjectInfo = () => {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <StyledApp>
-          <Header
-            themeToggler={themeToggler}
-            theme={theme}
-          />
+          <Header themeToggler={themeToggler} theme={theme} />
           <ScrollToTop theme={theme} />
           <Box
             mx={{ base: 2, md: 10 }}
@@ -74,7 +71,7 @@ const ProjectInfo = () => {
             <section id="main">
               <Box mx={{ base: 2, md: 10, lg: 20, xl: 40 }}>
                 <CoverImage projectSrc={projectSrc} theme={theme} />
-                <Box mt={16}>
+                <Box>
                   {projectSrc.about.map((aboutItem, index) => (
                     <Box index={index} my={10}>
                       <Text fontSize={'22px'} mt={4} mb={2} fontWeight={'bold'}>

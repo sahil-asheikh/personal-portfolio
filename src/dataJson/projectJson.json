@@ -1,20 +1,12 @@
 [
   {
     "projectIndex": 2,
-    "title": "Project Management Tool",
-
+    "title": "Kanban Board - Project Management Tool",
     "description": "Designed and developed the Kanban Board using Spring-Boot to develop the APIs and React.Js with Chakra-UI library to design the front end of the web application. Implemented an authentication system to manage the multiple user tasks and used the session to manage the user's login history with a unique user token. Tasks can be defined in 3 sections Not Started, On Progress, & Completed, and can manage with the drag and drop function, which helps to track the workflow.",
     "imgThumbnail": "https://drive.google.com/uc?export=view&id=1dvsCk7BaCWURu6WuiXo1-9a-VYHKcUR4",
-    "imgCover": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
     "about": [
       {
         "title": "Introduction",
-        "type": "plain",
-        "imgUrl": "",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-      },
-      {
-        "title": "Overview",
         "type": "plain",
         "imgUrl": "",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -30,12 +22,6 @@
           "leap into electronic typesetting, remaining essentially unchanged. It was",
           "popularised in the 1960s with the release of Letraset sheets"
         ]
-      },
-      {
-        "title": "Development Process",
-        "type": "plain",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       },
       {
         "title": "Research - about the product and company",
@@ -62,18 +48,6 @@
         ]
       },
       {
-        "title": "Reviews",
-        "type": "plain",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "title": "Define",
-        "type": "plain",
-        "imgUrl": "",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
         "title": "Core Problems",
         "type": "list",
         "imgUrl": "",
@@ -88,14 +62,14 @@
       {
         "title": "Project Flow",
         "type": "plain",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
-        "description": ""
+        "imgUrl": "https://cdn-proxy.slickplan.com/imgs/artwork/sample-process-flow.svg",
+        "description": "Based on the requirements, company/product goals, and core problems I have concluded this Project Fowl for the client."
       },
       {
         "title": "Wireframe",
         "type": "plain",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1OTeWyRsvKmG_MYPFn_9335CZXDDcmRMj",
-        "description": ""
+        "imgUrl": "https://i.pinimg.com/736x/a1/6a/ec/a16aecde7b284e697ef082a548494d28.jpg",
+        "description": "Based on the Product goals, and functioning I have this Wireframe for the client"
       }
     ],
     "projectImages": [
@@ -116,8 +90,8 @@
         "imgUrl": "https://drive.google.com/uc?export=view&id=1Z-mRHcLGRksAuNjgfMo7cpnr_KmY4LDy"
       }
     ],
-    "conclusionTitle": "Conclusion",
-    "conclusionDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "conclusionTitle": "Client's Review",
+    "conclusionDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. - Sahil Sheikh",
     "client": "Anonymous",
     "timeline": "July 2022 - August 2022",
     "type": "Web Application",
