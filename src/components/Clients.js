@@ -58,6 +58,7 @@ const Clients = ({ theme }) => {
                       w={{ base: '70%', md: '70%' }}
                       mx={'auto'}
                       my={3}
+                      title={''}
                     />
                   )}
                 </>

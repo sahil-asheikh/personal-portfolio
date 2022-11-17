@@ -1,9 +1,9 @@
 [
   {
-    "projectIndex": 2,
-    "title": "Kanban Board - Project Management Tool",
+    "projectIndex": 1,
+    "title": "Kanban - Project Manager",
     "description": "Designed and developed the Kanban Board using Spring-Boot to develop the APIs and React.Js with Chakra-UI library to design the front end of the web application. Implemented an authentication system to manage the multiple user tasks and used the session to manage the user's login history with a unique user token. Tasks can be defined in 3 sections Not Started, On Progress, & Completed, and can manage with the drag and drop function, which helps to track the workflow.",
-    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1dvsCk7BaCWURu6WuiXo1-9a-VYHKcUR4",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx",
     "about": [
       {
         "title": "Introduction",
@@ -12,7 +12,7 @@
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
       },
       {
-        "title": "Problem Statement",
+        "title": "Client's Requirements",
         "type": "list",
         "imgUrl": "",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "title": "Research - about the product and company",
+        "title": "Research - About the Product",
         "type": "list",
         "imgUrl": "",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "title": "Objectives of the company and product",
+        "title": "Objectives of the Product",
         "type": "list",
         "imgUrl": "",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
@@ -48,7 +48,7 @@
         ]
       },
       {
-        "title": "Core Problems",
+        "title": "Project Solutions",
         "type": "list",
         "imgUrl": "",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
@@ -95,8 +95,100 @@
     "client": "Anonymous",
     "timeline": "July 2022 - August 2022",
     "type": "Web Application",
-    "projectLiveUrl": "https://kanban-reactbegawo.herokuapp.com/",
+    "projectLiveUrl": "",
     "works": ["Web Application", "API Development"],
     "tools": ["React.Js, JavaScript", "Spring Boot, Java"]
+  },
+  {
+    "projectIndex": 2,
+    "title": "Takniik - Business Website",
+    "description": "Designed and developed the Kanban Board using Spring-Boot to develop the APIs and React.Js with Chakra-UI library to design the front end of the web application. Implemented an authentication system to manage the multiple user tasks and used the session to manage the user's login history with a unique user token. Tasks can be defined in 3 sections Not Started, On Progress, & Completed, and can manage with the drag and drop function, which helps to track the workflow.",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1aDqkcOs9kJdaYH9wmCq1B_t8J3wlamjF",
+    "about": [
+      {
+        "title": "Introduction",
+        "type": "plain",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "title": "Client's Requirements",
+        "type": "list",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "list": [
+          "when an unknown printer took a galley of type and scrambled it to make",
+          "a type specimen book. It has survived not only five centuries, but also the",
+          "leap into electronic typesetting, remaining essentially unchanged. It was",
+          "popularised in the 1960s with the release of Letraset sheets"
+        ]
+      },
+      {
+        "title": "Research - About the Company",
+        "type": "list",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "list": [
+          "when an unknown printer took a galley of type and scrambled it to make",
+          "a type specimen book. It has survived not only five centuries, but also the",
+          "leap into electronic typesetting, remaining essentially unchanged. It was",
+          "popularised in the 1960s with the release of Letraset sheets"
+        ]
+      },
+      {
+        "title": "Objectives of the Company",
+        "type": "list",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "list": [
+          "when an unknown printer took a galley of type and scrambled it to make",
+          "a type specimen book. It has survived not only five centuries, but also the",
+          "leap into electronic typesetting, remaining essentially unchanged. It was",
+          "popularised in the 1960s with the release of Letraset sheets"
+        ]
+      },
+      {
+        "title": "Project Solutions",
+        "type": "list",
+        "imgUrl": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "list": [
+          "when an unknown printer took a galley of type and scrambled it to make",
+          "a type specimen book. It has survived not only five centuries, but also the",
+          "leap into electronic typesetting, remaining essentially unchanged. It was",
+          "popularised in the 1960s with the release of Letraset sheets"
+        ]
+      }
+    ],
+    "projectImages": [
+      {
+        "title": "1. Hero, Client, and Services Section",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1aDqkcOs9kJdaYH9wmCq1B_t8J3wlamjF"
+      },
+      {
+        "title": "2. Work details, Call to Action, and Review Section",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1Q_D0TacWHyOXxJGuYIKVl2GjRQZhFOQ3"
+      },
+      {
+        "title": "3. About and Teams Section",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1NqqWArz3uMduda_dbrWZuQsu527hUU5q"
+      },
+      {
+        "title": "4. Glassmorphism effect for the contact page",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1lak-97niuJiJnXk6i9zMFgfRPjxVua40"
+      },
+      {
+        "title": "5. Footer of the Takniik Landing Page",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1QRRTHzG0UjshpjAVRTdyli6Eq3d3NF7J"
+      }
+    ],
+    "conclusionTitle": "Client's Review",
+    "conclusionDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. - Tankiik",
+    "client": "Takniik",
+    "timeline": "November 2022",
+    "type": "Business Website",
+    "projectLiveUrl": "https://takniik.netlify.app/",
+    "works": ["Business Website", "Landing Page"],
+    "tools": ["HTML5, CSS 3", "React.Js, JavaScript"]
   }
 ]

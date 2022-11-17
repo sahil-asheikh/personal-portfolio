@@ -41,23 +41,24 @@ const Home = ({ theme, toMain }) => {
             fontStyle={'italic'}
             fontSize={{ base: '16px', md: '18px' }}
           >
-            #
+            {/* #
             <Text as={'span'} color={'#73A1FB'}>
               Java
+            </Text>
+            ,  */}
+            #
+            <Text as={'span'} color={'#00CDF2'}>
+              React.Js
             </Text>
             , #
             <Text as={'span'} color={'#67AA3C'}>
               SpringBoot
             </Text>
             , #
-            <Text as={'span'} color={'#EAD41C'}>
+            {/* <Text as={'span'} color={'#EAD41C'}>
               JavaScript
             </Text>
-            , #
-            <Text as={'span'} color={'#00CDF2'}>
-              React.Js
-            </Text>
-            , #
+            , # */}
             <Text as={'span'} color={'#3BD17E'}>
               Android
             </Text>
