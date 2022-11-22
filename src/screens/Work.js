@@ -68,7 +68,8 @@ const Work = () => {
                 fontFamily={'Montserrat'}
                 color={'grey'}
               >
-                This page includes most of the projects I have <br />
+                This page includes most of the projects I have
+                <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
                 worked on thoughout my entire development career.
               </Text>
               <Text

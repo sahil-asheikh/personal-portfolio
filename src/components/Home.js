@@ -19,7 +19,8 @@ const Home = ({ theme, toMain }) => {
             fontFamily={'Montserrat'}
             color={'grey'}
           >
-            I’m a developer specializing in{' '}
+            I’m a Full Stack Developer, specializing in{' '}
+            <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
             <Text
               as={'span'}
               fontWeight={'bold'}
@@ -27,7 +28,7 @@ const Home = ({ theme, toMain }) => {
             >
               Web, API
             </Text>{' '}
-            and <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
+            and{' '}
             <Text
               as={'span'}
               fontWeight={'bold'}
