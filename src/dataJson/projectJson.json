@@ -1,106 +1,6 @@
 [
   {
     "projectIndex": 0,
-    "title": "Kanban - Project Manager",
-    "description": "Designed and developed the Kanban Board using Spring-Boot to develop the APIs and React.Js with Chakra-UI library to design the front end of the web application. Implemented an authentication system to manage the multiple user tasks and used the session to manage the user's login history with a unique user token. Tasks can be defined in 3 sections Not Started, On Progress, & Completed, and can manage with the drag and drop function, which helps to track the workflow.",
-    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx",
-    "about": [
-      {
-        "title": "Introduction",
-        "type": "plain",
-        "imgUrl": "",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-      },
-      {
-        "title": "Client's Requirements",
-        "type": "list",
-        "imgUrl": "",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "list": [
-          "when an unknown printer took a galley of type and scrambled it to make",
-          "a type specimen book. It has survived not only five centuries, but also the",
-          "leap into electronic typesetting, remaining essentially unchanged. It was",
-          "popularised in the 1960s with the release of Letraset sheets"
-        ]
-      },
-      {
-        "title": "Research - About the Product",
-        "type": "list",
-        "imgUrl": "",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "list": [
-          "when an unknown printer took a galley of type and scrambled it to make",
-          "a type specimen book. It has survived not only five centuries, but also the",
-          "leap into electronic typesetting, remaining essentially unchanged. It was",
-          "popularised in the 1960s with the release of Letraset sheets"
-        ]
-      },
-      {
-        "title": "Objectives of the Product",
-        "type": "list",
-        "imgUrl": "",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "list": [
-          "when an unknown printer took a galley of type and scrambled it to make",
-          "a type specimen book. It has survived not only five centuries, but also the",
-          "leap into electronic typesetting, remaining essentially unchanged. It was",
-          "popularised in the 1960s with the release of Letraset sheets"
-        ]
-      },
-      {
-        "title": "Project Solutions",
-        "type": "list",
-        "imgUrl": "",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "list": [
-          "when an unknown printer took a galley of type and scrambled it to make",
-          "a type specimen book. It has survived not only five centuries, but also the",
-          "leap into electronic typesetting, remaining essentially unchanged. It was",
-          "popularised in the 1960s with the release of Letraset sheets"
-        ]
-      },
-      {
-        "title": "Project Flow",
-        "type": "plain",
-        "imgUrl": "https://cdn-proxy.slickplan.com/imgs/artwork/sample-process-flow.svg",
-        "description": "Based on the requirements, company/product goals, and core problems I have concluded this Project Fowl for the client."
-      },
-      {
-        "title": "Wireframe",
-        "type": "plain",
-        "imgUrl": "https://i.pinimg.com/736x/a1/6a/ec/a16aecde7b284e697ef082a548494d28.jpg",
-        "description": "Based on the Product goals, and functioning I have this Wireframe for the client"
-      }
-    ],
-    "projectImages": [
-      {
-        "title": "1. Login and Sign up page for the web application",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1V6Six4PHVHMETRorMbdC4BydbErcqva7"
-      },
-      {
-        "title": "2. Dashboard of the Task Manager",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx"
-      },
-      {
-        "title": "3. Create/Add and Update Task Modal UIUX",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=156wYZMa47eFDub-0RLKsPBkIY3yo-enq"
-      },
-      {
-        "title": "4. Task Details and Drag & Drop functionality",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1Z-mRHcLGRksAuNjgfMo7cpnr_KmY4LDy"
-      }
-    ],
-    "conclusionTitle": "Client's Review",
-    "conclusionDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. - Sahil Sheikh",
-    "client": "Anonymous",
-    "timeline": "July 2022 - August 2022",
-    "type": "Web Application",
-    "projectLiveUrl": "",
-    "works": ["Web Application", "API Development"],
-    "tools": ["React.Js, JavaScript", "Spring Boot, Java"]
-  },
-  {
-    "projectIndex": 1,
     "title": "Takniik - Business Website",
     "imgThumbnail": "https://drive.google.com/uc?export=view&id=1aDqkcOs9kJdaYH9wmCq1B_t8J3wlamjF",
     "about": [
@@ -116,7 +16,7 @@
         "imgUrl": "",
         "description": "Below are the requirements, that client asked for",
         "list": [
-          "Need a full-fledged web application with dynamic textual change.",
+          "Need a full-fledged web application to represent the company profile.",
           "Need a Black theme as a primary theme option and plain white will be secondary.",
           "Need Animation work for the buttons, texts, and for components/sections.",
           "Need to be lightweight, and flexible with the heavy assets and animation work.."
