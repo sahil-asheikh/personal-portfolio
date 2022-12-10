@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
+import Header from '../components/commons/Header';
 import { Box, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '../themes';
-import Footer from '../components/Footer';
-import ScrollToTop from '../components/ScrollToTop';
+import Footer from '../components/commons/Footer';
+import ScrollToTop from '../components/commons/ScrollToTop';
 import { BsChevronDown } from 'react-icons/bs';
-import ProjectItem from '../components/ProjectsItem';
+import ProjectItem from '../components/commons/projects/ProjectsItem';
 import AllProjectDetails from '../dataJson/projectJson.json';
 
 const StyledApp = styled.div`

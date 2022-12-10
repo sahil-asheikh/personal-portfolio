@@ -30,7 +30,7 @@ const ProjectItem = ({ theme, projectIndex, imgThumbnail, title, type }) => {
               {title} &nbsp;
               <ExternalLinkIcon w={'14px'} h={'14px'} />
             </Text>
-            <Text fontWeight={'thin'} fontSize={'12px'} fontStyle={'italic'}>
+            <Text fontWeight={'thin'} fontSize={'12px'}>
               #{type}
             </Text>
           </Stack>

@@ -1,7 +1,7 @@
 import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
-import SkillsItem from './SkillsItem';
-import SkillInfo from '../dataJson/skillInfo.json';
+import SkillsItem from './Skills/SkillsItem';
+import SkillInfo from '../../dataJson/skillInfo.json';
 
 const Skills = ({ theme }) => {
   const skillInfo = SkillInfo;

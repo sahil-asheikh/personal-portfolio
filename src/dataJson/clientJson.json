@@ -1,6 +1,22 @@
 [
-  "https://drive.google.com/uc?export=view&id=1z03n8HXHv0zk1dUQ2GUM_Aij1NEjRdPo",
-  "https://drive.google.com/uc?export=view&id=1bVXs_nfvvL8KDPQ-TYAM2LKSX9P7vyrP",
-  "https://drive.google.com/uc?export=view&id=1POd3BwJSjJuKSkxmU9ex_juTy5pvR3ZA",
-  "https://drive.google.com/uc?export=view&id=18QmP8wmeokZRFQnn6XVoY2pPvJ8Lx8aq"
+  {
+    "img": "",
+    "name": ""
+  },
+  {
+    "img": "https://drive.google.com/uc?export=view&id=1U01eht85NSc7ywwVlfb5RyLfBt-HpKi-",
+    "name": "Qaswa Tech Pvt. Ltd."
+  },
+  {
+    "img": "https://drive.google.com/uc?export=view&id=1Pz4sFGx81ayMxkjdfLGaDp8svuvHkmiH",
+    "name": "Betsol Softwares (India)"
+  },
+  {
+    "img": "https://drive.google.com/uc?export=view&id=1sWFeZTGEtw4GF-yZDLZDgCivic2HdnBB",
+    "name": "Sfity Tech Pvt. Ltd."
+  },
+  {
+    "img": "https://drive.google.com/uc?export=view&id=1oxgRw8xF7Xhx6w1PF4Yt0i3yeH5LhILB",
+    "name": "Takniik Pvt. Ltd."
+  }
 ]

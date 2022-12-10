@@ -2,17 +2,17 @@
   {
     "logo": "https://drive.google.com/uc?export=view&id=1rHOIFC5sLWM2wjaOSNP3UlLkjBzUxfbJ",
     "skillTitle": "Web Designing and Development",
-    "subSkills": "HTML, CSS, Bootstrap, JavaScript"
+    "subSkills": "HTML, CSS, JavaScript, Bootstrap"
   },
   {
     "logo": "https://drive.google.com/uc?export=view&id=1u-OKBePqXkBlEhTHIBGCUrLgklkaCgAF",
     "skillTitle": "Frontend Development Framework",
-    "subSkills": "React.Js, Vue.Js, Node.Js"
+    "subSkills": "React.Js, Material UI, Chakra UI, Vue.Js"
   },
   {
     "logo": "https://drive.google.com/uc?export=view&id=11V8dfgDJpYVIOHUN3YOaq4V0AD4ZA08C",
     "skillTitle": "REST-API Development Framework",
-    "subSkills": "Spring, Hibernate, Spring Boot"
+    "subSkills": "Spring, Spring Security, Spring Boot"
   },
   {
     "logo": "https://drive.google.com/uc?export=view&id=1TdG92KIey0CF1mM7wQbPYekXuPJ1xkQG",
@@ -22,11 +22,11 @@
   {
     "logo": "https://drive.google.com/uc?export=view&id=1e6BcME0ntXiPfIBVMN9f_qM-tCloNu1T",
     "skillTitle": "Backend Development Framework",
-    "subSkills": "Java, JDBC, Servlet, JSP, JSTL"
+    "subSkills": "Java, JavaScript, Node.Js, Python"
   },
   {
     "logo": "https://drive.google.com/uc?export=view&id=1twP3vTFGpYt91o4KT5kMOPUACGFYLmjy",
     "skillTitle": "Database Management System",
-    "subSkills": "SQL, MySQL, Oracle, Firebase"
+    "subSkills": "SQL, NoSQL, MySQL, MongoDB, Firebase"
   }
 ]

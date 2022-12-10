@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
+import Header from '../components/commons/Header';
 import {
   Box,
   Image,
@@ -11,11 +11,11 @@ import {
 } from '@chakra-ui/react';
 import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '../themes';
-import Footer from '../components/Footer';
-import ScrollToTop from '../components/ScrollToTop';
+import Footer from '../components/commons/Footer';
+import ScrollToTop from '../components/commons/ScrollToTop';
 import { useParams } from 'react-router-dom';
-import CoverImage from '../components/CoverImage';
-import ProjectClientInfo from '../components/ProjectClientInfo';
+import CoverImage from '../components/projectInfo/CoverImage';
+import ProjectClientInfo from '../components/projectInfo/ProjectClientInfo';
 import ProjectJson from '../dataJson/projectJson.json';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 

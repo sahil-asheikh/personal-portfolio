@@ -2,8 +2,8 @@ import { ArrowRightIcon } from '@chakra-ui/icons';
 import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProjectItem from './ProjectsItem';
-import AllProjectDetails from '../dataJson/projectJson.json';
+import ProjectItem from '../commons/projects/ProjectsItem';
+import AllProjectDetails from '../../dataJson/projectJson.json';
 
 const Projects = ({ theme }) => {
   const allProjectDetails = AllProjectDetails;

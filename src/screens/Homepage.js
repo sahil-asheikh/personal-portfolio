@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import Projects from '../components/Projects';
+import Header from '../components/commons/Header';
+import Projects from '../components/homepage/Projects';
 import { Box } from '@chakra-ui/react';
 import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '../themes';
-import Home from '../components/Home';
-import Clients from '../components/Clients';
-import Skills from '../components/Skills';
-import Footer from '../components/Footer';
-import ScrollToTop from '../components/ScrollToTop';
+import Home from '../components/homepage/Home';
+import Clients from '../components/homepage/Clients';
+import Skills from '../components/homepage/Skills';
+import Footer from '../components/commons/Footer';
+import ScrollToTop from '../components/commons/ScrollToTop';
+// import AboutMe from '../components/commons/AboutMe';
+// import Testimonial from '../components/commons/Testimonial';
+// import Cta from '../components/commons/Cta';
 
 const StyledApp = styled.div`
   background: ${({ theme }) => theme.body};
@@ -60,11 +63,14 @@ const Homepage = () => {
         <Box mx={{ base: 2, md: 10 }}>
           <ScrollToTop theme={theme} />
           <section id="main">
+            {/* <AboutMe /> */}
             <Clients theme={theme} />
             <Skills theme={theme} />
             <Projects theme={theme} />
+            {/* <Testimonial /> */}
           </section>
         </Box>
+        {/* <Cta /> */}
         <Footer theme={theme} />
       </StyledApp>
     </ThemeProvider>

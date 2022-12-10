@@ -1,6 +1,6 @@
-import { Box, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Image, Link, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
-import ClientImages from '../dataJson/clientJson.json';
+import ClientImages from '../../dataJson/clientJson.json';
 
 const Clients = ({ theme }) => {
   const clientImages = ClientImages;
@@ -33,15 +33,15 @@ const Clients = ({ theme }) => {
             </Text>
             <SimpleGrid
               columns={{ base: 3, md: 6 }}
-              gap={{ base: '', md: 6 }}
+              gap={{ base: '', md: 0 }}
               my={6}
               alignItems={'center'}
             >
               {clientImages.map((clientImage, index) => (
                 <>
-                  {clientImage === '' ||
-                  clientImage.length === 0 ||
-                  clientImage === null ? (
+                  {clientImage.img === '' ||
+                  clientImage.img.length === 0 ||
+                  clientImage.img === null ? (
                     <Text
                       display={{
                         base: 'none',
@@ -51,15 +51,33 @@ const Clients = ({ theme }) => {
                       }}
                     ></Text>
                   ) : (
-                    <Image
-                      key={index}
-                      src={clientImage}
-                      alt="Client Image"
-                      w={{ base: '70%', md: '70%' }}
+                    <Link
                       mx={'auto'}
-                      my={3}
-                      title={''}
-                    />
+                      _hover={{
+                        color: '#27AE60',
+                        textDecoration: 'none',
+                      }}
+                      // target={'_blank'}
+                      // href={''}
+                    >
+                      <Image
+                        key={index}
+                        src={clientImage.img}
+                        alt="Client Image"
+                        w={{ base: '60%', md: '60%' }}
+                        mx={'auto'}
+                        my={3}
+                        title={clientImage.name}
+                      />
+                      {/* <Text
+                        fontWeight={'semibold'}
+                        px={3}
+                        _hover={{ color: '#27AE60', textDecoration: 'none' }}
+                        align={'center'}
+                      >
+                        {clientImage.name}
+                      </Text> */}
+                    </Link>
                   )}
                 </>
               ))}
