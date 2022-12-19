@@ -1,7 +1,7 @@
 import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 import SkillsItem from './Skills/SkillsItem';
-import SkillInfo from '../../dataJson/skillInfo.json';
+import SkillInfo from '../../assets/dataJson/skillInfo.json';
 
 const Skills = ({ theme }) => {
   const skillInfo = SkillInfo;
@@ -21,13 +21,14 @@ const Skills = ({ theme }) => {
                 textAlign={{ base: 'center', md: 'left' }}
                 mx={6}
               >
-                Skills that I am good at,{' '}
-                <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
+                Skills that{' '}
                 <Text
                   as={'span'}
                   fontWeight={'semibold'}
-                  color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+                  color={theme === 'light' ? '#090909' : '#F2F2F2'}
                 >
+                  I am good at,{' '}
+                  <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
                   {'('}Capabilities{')'}
                 </Text>
               </Text>

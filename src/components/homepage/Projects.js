@@ -3,7 +3,7 @@ import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectItem from '../commons/projects/ProjectsItem';
-import AllProjectDetails from '../../dataJson/projectJson.json';
+import AllProjectDetails from '../../assets/dataJson/projectJson.json';
 
 const Projects = ({ theme }) => {
   const allProjectDetails = AllProjectDetails;
@@ -29,13 +29,17 @@ const Projects = ({ theme }) => {
                   textAlign={{ base: 'center', md: 'left' }}
                   mx={6}
                 >
-                  Some of my projects -{' '}
-                  <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
+                  Some of my{' '}
                   <Text
                     as={'span'}
                     fontWeight={'semibold'}
-                    color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+                    color={theme === 'light' ? '#090909' : '#F2F2F2'}
                   >
+                    Projects,{' '}
+                    <Text
+                      as={'p'}
+                      display={{ base: 'none', md: 'block' }}
+                    ></Text>
                     Recent Work{' '}
                   </Text>
                 </Text>

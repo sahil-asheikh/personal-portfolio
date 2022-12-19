@@ -24,7 +24,7 @@ const Home = ({ theme, toMain }) => {
             <Text
               as={'span'}
               fontWeight={'bold'}
-              color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+              color={theme === 'light' ? '#090909' : '#F2F2F2'}
             >
               Web, API
             </Text>{' '}
@@ -32,7 +32,7 @@ const Home = ({ theme, toMain }) => {
             <Text
               as={'span'}
               fontWeight={'bold'}
-              color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+              color={theme === 'light' ? '#090909' : '#F2F2F2'}
             >
               Android Development
             </Text>{' '}
@@ -41,12 +41,9 @@ const Home = ({ theme, toMain }) => {
             fontWeight={'bold'}
             fontStyle={'italic'}
             fontSize={{ base: '16px', md: '18px' }}
+            mt={'10px'}
+            letterSpacing={'3px'}
           >
-            {/* #
-            <Text as={'span'} color={'#73A1FB'}>
-              Java
-            </Text>
-            ,  */}
             #
             <Text as={'span'} color={'#00CDF2'}>
               React.Js
@@ -56,10 +53,6 @@ const Home = ({ theme, toMain }) => {
               SpringBoot
             </Text>
             , #
-            {/* <Text as={'span'} color={'#EAD41C'}>
-              JavaScript
-            </Text>
-            , # */}
             <Text as={'span'} color={'#3BD17E'}>
               Android
             </Text>

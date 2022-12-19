@@ -16,10 +16,12 @@
         "imgUrl": "",
         "description": "Below are the requirements, that client asked for",
         "list": [
-          "Need a full-fledged web application to represent the company profile.",
-          "Need a Black theme as a primary theme option and plain white will be secondary.",
-          "Need Animation work for the buttons, texts, and for components/sections.",
-          "Need to be lightweight, and flexible with the heavy assets and animation work.."
+          "Need a full-fledged web application to represent the company profile, work, clients, services, etc.",
+          "Must have a Blog posting panel, where admins can manage blogs and the job/work opening.",
+          "Need a Black theme as a primary theme option and plain white must be secondary.",
+          "Need Animation work for the buttons, texts, and components/sections.",
+          "Need to be lightweight, and flexible with the heavy assets and animation work.",
+          "Don't want to deal with the heavy backend and microservices for the data storage, need something lightweight and easy to use storage option."
         ]
       },
       {
@@ -28,9 +30,11 @@
         "imgUrl": "",
         "description": "After understanding the client's requirements and work, I concluded the solutions below for the client as these are the best options to use per the requirements.",
         "list": [
-          "The best library/framework for the frontend design is React.Js as the client wants lightweight and flexible for future changes.",
+          "For frontend designing, the best library/framework is React.Js as the client wants lightweight and flexible for future changes.",
+          "For the blog panel, added an admin login dashboard to manage the blogs and job/work openings.",
           "Framer Motion and React Spring are the libraries used for animation work.",
-          "For the deployment, we concluded AWS as the client has a few more applications to deploy on the same server."
+          "For the deployment, we concluded AWS as the client has a few more applications to deploy on the same server.",
+          "For the lightweight and easy-to-use storage option, used firebase to store all the data like images, gifs, and videos, and also, to manage blogs."
         ]
       }
     ],
@@ -63,9 +67,9 @@
     "conclusionTitle": "",
     "conclusionDescription": "",
     "client": "Takniik",
-    "timeline": "December 2022",
+    "timeline": "November 2022 - December 2022",
     "type": "Business Website",
-    "projectLiveUrl": "https://takniik.netlify.app/",
+    "projectLiveUrl": "https://takniik.com/",
     "works": ["Business Website", "Landing Page"],
     "tools": ["HTML5, CSS 3", "React.Js, JavaScript"]
   }

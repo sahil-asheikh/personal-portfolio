@@ -16,7 +16,7 @@ import ScrollToTop from '../components/commons/ScrollToTop';
 import { useParams } from 'react-router-dom';
 import CoverImage from '../components/projectInfo/CoverImage';
 import ProjectClientInfo from '../components/projectInfo/ProjectClientInfo';
-import ProjectJson from '../dataJson/projectJson.json';
+import ProjectJson from '../assets/dataJson/projectJson.json';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 
 const StyledApp = styled.div`
@@ -158,7 +158,7 @@ const ProjectInfo = () => {
                         textAlign={'justify'}
                         fontSize={'16px'}
                         my={5}
-                        bg={theme === 'light' ? '#F2F2F2' : '#0B0F13'}
+                        bg={theme === 'light' ? '#F2F2F2' : '#090909'}
                         ms={2}
                         ps={3}
                       >

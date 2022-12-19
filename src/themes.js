@@ -8,7 +8,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  body: '#0B0F13',
+  body: '#090909',
   text: '#FFFFFF',
   borderColor: 'rgb(255, 255, 255, 0.7)',
   bgSecondary: '#2D2D2D',

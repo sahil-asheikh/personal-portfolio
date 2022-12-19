@@ -7,7 +7,7 @@ import Footer from '../components/commons/Footer';
 import ScrollToTop from '../components/commons/ScrollToTop';
 import { BsChevronDown } from 'react-icons/bs';
 import ProjectItem from '../components/commons/projects/ProjectsItem';
-import AllProjectDetails from '../dataJson/projectJson.json';
+import AllProjectDetails from '../assets/dataJson/projectJson.json';
 
 const StyledApp = styled.div`
   background: ${({ theme }) => theme.body};
@@ -76,7 +76,7 @@ const Work = () => {
                 fontSize={{ base: '20px', md: '40px' }}
                 fontFamily={'Montserrat'}
                 fontWeight={'bold'}
-                color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+                color={theme === 'light' ? '#090909' : '#F2F2F2'}
                 mt={20}
               >
                 Recent Project

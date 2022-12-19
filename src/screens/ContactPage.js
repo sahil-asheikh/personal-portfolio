@@ -67,7 +67,7 @@ const ContactPage = () => {
                 <Link
                   href="mailto: sahilasheikh.dev@gmail.com"
                   style={{ color: '#4267B2', fontWeight: 'bold' }}
-                  _hover={{ textDecoration: 'none' }}
+                  _hover={{ textDecoration: 'underline' }}
                 >
                   Email
                 </Link>
@@ -76,7 +76,7 @@ const ContactPage = () => {
                 <Link
                   href="https://wa.me/+918766509387"
                   style={{ color: '#27AE60', fontWeight: 'bold' }}
-                  _hover={{ textDecoration: 'none' }}
+                  _hover={{ textDecoration: 'underline' }}
                   target={'_blank'}
                 >
                   WhatsApp
@@ -87,10 +87,23 @@ const ContactPage = () => {
                 fontSize={{ base: '20px', md: '40px' }}
                 fontFamily={'Montserrat'}
                 fontWeight={'bold'}
-                color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+                color={theme === 'light' ? '#090909' : '#F2F2F2'}
                 mt={20}
               >
-                Start a Project
+                <a
+                  href="/"
+                  onClick={e => {
+                    let hero = document.getElementById('main');
+                    e.preventDefault();
+                    hero &&
+                      hero.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                      });
+                  }}
+                >
+                  Start a Project
+                </a>
               </Text>
             </Box>
           </Stack>

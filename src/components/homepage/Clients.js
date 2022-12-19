@@ -1,6 +1,6 @@
 import { Box, Image, Link, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
-import ClientImages from '../../dataJson/clientJson.json';
+import ClientImages from '../../assets/dataJson/clientJson.json';
 
 const Clients = ({ theme }) => {
   const clientImages = ClientImages;
@@ -11,7 +11,7 @@ const Clients = ({ theme }) => {
         ''
       ) : (
         <Box fontFamily={'Montserrat'}>
-          <Box my={20} pt={20}>
+          <Box my={20}>
             <Text
               fontSize={'26px'}
               fontWeight={'thin'}
@@ -24,11 +24,11 @@ const Clients = ({ theme }) => {
               <Text
                 as={'span'}
                 fontWeight={'semibold'}
-                color={theme === 'light' ? '#0B0F13' : '#F2F2F2'}
+                color={theme === 'light' ? '#090909' : '#F2F2F2'}
               >
-                the companies I have{' '}
+                the Companies,{' '}
                 <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
-                worked with
+                I Worked with
               </Text>
             </Text>
             <SimpleGrid
@@ -57,11 +57,17 @@ const Clients = ({ theme }) => {
                         color: '#27AE60',
                         textDecoration: 'none',
                       }}
-                      // target={'_blank'}
-                      // href={''}
+                      target={'_blank'}
+                      href={clientImage.url}
                     >
                       <Image
                         key={index}
+                        filter="grayscale(100%)"
+                        _hover={{
+                          filter: 'none',
+                          transition: 'all .25s ease-in-out',
+                          transform: 'scale(1.15)',
+                        }}
                         src={clientImage.img}
                         alt="Client Image"
                         w={{ base: '60%', md: '60%' }}

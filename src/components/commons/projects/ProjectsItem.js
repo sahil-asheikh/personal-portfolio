@@ -14,13 +14,17 @@ const ProjectItem = ({ theme, projectIndex, imgThumbnail, title, type }) => {
     >
       <Link to={'/ProjectInfo/' + projectIndex}>
         <Box
-          bg={theme === 'light' ? '#FFFFFF' : '#1A2026'}
+          bg={theme === 'light' ? '#FFFFFF' : '#000000'}
           maxW={'445px'}
           w={'full'}
           boxShadow={'2xl'}
           rounded={'sm'}
           p={3}
           overflow={'hidden'}
+          _hover={{
+            transition: 'all .25s ease-in-out',
+            transform: 'translate3d(0px, -15px, 0px)',
+          }}
         >
           <Box mt={-6} mx={-6} mb={3}>
             <Image w={'100%'} h={'100%'} src={imgThumbnail} layout={'fill'} />
