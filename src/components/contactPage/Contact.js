@@ -90,9 +90,16 @@ const Contact = ({ theme }) => {
     if (nameInput === '' || nameInput.length < 3) {
       onLoadingClose();
       alertToast('Invalid Name', 'warning');
-    } else if (phoneInput === '' || phoneInput.length < 10) {
+    } else if (phoneInput === '' || phoneInput === undefined) {
       onLoadingClose();
-      alertToast('Invalid Number Length', 'warning');
+      alertToast('Invalid Phone Number', 'warning');
+      console.log('phoneInput1');
+      console.log(phoneInput);
+    } else if (phoneInput.length < 10) {
+      onLoadingClose();
+      alertToast('Invalid Phone Number', 'warning');
+      console.log('phoneInput2');
+      console.log(phoneInput);
     } else if (
       emailInput === '' ||
       emailInput.length < 3 ||
@@ -152,6 +159,7 @@ const Contact = ({ theme }) => {
       // loading status
       onLoadingOpen();
       console.log('message sending...');
+      alertToast('Message Sending', 'info');
 
       // send a request
       xhttp.open('GET', url, true);
@@ -239,6 +247,7 @@ const Contact = ({ theme }) => {
                 fontWeight={'semibold'}
                 pattern={'[0-9]'}
                 onChange={e => handlePhoneNumber(e.target.value)}
+                // onChange={e => setPhoneInput(e.target.value)}
               />
             </Text>
             <Text
@@ -263,7 +272,7 @@ const Contact = ({ theme }) => {
               fontWeight={'semibold'}
               fontSize={'16px'}
               mx={{ base: 0, md: 6, lg: 6, xl: 6 }}
-              mt={6}
+              mt={{ base: '-25px', md: 6, lg: 6, xl: 6 }}
               mb={12}
             >
               <Text mb={5}>Project Name: </Text>
@@ -288,7 +297,7 @@ const Contact = ({ theme }) => {
               <textarea
                 id="clientProjectDescription"
                 placeholder="Describe your project in few lines"
-                rows={4}
+                rows={6}
                 fontWeight={'semibold'}
                 onChange={e => setProjectDescription(e.target.value)}
               />

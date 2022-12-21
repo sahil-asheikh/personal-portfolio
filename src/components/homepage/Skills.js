@@ -19,7 +19,7 @@ const Skills = ({ theme }) => {
                 letterSpacing={1.1}
                 color={'grey'}
                 textAlign={{ base: 'center', md: 'left' }}
-                mx={6}
+                mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
               >
                 Skills that{' '}
                 <Text

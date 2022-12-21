@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Cta = () => {
   return (
@@ -29,7 +29,9 @@ const Cta = () => {
               <img
                 className="social-icon"
                 style={{ maxWidth: '24px', marginTop: '-5px' }}
-                src={'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'}
+                src={
+                  'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'
+                }
                 alt="greentick"
               />{' '}
               &nbsp; aiushdfijhasdijfhbasdikfhbdifhb
@@ -40,7 +42,9 @@ const Cta = () => {
               <img
                 className="social-icon"
                 style={{ maxWidth: '24px', marginTop: '-5px' }}
-                src={'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'}
+                src={
+                  'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'
+                }
                 alt="greentick"
               />{' '}
               &nbsp; aiushdfijhasdijfhbasdikfhbdifhb
@@ -51,7 +55,9 @@ const Cta = () => {
               <img
                 className="social-icon"
                 style={{ maxWidth: '24px', marginTop: '-5px' }}
-                src={'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'}
+                src={
+                  'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'
+                }
                 alt="greentick"
               />{' '}
               &nbsp; aiushdfijhasdijfhbasdikfhbdifhb

@@ -67,7 +67,7 @@ const ContactPage = () => {
                 <Link
                   href="mailto: sahilasheikh.dev@gmail.com"
                   style={{ color: '#4267B2', fontWeight: 'bold' }}
-                  _hover={{ textDecoration: 'underline' }}
+                  _hover={{ textDecoration: 'none' }}
                 >
                   Email
                 </Link>
@@ -76,7 +76,7 @@ const ContactPage = () => {
                 <Link
                   href="https://wa.me/+918766509387"
                   style={{ color: '#27AE60', fontWeight: 'bold' }}
-                  _hover={{ textDecoration: 'underline' }}
+                  _hover={{ textDecoration: 'none' }}
                   target={'_blank'}
                 >
                   WhatsApp

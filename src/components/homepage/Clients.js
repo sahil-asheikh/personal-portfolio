@@ -18,7 +18,7 @@ const Clients = ({ theme }) => {
               letterSpacing={1.1}
               color={'grey'}
               textAlign={{ base: 'center', md: 'left' }}
-              mx={6}
+              mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
             >
               Some of{' '}
               <Text
@@ -27,8 +27,8 @@ const Clients = ({ theme }) => {
                 color={theme === 'light' ? '#090909' : '#F2F2F2'}
               >
                 the Companies,{' '}
-                <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
-                I Worked with
+                <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>I
+                Worked with
               </Text>
             </Text>
             <SimpleGrid
@@ -57,8 +57,8 @@ const Clients = ({ theme }) => {
                         color: '#27AE60',
                         textDecoration: 'none',
                       }}
-                      target={'_blank'}
-                      href={clientImage.url}
+                      // target={'_blank'}
+                      // href={clientImage.url}
                     >
                       <Image
                         key={index}

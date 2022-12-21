@@ -9,7 +9,7 @@ import Clients from '../components/homepage/Clients';
 import Skills from '../components/homepage/Skills';
 import Footer from '../components/commons/Footer';
 import ScrollToTop from '../components/commons/ScrollToTop';
-// import AboutMe from '../components/homepage/AboutMe';
+import AboutMe from '../components/homepage/AboutMe';
 // import Testimonial from '../components/homepage/Testimonial';
 // import Cta from '../components/commons/Cta';
 
@@ -63,7 +63,7 @@ const Homepage = () => {
         <Box mx={{ base: 2, md: 10 }}>
           <ScrollToTop theme={theme} />
           <section id="main">
-            {/* <AboutMe theme={theme} /> */}
+            <AboutMe theme={theme} />
             <Clients theme={theme} />
             <Skills theme={theme} />
             <Projects theme={theme} />
