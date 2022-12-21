@@ -298,6 +298,7 @@ const Contact = ({ theme }) => {
                 id="clientProjectDescription"
                 placeholder="Describe your project in few lines"
                 rows={6}
+                style={{ overflow: 'hidden' }}
                 fontWeight={'semibold'}
                 onChange={e => setProjectDescription(e.target.value)}
               />
