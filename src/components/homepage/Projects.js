@@ -40,7 +40,7 @@ const Projects = ({ theme }) => {
                       as={'p'}
                       display={{ base: 'none', md: 'block' }}
                     ></Text>
-                    Recent Work{' '}
+                    {'('}Recent Work{')'}
                   </Text>
                 </Text>
                 <Box

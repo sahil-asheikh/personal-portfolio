@@ -13,15 +13,15 @@ const Testimonial = ({ theme }) => {
           textAlign={{ base: 'center', md: 'left' }}
           mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
         >
-          Here are some{' '}
+          What my{' '}
           <Text
             as={'span'}
             fontWeight={'semibold'}
             color={theme === 'light' ? '#010101' : '#F2F2F2'}
           >
-            Testimonials{' '}
+            Client Says{' '}
             <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
-            from my Clients
+            {'('}Testimonials{')'}
           </Text>
         </Text>
         <SimpleGrid
