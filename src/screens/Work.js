@@ -76,7 +76,7 @@ const Work = () => {
                 fontSize={{ base: '20px', md: '40px' }}
                 fontFamily={'Montserrat'}
                 fontWeight={'bold'}
-                color={theme === 'light' ? '#090909' : '#F2F2F2'}
+                color={theme === 'light' ? '#010101' : '#F2F2F2'}
                 mt={20}
               >
                 Recent Project

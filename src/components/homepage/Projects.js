@@ -33,7 +33,7 @@ const Projects = ({ theme }) => {
                   <Text
                     as={'span'}
                     fontWeight={'semibold'}
-                    color={theme === 'light' ? '#090909' : '#F2F2F2'}
+                    color={theme === 'light' ? '#010101' : '#F2F2F2'}
                   >
                     Projects,{' '}
                     <Text

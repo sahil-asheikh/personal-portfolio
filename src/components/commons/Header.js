@@ -18,8 +18,9 @@ const Header = ({ themeToggler, theme }) => {
         position="fixed"
         top={0}
         width="100%"
-        bg={theme === 'light' ? '#F2F2F2' : '#090909'}
+        bg={theme === 'light' ? '#F2F2F2' : '#010101'}
         opacity={0.9}
+        py={3}
       >
         <Flex
           as="nav"
@@ -88,7 +89,11 @@ const Header = ({ themeToggler, theme }) => {
             _hover={'none'}
             _active={'none'}
           >
-            {theme === 'light' ? <MoonIcon /> : <SunIcon />}
+            {theme === 'light' ? (
+              <MoonIcon _hover={{ color: '#27AE60' }} />
+            ) : (
+              <SunIcon _hover={{ color: '#27AE60' }} />
+            )}
           </IconButton>
         </Flex>
         <ScrollIndicator />

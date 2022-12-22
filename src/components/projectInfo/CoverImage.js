@@ -19,7 +19,7 @@ const CoverImage = ({ projectSrc, theme }) => {
           alignSelf={'flex-end'}
           left={0}
           bgGradient={`linear(to-b, transparent, ${
-            theme === 'dark' ? '#090909' : '#F2F2F2'
+            theme === 'dark' ? '#010101' : '#F2F2F2'
           })`}
           w={'100%'}
         >

@@ -150,7 +150,7 @@ const ProjectInfo = () => {
                     </Text>{' '}
                     <Box
                       borderLeftRadius={'5px'}
-                      // bg={theme === 'light' ? '#000000' : '#FFFFFF'}
+                      // bg={theme === 'light' ? '#090909' : '#FFFFFF'}
                       bg={'#27ae60'}
                       me={2}
                     >
@@ -158,7 +158,7 @@ const ProjectInfo = () => {
                         textAlign={'justify'}
                         fontSize={'16px'}
                         my={5}
-                        bg={theme === 'light' ? '#F2F2F2' : '#090909'}
+                        bg={theme === 'light' ? '#F2F2F2' : '#010101'}
                         ms={2}
                         ps={3}
                       >

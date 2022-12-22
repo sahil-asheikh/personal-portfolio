@@ -14,7 +14,7 @@ const ProjectItem = ({ theme, projectIndex, imgThumbnail, title, type }) => {
     >
       <Link to={'/ProjectInfo/' + projectIndex}>
         <Box
-          bg={theme === 'light' ? '#FFFFFF' : '#000000'}
+          bg={theme === 'light' ? '#FFFFFF' : '#090909'}
           maxW={'445px'}
           w={'full'}
           boxShadow={'2xl'}

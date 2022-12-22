@@ -12,7 +12,7 @@ const Clients = ({ theme }) => {
       ) : (
         <Box fontFamily={'Montserrat'}>
           <Box my={20}>
-            <Text
+            {/* <Text
               fontSize={'26px'}
               fontWeight={'thin'}
               letterSpacing={1.1}
@@ -30,7 +30,7 @@ const Clients = ({ theme }) => {
                 <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>I
                 Worked with
               </Text>
-            </Text>
+            </Text> */}
             <SimpleGrid
               columns={{ base: 3, md: 6 }}
               gap={{ base: '', md: 0 }}

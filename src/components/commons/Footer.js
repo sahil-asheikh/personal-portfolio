@@ -8,7 +8,7 @@ const Footer = ({ theme }) => {
       px={{ base: 2, md: 10 }}
       mt={10}
       py={10}
-      bg={theme === 'light' ? '#FFFFFF' : '#000000'}
+      bg={theme === 'light' ? '#FFFFFF' : '#090909'}
       w={'100%'}
     >
       <Text
@@ -28,7 +28,7 @@ const Footer = ({ theme }) => {
           <Text
             as={'span'}
             fontWeight={'semibold'}
-            color={theme === 'light' ? '#090909' : '#F2F2F2'}
+            color={theme === 'light' ? '#010101' : '#F2F2F2'}
           >
             <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
             <Link href="/" _hover={{ color: '#27AE60' }}>
@@ -38,7 +38,7 @@ const Footer = ({ theme }) => {
           <Text
             as={'span'}
             fontWeight={'semibold'}
-            color={theme === 'light' ? '#090909' : '#F2F2F2'}
+            color={theme === 'light' ? '#010101' : '#F2F2F2'}
             textAlign={{
               base: 'center',
               md: 'right',

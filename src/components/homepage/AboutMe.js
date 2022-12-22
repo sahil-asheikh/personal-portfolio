@@ -12,7 +12,7 @@ const AboutMe = ({ theme }) => {
   return (
     <Box fontFamily={'Montserrat'}>
       <Box my={20} pt={20}>
-        <Text
+        {/* <Text
           fontSize={'26px'}
           fontWeight={'thin'}
           letterSpacing={1.1}
@@ -24,13 +24,13 @@ const AboutMe = ({ theme }) => {
           <Text
             as={'span'}
             fontWeight={'semibold'}
-            color={theme === 'light' ? '#090909' : '#F2F2F2'}
+            color={theme === 'light' ? '#010101' : '#F2F2F2'}
           >
             some Description,{' '}
             <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
             {'('}About Me{')'}
           </Text>
-        </Text>
+        </Text> */}
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
           gap={{ base: 1, md: 2, lg: 2, xl: 2 }}
@@ -73,7 +73,7 @@ const AboutMe = ({ theme }) => {
               <Text
                 as={'span'}
                 fontWeight={'semibold'}
-                color={theme === 'light' ? '#090909' : '#F2F2F2'}
+                color={theme === 'light' ? '#010101' : '#F2F2F2'}
               >
                 Sahil Sheikh
               </Text>

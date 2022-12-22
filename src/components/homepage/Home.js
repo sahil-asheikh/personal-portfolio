@@ -24,7 +24,7 @@ const Home = ({ theme, toMain }) => {
             <Text
               as={'span'}
               fontWeight={'bold'}
-              color={theme === 'light' ? '#090909' : '#F2F2F2'}
+              color={theme === 'light' ? '#010101' : '#F2F2F2'}
             >
               Web, API
             </Text>{' '}
@@ -32,7 +32,7 @@ const Home = ({ theme, toMain }) => {
             <Text
               as={'span'}
               fontWeight={'bold'}
-              color={theme === 'light' ? '#090909' : '#F2F2F2'}
+              color={theme === 'light' ? '#010101' : '#F2F2F2'}
             >
               Android Development
             </Text>{' '}
