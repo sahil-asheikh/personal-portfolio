@@ -1,4 +1,4 @@
-import { Box, IconButton, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Image, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 import ProfilePic from '../../assets/images/profile.png';
 import LinkedInDark from '../../assets/images/linkedinDark.png';
@@ -12,25 +12,6 @@ const AboutMe = ({ theme }) => {
   return (
     <Box fontFamily={'Montserrat'}>
       <Box my={20} pt={20}>
-        {/* <Text
-          fontSize={'26px'}
-          fontWeight={'thin'}
-          letterSpacing={1.1}
-          color={'grey'}
-          textAlign={{ base: 'center', md: 'left' }}
-          mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
-        >
-          Here is{' '}
-          <Text
-            as={'span'}
-            fontWeight={'semibold'}
-            color={theme === 'light' ? '#010101' : '#F2F2F2'}
-          >
-            some Description,{' '}
-            <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
-            {'('}About Me{')'}
-          </Text>
-        </Text> */}
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
           gap={{ base: 1, md: 2, lg: 2, xl: 2 }}
@@ -85,38 +66,32 @@ const AboutMe = ({ theme }) => {
               textAlign={'justify'}
               mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
             >
-              A Software Developer and Freelance Full Stack Developer with
-              industry experience of 4+ Years in building responsive, mobile
-              friendly websites and web apps using React Js, also Microservices,
-              and REST APIs using Java and Spring Boot, developing end-to-end
-              solutions for clients, and delivering the work throughout the
-              internet.
-              <br />
-              <br />I can help you or your business to create a landing page,
-              portfolio website, web application, microservices, APIs, or
-              android application, from a design concept to a completed,
-              polished, professional app. I can also help maintain and update
-              existing applications.
+              I am a full stack developer with 4+ years of experience in Java
+              and React JS. I have a proven track record of developing web
+              applications and RESTful APIs, and have worked on a variety of
+              projects for clients ranging from small startups to large
+              enterprises, and am comfortable working on both the front-end and
+              back-end of a web application. As a freelance developer, I am able
+              to bring my skills and expertise to a variety of projects. Contact
+              me if you need a full stack developer for your next project.
             </Text>
             <Box
               letterSpacing={1.1}
               textAlign={{ base: 'center', md: 'left' }}
               mx={{ base: 0, md: 6, lg: 6, xl: 6 }}
               mt={9}
+              display={'inline-flex'}
             >
-              <IconButton
-                onClick={() => {
-                  window.open(
-                    'https://www.linkedin.com/in/sahilsheikh-dev/',
-                    '_blank'
-                  );
-                }}
+              <a
+                as={'a'}
+                href="https://www.linkedin.com/in/sahilsheikh-dev/"
+                target={'_blank'}
+                rel="noreferrer"
                 bg={'transparent'}
-                _hover={'none'}
-                _active={'none'}
                 me={3}
               >
                 <Image
+                  as={'img'}
                   w={'100%'}
                   maxW={'40px'}
                   _hover={{
@@ -126,14 +101,12 @@ const AboutMe = ({ theme }) => {
                   src={theme === 'dark' ? LinkedinLight : LinkedInDark}
                   alt="logo"
                 />
-              </IconButton>
-              <IconButton
-                onClick={() => {
-                  window.open(
-                    'https://instagram.com/sahilsheikh.dev',
-                    '_blank'
-                  );
-                }}
+              </a>
+              &nbsp; &nbsp;
+              <a
+                href="https://instagram.com/sahilsheikh.dev"
+                target={'_blank'}
+                rel="noreferrer"
                 bg={'transparent'}
                 _hover={'none'}
                 _active={'none'}
@@ -149,14 +122,12 @@ const AboutMe = ({ theme }) => {
                   src={theme === 'dark' ? InstagramLight : InstagramDark}
                   alt="logo"
                 />
-              </IconButton>
-              <IconButton
-                onClick={() => {
-                  window.open(
-                    'https://www.youtube.com/@sahilsheikh-dev',
-                    '_blank'
-                  );
-                }}
+              </a>
+              &nbsp; &nbsp;
+              <a
+                href="https://www.youtube.com/@sahilsheikh-dev"
+                target={'_blank'}
+                rel="noreferrer"
                 bg={'transparent'}
                 _hover={'none'}
                 _active={'none'}
@@ -172,7 +143,7 @@ const AboutMe = ({ theme }) => {
                   src={theme === 'dark' ? YoutubeLight : YoutubeDark}
                   alt="logo"
                 />
-              </IconButton>
+              </a>
             </Box>
           </Box>
         </SimpleGrid>

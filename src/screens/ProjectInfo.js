@@ -71,6 +71,79 @@ const ProjectInfo = () => {
             <section id="main">
               <Box mx={{ base: 2, md: 10, lg: 20, xl: 40 }}>
                 <CoverImage projectSrc={projectSrc} theme={theme} />
+                <Text textAlign={'justify'} fontSize={'16px'} my={5}>
+                  {projectSrc.description}
+                </Text>
+                <SimpleGrid
+                  columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
+                  gap={{ base: '', md: 6 }}
+                  // mx={{ base: 3, md: 6, lg: 6, xl: 6 }}
+                >
+                  <Box mt={3}>
+                    <Text color={'gray'} fontWeight={'bold'} fontSize={'20px'}>
+                      Client
+                    </Text>
+                    <Text
+                      textAlign={'justify'}
+                      fontSize={'16px'}
+                      fontWeight={'semibold'}
+                      my={2}
+                      letterSpacing={'2px'}
+                    >
+                      {projectSrc.client}
+                    </Text>
+                  </Box>
+                  <Box mt={3}>
+                    <Text color={'gray'} fontWeight={'bold'} fontSize={'20px'}>
+                      Timeline
+                    </Text>
+                    <Text
+                      textAlign={'justify'}
+                      fontSize={'16px'}
+                      fontWeight={'semibold'}
+                      my={2}
+                      letterSpacing={'2px'}
+                    >
+                      {projectSrc.timeline}
+                    </Text>
+                  </Box>
+                  <Box mt={3}>
+                    <Text color={'gray'} fontWeight={'bold'} fontSize={'20px'}>
+                      Work
+                    </Text>
+                    <Text
+                      textAlign={'justify'}
+                      fontSize={'16px'}
+                      fontWeight={'semibold'}
+                      my={2}
+                      letterSpacing={'2px'}
+                    >
+                      {projectSrc.works.map((work, index) => (
+                        <Text as={'span'} key={index}>
+                          {work} <br />
+                        </Text>
+                      ))}
+                    </Text>
+                  </Box>
+                  <Box mt={3}>
+                    <Text color={'gray'} fontWeight={'bold'} fontSize={'20px'}>
+                      Tools Used
+                    </Text>
+                    <Text
+                      textAlign={'justify'}
+                      fontSize={'16px'}
+                      fontWeight={'semibold'}
+                      my={2}
+                      letterSpacing={'2px'}
+                    >
+                      {projectSrc.tools.map((tool, index) => (
+                        <Text as={'span'} key={index}>
+                          {tool} <br />
+                        </Text>
+                      ))}
+                    </Text>
+                  </Box>
+                </SimpleGrid>
                 <Box>
                   {projectSrc.about.map((aboutItem, index) => (
                     <Box index={index} my={10}>
@@ -144,7 +217,7 @@ const ProjectInfo = () => {
                       ))}
                     </SimpleGrid>
                   </Box>
-                  <Box my={10}>
+                  <Box mt={20}>
                     <Text fontSize={'22px'} mt={4} mb={2} fontWeight={'bold'}>
                       {projectSrc.conclusionTitle}
                     </Text>{' '}
@@ -167,7 +240,7 @@ const ProjectInfo = () => {
                     </Box>
                   </Box>
                 </Box>
-                <ProjectClientInfo projectSrc={projectSrc} theme={theme} />
+                <ProjectClientInfo projectSrc={projectSrc} />
               </Box>
             </section>
           </Box>

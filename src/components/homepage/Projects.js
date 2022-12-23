@@ -43,25 +43,6 @@ const Projects = ({ theme }) => {
                     {'('}Recent Work{')'}
                   </Text>
                 </Text>
-                <Box
-                  textAlign={{ base: 'right', md: 'right' }}
-                  mx={{ base: 1, md: 10 }}
-                  display={{ base: 'none', md: 'block' }}
-                >
-                  <Link to={'/Work'}>
-                    <Text
-                      size={'sm'}
-                      bg={'none'}
-                      _hover={'none'}
-                      _active={'none'}
-                      mx={'auto'}
-                      color={'#27AE60'}
-                      fontWeight={'semibold'}
-                    >
-                      More Projects &nbsp; <ArrowRightIcon />
-                    </Text>
-                  </Link>
-                </Box>
               </SimpleGrid>
               <SimpleGrid
                 columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
@@ -84,26 +65,26 @@ const Projects = ({ theme }) => {
                   )
                 )}
               </SimpleGrid>
-              <Box
-                textAlign={{ base: 'center', md: 'right' }}
-                mx={{ base: 1, md: 10 }}
-                display={{ base: 'block', md: 'none' }}
-              >
-                <Link to={'/Work'}>
-                  <Text
-                    size={'sm'}
-                    bg={'none'}
-                    _hover={'none'}
-                    _active={'none'}
-                    mx={'auto'}
-                    mt={3}
-                    color={'#27AE60'}
-                    fontWeight={'semibold'}
-                  >
-                    More Projects &nbsp; <ArrowRightIcon />
-                  </Text>
-                </Link>
-              </Box>
+              {allProjectDetails.length <= 4 ? (
+                ''
+              ) : (
+                <Box textAlign={'center'} mx={{ base: 1, md: 10 }}>
+                  <Link to={'/Work'}>
+                    <Text
+                      size={'sm'}
+                      bg={'none'}
+                      _hover={'none'}
+                      _active={'none'}
+                      mx={'auto'}
+                      mt={3}
+                      color={'#27AE60'}
+                      fontWeight={'semibold'}
+                    >
+                      More Projects &nbsp; <ArrowRightIcon />
+                    </Text>
+                  </Link>
+                </Box>
+              )}
             </Box>
           </Box>
         </div>

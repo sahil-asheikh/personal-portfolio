@@ -1,3 +1,4 @@
+import '../assets/css/style.css';
 import React, { useEffect, useState } from 'react';
 import Header from '../components/commons/Header';
 import Projects from '../components/homepage/Projects';

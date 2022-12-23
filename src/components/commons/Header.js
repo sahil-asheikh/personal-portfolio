@@ -14,6 +14,7 @@ const Header = ({ themeToggler, theme }) => {
   return (
     <>
       <Box
+        as="div"
         overflow="hidden"
         position="fixed"
         top={0}

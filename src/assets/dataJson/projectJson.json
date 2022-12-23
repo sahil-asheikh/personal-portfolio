@@ -1,39 +1,10 @@
 [
   {
     "projectIndex": 0,
-    "title": "Kanban - RESTFUl APIs",
+    "title": "Kanban - RESTful APIs",
     "imgThumbnail": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx",
+    "description": "I developed a web portal called Kanban Board using React JS and Spring Boot. The goal of the project was to create a tool that could manage and assign work to team members, and be reviewed and managed by the admin and managers. The frontend of the portal was developed using React JS, while the RESTFul APIs were developed using Spring Boot. With this web portal, users can easily track and organize their work, ensuring that projects are completed efficiently and effectively. The Kanban Board is a valuable resource for teams looking to streamline their workflow and increase productivity.",
     "about": [
-      {
-        "title": "Introduction",
-        "type": "plain",
-        "imgUrl": "",
-        "description": "A kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow). It can help both agile and development teams or any team establish order in their daily work. This web portal is designed with ReactJs and the API for this application is developed using Spring Boot."
-      },
-      {
-        "title": "Client's Requirements",
-        "type": "list",
-        "imgUrl": "",
-        "description": "Below are the requirements, that client asked for",
-        "list": [
-          "when an unknown printer took a galley of type and scrambled it to make",
-          "a type specimen book. It has survived not only five centuries, but also the",
-          "leap into electronic typesetting, remaining essentially unchanged. It was",
-          "popularised in the 1960s with the release of Letraset sheets"
-        ]
-      },
-      {
-        "title": "Project Solutions",
-        "type": "list",
-        "imgUrl": "",
-        "description": "After understanding the client's requirements and work, I concluded the solutions below for the client as these are the best options to use per the requirements.",
-        "list": [
-          "when an unknown printer took a galley of type and scrambled it to make",
-          "a type specimen book. It has survived not only five centuries, but also the",
-          "leap into electronic typesetting, remaining essentially unchanged. It was",
-          "popularised in the 1960s with the release of Letraset sheets"
-        ]
-      },
       {
         "title": "Project Flow",
         "type": "plain",
@@ -72,41 +43,8 @@
     "projectIndex": 1,
     "title": "Takniik - Business Website",
     "imgThumbnail": "https://drive.google.com/uc?export=view&id=19zhQcGVm98i1sAriqj8BQLwD73JEg5-z",
-    "about": [
-      {
-        "title": "Introduction",
-        "type": "plain",
-        "imgUrl": "",
-        "description": "Takniik is a Startup company that provides media and software solutions to multiple businesses. Tankiik worked on B2B (Business to Business) Model and asked for a business website that must have all the descriptions about the company also requested to use the Black theme as a primary theme and must have the option to manage company blogs and other textual data dynamically for the future flexibility using lightweight frontend library/framework."
-      },
-      {
-        "title": "Client's Requirements",
-        "type": "list",
-        "imgUrl": "",
-        "description": "Below are the requirements, that client asked for",
-        "list": [
-          "Need a full-fledged web application to represent the company profile, work, clients, services, etc.",
-          "Must have a Blog posting panel, where admins can manage blogs and the job/work opening.",
-          "Need a Black theme as a primary theme option and plain white must be secondary.",
-          "Need Animation work for the buttons, texts, and components/sections.",
-          "Need to be lightweight, and flexible with the heavy assets and animation work.",
-          "Don't want to deal with the heavy backend and microservices for the data storage, need something lightweight and easy to use storage option."
-        ]
-      },
-      {
-        "title": "Project Solutions",
-        "type": "list",
-        "imgUrl": "",
-        "description": "After understanding the client's requirements and work, I concluded the solutions below for the client as these are the best options to use per the requirements.",
-        "list": [
-          "For frontend designing, the best library/framework is React.Js as the client wants lightweight and flexible for future changes.",
-          "For the blog panel, added an admin login dashboard to manage the blogs and job/work openings.",
-          "Framer Motion and React Spring are the libraries used for animation work.",
-          "For the deployment, we concluded AWS as the client has a few more applications to deploy on the same server.",
-          "For the lightweight and easy-to-use storage option, used firebase to store all the data like images, gifs, and videos, and also, to manage blogs."
-        ]
-      }
-    ],
+    "description": "I developed a web application for Takniik, a startup that provides development and design services to other businesses. The application, built using React JS, features a page that showcases the company's services and includes customer testimonials. I also implemented a blog panel that allows the admin to easily post and manage multiple blogs. The goal of the project was to create a professional and engaging website for Takniik that effectively communicates the company's offerings and establishes its credibility in the industry. I worked closely with the client to understand their needs and ensure that the final product met their expectations. Overall, the project was a success and the client was very satisfied with the result.",
+    "about": [""],
     "projectImages": [
       {
         "title": "1. Hero, Client, and Services Section",

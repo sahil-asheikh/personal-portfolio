@@ -37,7 +37,7 @@ const Home = ({ theme, toMain }) => {
               Android Development
             </Text>{' '}
           </Text>
-          <Text
+          {/* <Text
             fontWeight={'bold'}
             fontStyle={'italic'}
             fontSize={{ base: '16px', md: '18px' }}
@@ -56,7 +56,7 @@ const Home = ({ theme, toMain }) => {
             <Text as={'span'} color={'#3BD17E'}>
               Android
             </Text>
-          </Text>
+          </Text> */}
         </Box>
       </Stack>
       <Stack

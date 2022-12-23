@@ -1,4 +1,4 @@
-import { Box, Image, Link, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Image, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 import ClientImages from '../../assets/dataJson/clientJson.json';
 
@@ -12,25 +12,6 @@ const Clients = ({ theme }) => {
       ) : (
         <Box fontFamily={'Montserrat'}>
           <Box my={20}>
-            {/* <Text
-              fontSize={'26px'}
-              fontWeight={'thin'}
-              letterSpacing={1.1}
-              color={'grey'}
-              textAlign={{ base: 'center', md: 'left' }}
-              mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
-            >
-              Some of{' '}
-              <Text
-                as={'span'}
-                fontWeight={'semibold'}
-                color={theme === 'light' ? '#090909' : '#F2F2F2'}
-              >
-                the Companies,{' '}
-                <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>I
-                Worked with
-              </Text>
-            </Text> */}
             <SimpleGrid
               columns={{ base: 3, md: 6 }}
               gap={{ base: '', md: 0 }}
@@ -51,39 +32,21 @@ const Clients = ({ theme }) => {
                       }}
                     ></Text>
                   ) : (
-                    <Link
-                      mx={'auto'}
+                    <Image
+                      key={index}
+                      filter="grayscale(100%)"
                       _hover={{
-                        color: '#27AE60',
-                        textDecoration: 'none',
+                        filter: 'none',
+                        transition: 'all .25s ease-in-out',
+                        transform: 'scale(1.15)',
                       }}
-                      // target={'_blank'}
-                      // href={clientImage.url}
-                    >
-                      <Image
-                        key={index}
-                        filter="grayscale(100%)"
-                        _hover={{
-                          filter: 'none',
-                          transition: 'all .25s ease-in-out',
-                          transform: 'scale(1.15)',
-                        }}
-                        src={clientImage.img}
-                        alt="Client Image"
-                        w={{ base: '60%', md: '60%' }}
-                        mx={'auto'}
-                        my={3}
-                        title={clientImage.name}
-                      />
-                      {/* <Text
-                        fontWeight={'semibold'}
-                        px={3}
-                        _hover={{ color: '#27AE60', textDecoration: 'none' }}
-                        align={'center'}
-                      >
-                        {clientImage.name}
-                      </Text> */}
-                    </Link>
+                      src={clientImage.img}
+                      alt="Client Image"
+                      w={{ base: '60%', md: '60%' }}
+                      mx={'auto'}
+                      my={3}
+                      title={clientImage.name}
+                    />
                   )}
                 </>
               ))}
