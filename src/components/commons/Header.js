@@ -13,15 +13,18 @@ const Header = ({ themeToggler, theme }) => {
 
   return (
     <>
-      <Box
+      <div
         as="div"
-        overflow="hidden"
-        position="fixed"
-        top={0}
-        width="100%"
-        bg={theme === 'light' ? '#F2F2F2' : '#010101'}
-        opacity={0.9}
-        py={3}
+        style={{
+          overflow: 'hidden',
+          position: 'fixed',
+          top: '0',
+          width: '100%',
+          opacity: '0.9',
+          padding: '10px 0',
+          background: theme === 'light' ? '#F2F2F2' : '#010101',
+          zIndex: '99',
+        }}
       >
         <Flex
           as="nav"
@@ -98,7 +101,7 @@ const Header = ({ themeToggler, theme }) => {
           </IconButton>
         </Flex>
         <ScrollIndicator />
-      </Box>
+      </div>
     </>
   );
 };

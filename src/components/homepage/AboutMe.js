@@ -1,6 +1,5 @@
 import { Box, Image, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
-import ProfilePic from '../../assets/images/profile.png';
 import LinkedInDark from '../../assets/images/linkedinDark.png';
 import LinkedinLight from '../../assets/images/linkedinLight.png';
 import InstagramDark from '../../assets/images/instagramDark.png';
@@ -13,28 +12,11 @@ const AboutMe = ({ theme }) => {
     <Box fontFamily={'Montserrat'}>
       <Box my={20} pt={20}>
         <SimpleGrid
-          columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
+          columns={{ base: 1, md: 1, lg: 1, xl: 1 }}
           gap={{ base: 1, md: 2, lg: 2, xl: 2 }}
           my={6}
           alignItems={'center'}
         >
-          <Box
-            letterSpacing={1.1}
-            color={'grey'}
-            textAlign={{ base: 'center', md: 'left' }}
-            mx={'auto'}
-            mt={6}
-            bg={'red'}
-          >
-            <Image
-              w={'100%'}
-              h={'100%'}
-              layout={'fill'}
-              maxWidth={'500px'}
-              src={ProfilePic}
-              alt="logo"
-            />
-          </Box>
           <Box
             letterSpacing={1.1}
             textAlign={{ base: 'center', md: 'left' }}
