@@ -16,6 +16,7 @@ const ProjectItem = ({ theme, projectIndex, imgThumbnail, title, type }) => {
         <Box
           bg={theme === 'light' ? '#FFFFFF' : '#090909'}
           maxW={'445px'}
+          minH={'280px'}
           w={'full'}
           boxShadow={'2xl'}
           rounded={'sm'}

@@ -6,6 +6,7 @@ import InstagramDark from '../../assets/images/instagramDark.png';
 import InstagramLight from '../../assets/images/instagramLight.png';
 import YoutubeDark from '../../assets/images/youtubeDark.png';
 import YoutubeLight from '../../assets/images/youtubeLight.png';
+import SectionHeading from '../commons/SectionHeading';
 
 const AboutMe = ({ theme }) => {
   return (
@@ -23,24 +24,12 @@ const AboutMe = ({ theme }) => {
             mx={{ base: 0, md: 6, lg: 6, xl: 6 }}
             mt={6}
           >
-            <Text
-              fontSize={{ base: '26px', md: '26px', lg: '26px', xl: '26px' }}
-              fontWeight={'bold'}
-              letterSpacing={1.1}
-              color={'grey'}
-              textAlign={{ base: 'center', md: 'left' }}
-              mx={6}
-              mb={3}
-            >
-              Hi, I am{' '}
-              <Text
-                as={'span'}
-                fontWeight={'semibold'}
-                color={theme === 'light' ? '#010101' : '#F2F2F2'}
-              >
-                Sahil Sheikh
-              </Text>
-            </Text>
+            <SectionHeading
+              theme={theme}
+              initialHeading={'Hi, I am'}
+              highligtedText={'Sahil Sheikh'}
+              summaryText={''}
+            />
             <Text
               fontSize={'18px'}
               fontWeight={'thin'}

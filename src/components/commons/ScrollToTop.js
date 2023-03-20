@@ -2,7 +2,7 @@ import { Box, Button } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { BsArrowUpCircleFill } from 'react-icons/bs';
 
-const ScrollToTop = ({ theme }) => {
+const ScrollToTop = () => {
   const [scrollCheck, setScrollCheck] = useState(false);
 
   window.onscroll = function () {

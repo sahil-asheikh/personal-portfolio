@@ -1,80 +1,31 @@
 import '../assets/css/style.css';
-import React, { useEffect, useState } from 'react';
-import Header from '../components/commons/Header';
+import React from 'react';
 import Projects from '../components/homepage/Projects';
-import { Box } from '@chakra-ui/react';
-import styled, { ThemeProvider } from 'styled-components';
-import { darkTheme, GlobalStyles, lightTheme } from '../themes';
-import Home from '../components/homepage/Home';
+import HeroSection from '../components/homepage/HeroSection';
 import Clients from '../components/homepage/Clients';
 import Skills from '../components/homepage/Skills';
-import Footer from '../components/commons/Footer';
-import ScrollToTop from '../components/commons/ScrollToTop';
 import AboutMe from '../components/homepage/AboutMe';
+import { useEffect } from 'react';
 // import Testimonial from '../components/homepage/Testimonial';
 // import Cta from '../components/commons/Cta';
 
-const StyledApp = styled.div`
-  background: ${({ theme }) => theme.body};
-  color: ${({ theme }) => theme.text};
-`;
-
-const Homepage = () => {
-  const [theme, setTheme] = useState('dark');
-  const [toMain, setToMain] = useState('');
-  const themeToggler = () => {
-    if (theme === 'dark') {
-      localStorage.setItem('currentTheme', 'light');
-      setTheme('light');
-    } else {
-      localStorage.setItem('currentTheme', 'dark');
-      setTheme('dark');
-    }
-    setCurrentTheme();
-  };
-
-  const setCurrentTheme = () => {
-    if (
-      localStorage.getItem('currentTheme') === null ||
-      localStorage.getItem('currentTheme') === ''
-    ) {
-      localStorage.setItem('currentTheme', 'dark');
-      setTheme('dark');
-    } else {
-      setTheme(localStorage.getItem('currentTheme'));
-    }
-  };
-
-  // const themeReset = () => {
-  //   localStorage.clear();
-  //   console.log('reset-complete');
-  // };
-
+const Homepage = ({ theme }) => {
   useEffect(() => {
-    setCurrentTheme();
-    setToMain(document.getElementById('main'));
+    window.scrollTo(0, 0);
   }, []);
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <StyledApp>
-        <GlobalStyles />
-        <Header themeToggler={themeToggler} theme={theme} />
-        <Home theme={theme} toMain={toMain} />
-        <Box mx={{ base: 2, md: 10 }}>
-          <ScrollToTop theme={theme} />
-          <section id="main">
-            <AboutMe theme={theme} />
-            <Clients theme={theme} />
-            <Skills theme={theme} />
-            <Projects theme={theme} />
-            {/* <Testimonial theme={theme} /> */}
-          </section>
-        </Box>
-        {/* <Cta /> */}
-        <Footer theme={theme} />
-      </StyledApp>
-    </ThemeProvider>
+    <>
+      <HeroSection theme={theme} />
+      <section id="main">
+        <AboutMe theme={theme} />
+        <Clients theme={theme} />
+        <Skills theme={theme} />
+        <Projects theme={theme} />
+        {/* <Testimonial theme={theme} /> */}
+      </section>
+      {/* <Cta /> */}
+    </>
   );
 };
 

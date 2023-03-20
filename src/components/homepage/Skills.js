@@ -1,7 +1,8 @@
-import { Box, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, SimpleGrid } from '@chakra-ui/react';
 import React from 'react';
 import SkillsItem from './Skills/SkillsItem';
 import SkillInfo from '../../assets/dataJson/skillInfo.json';
+import SectionHeading from '../commons/SectionHeading';
 
 const Skills = ({ theme }) => {
   const skillInfo = SkillInfo;
@@ -13,25 +14,12 @@ const Skills = ({ theme }) => {
         <div>
           <Box fontFamily={'Montserrat'}>
             <Box my={20}>
-              <Text
-                fontSize={'26px'}
-                fontWeight={'thin'}
-                letterSpacing={1.1}
-                color={'grey'}
-                textAlign={{ base: 'center', md: 'left' }}
-                mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
-              >
-                Skills that{' '}
-                <Text
-                  as={'span'}
-                  fontWeight={'semibold'}
-                  color={theme === 'light' ? '#010101' : '#F2F2F2'}
-                >
-                  I am good at,{' '}
-                  <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
-                  {'('}Capabilities{')'}
-                </Text>
-              </Text>
+              <SectionHeading
+                theme={theme}
+                initialHeading={'Skills that'}
+                highligtedText={'I am good at,'}
+                summaryText={'(Capabilities)'}
+              />
               <SimpleGrid
                 columns={{ base: 1, md: 2, lg: 3, xl: 3 }}
                 gap={{ base: '', md: 6 }}

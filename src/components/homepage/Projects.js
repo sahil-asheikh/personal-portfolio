@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectItem from '../commons/projects/ProjectsItem';
 import AllProjectDetails from '../../assets/dataJson/projectJson.json';
+import SectionHeading from '../commons/SectionHeading';
 
 const Projects = ({ theme }) => {
   const allProjectDetails = AllProjectDetails;
@@ -21,28 +22,12 @@ const Projects = ({ theme }) => {
                 gap={{ base: '', md: 6 }}
                 alignItems={'end'}
               >
-                <Text
-                  fontSize={'26px'}
-                  fontWeight={'thin'}
-                  letterSpacing={1.1}
-                  color={'grey'}
-                  textAlign={{ base: 'center', md: 'left' }}
-                  mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
-                >
-                  Some of my{' '}
-                  <Text
-                    as={'span'}
-                    fontWeight={'semibold'}
-                    color={theme === 'light' ? '#010101' : '#F2F2F2'}
-                  >
-                    Projects,{' '}
-                    <Text
-                      as={'p'}
-                      display={{ base: 'none', md: 'block' }}
-                    ></Text>
-                    {'('}Recent Work{')'}
-                  </Text>
-                </Text>
+                <SectionHeading
+                  theme={theme}
+                  initialHeading={'Some of my'}
+                  highligtedText={'Projects,'}
+                  summaryText={'(Recent Work)'}
+                />
               </SimpleGrid>
               <SimpleGrid
                 columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
