@@ -60,7 +60,10 @@ function App() {
         <BrowserRouter>
           <Header themeToggler={themeToggler} theme={theme} />
           <ScrollToTop />
-          <Box mx={{ base: 2, md: 10 }} fontFamily={'Montserrat'}>
+          <Box
+            // mx={{ base: 2, md: 10 }}
+            fontFamily={'Montserrat'}
+          >
             <Routes>
               <Route path="/" element={<Homepage theme={theme} />} />
               <Route path="/Work" element={<Work theme={theme} />} />

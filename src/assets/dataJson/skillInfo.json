@@ -2,31 +2,19 @@
   {
     "logo": "https://drive.google.com/uc?export=view&id=1rHOIFC5sLWM2wjaOSNP3UlLkjBzUxfbJ",
     "skillTitle": "Web Designing and Development",
-    "subSkills": "HTML, CSS, JavaScript, Bootstrap"
+    "subSkills": "HTML, CSS, JavaScript, Bootstrap",
+    "description": "Experienced in Web Designing and Development proficient in using HTML, CSS, JavaScript, and Bootstrap. I have developed several mobile friendly websites including portfolio, landing pages, and company websites, etc. for startups and businesses. My expertise has enabled me to create visually appealing and user-friendly websites that enhance businesses' online presence and reach their target audience."
   },
   {
     "logo": "https://drive.google.com/uc?export=view&id=1u-OKBePqXkBlEhTHIBGCUrLgklkaCgAF",
     "skillTitle": "Frontend Development Framework",
-    "subSkills": "React.Js, Material UI, Chakra UI, Vue.Js"
+    "subSkills": "React.Js, Material UI, Chakra UI, Vue.Js",
+    "description": "Experienced Frontend Developer with proficiency in React JS, API implementation, and handling complex data structures. I create scalable and interactive user interfaces, resulting in enhanced user engagement and satisfaction. I have delivered high-quality solutions to clients, utilizing UI libraries like Material UI, Chakra UI, and other popular frameworks."
   },
   {
     "logo": "https://drive.google.com/uc?export=view&id=11V8dfgDJpYVIOHUN3YOaq4V0AD4ZA08C",
-    "skillTitle": "REST-API Development Framework",
-    "subSkills": "Spring, Spring Security, Spring Boot"
-  },
-  {
-    "logo": "https://drive.google.com/uc?export=view&id=1TdG92KIey0CF1mM7wQbPYekXuPJ1xkQG",
-    "skillTitle": "Cross Platform App Development",
-    "subSkills": "Android, React Native, Dart, Flutter"
-  },
-  {
-    "logo": "https://drive.google.com/uc?export=view&id=1e6BcME0ntXiPfIBVMN9f_qM-tCloNu1T",
-    "skillTitle": "Backend Development Framework",
-    "subSkills": "Java, JavaScript, Node.Js, Python"
-  },
-  {
-    "logo": "https://drive.google.com/uc?export=view&id=1twP3vTFGpYt91o4KT5kMOPUACGFYLmjy",
-    "skillTitle": "Database Management System",
-    "subSkills": "SQL, NoSQL, MySQL, MongoDB, Firebase"
+    "skillTitle": "Backend / REST-API Development",
+    "subSkills": "Java, Spring, Spring Boot",
+    "description": "Experienced Backend Developer skilled in Java and Spring Boot, developing Restful API services since 2020. I have developed microservices for Ecommerce, CRM, and Food Delivery applications, among others. My expertise ensures robust and scalable systems, enhancing operational efficiency and improving customer experience."
   }
 ]

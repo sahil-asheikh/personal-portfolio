@@ -6,7 +6,7 @@ const Footer = ({ theme }) => {
     <Box
       fontFamily={'Montserrat'}
       px={{ base: 2, md: 10 }}
-      mt={10}
+      mt={0}
       py={10}
       bg={theme === 'light' ? '#FFFFFF' : '#090909'}
       w={'100%'}

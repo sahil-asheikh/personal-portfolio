@@ -18,7 +18,7 @@ const Skills = ({ theme }) => {
                 theme={theme}
                 initialHeading={'Skills that'}
                 highligtedText={'I am good at,'}
-                summaryText={'(Capabilities)'}
+                summaryText={'(Capabilities and Services)'}
               />
               <SimpleGrid
                 columns={{ base: 1, md: 2, lg: 3, xl: 3 }}
@@ -27,13 +27,7 @@ const Skills = ({ theme }) => {
                 mx={{ base: 0, md: 3, lg: 3, xl: 3 }}
               >
                 {skillInfo.map((skillItem, index) => (
-                  <SkillsItem
-                    key={index}
-                    theme={theme}
-                    skillImage={skillItem.logo}
-                    skilTitle={skillItem.skillTitle}
-                    subSkills={skillItem.subSkills}
-                  />
+                  <SkillsItem key={index} theme={theme} skillItem={skillItem} />
                 ))}
               </SimpleGrid>
             </Box>

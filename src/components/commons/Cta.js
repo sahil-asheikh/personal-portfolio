@@ -1,71 +1,54 @@
+import { Box, Button, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FiveStar from '../../assets/images/fiveStars.png';
 
-const Cta = () => {
+const Cta = ({ theme }) => {
   return (
-    <div className="about-us about-cta-bg mt-5">
-      <div className="about-cta-section w-100 text-center">
-        <h1 className="about-us-heading text-white">CTA HEading</h1>
-        <p className="about-us-subheading w-75 mx-auto">CTA subheading</p>
-        <div className="about-contact-btn text-center">
-          <Link
-            to={URL}
-            className="hero-btn"
-            style={{
-              textDecoration: 'none',
-              color: '#FFFFFF',
-            }}
+    <>
+      <Box
+        as="div"
+        minW={'100%'}
+        minH={'300px'}
+        mt={3}
+        mb={0}
+        py={9}
+        mx={'auto'}
+        bg={theme === 'light' ? '#FFFFFF' : '#090909'}
+        textAlign="center"
+        display={'flex'}
+        alignItems="center"
+        left={0}
+        right={0}
+      >
+        <Box as="div" w={'100%'} mx={'auto'}>
+          <Text as={'h1'} fontSize={'24px'} mb={3} fontWeight={'semibold'}>
+            Transform your vision into reality
+          </Text>
+          <Text as={'h1'} fontSize={'20px'} mb={3} fontWeight={'500'}>
+            Schedule your free consultation today!
+          </Text>
+          <Image
+            src={FiveStar}
+            maxW={'150px'}
+            mx="auto"
+            objectFit="cover"
+            alt="logo"
+          />
+          <Button
+            color={'#FFFFFF'}
+            bg={'#27AE60'}
+            _hover={'none'}
+            fontWeight={'semibold'}
+            mx={{ base: 0, md: 6, lg: 6, xl: 6 }}
+            my={6}
+            borderRadius="none"
           >
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Now
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </Link>
-        </div>
-        <div
-          className="row mx-md-5 mx-lg-5 mx-xl-5 px-md-5 px-lg-5 px-xl-5 mt-5"
-          style={{ maxWidth: '100vw' }}
-        >
-          <div className="col-md-4 col-lg-4 col-xl-4 px-md-4 px-lg-4 px-xl-4 px-5">
-            <p className="text-start text-md-center text-lg-center text-xl-center ms-4">
-              <img
-                className="social-icon"
-                style={{ maxWidth: '24px', marginTop: '-5px' }}
-                src={
-                  'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'
-                }
-                alt="greentick"
-              />{' '}
-              &nbsp; aiushdfijhasdijfhbasdikfhbdifhb
-            </p>
-          </div>
-          <div className="col-md-4 col-lg-4 col-xl-4 px-md-4 px-lg-4 px-xl-4 px-5">
-            <p className="text-start text-md-center text-lg-center text-xl-center ms-4">
-              <img
-                className="social-icon"
-                style={{ maxWidth: '24px', marginTop: '-5px' }}
-                src={
-                  'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'
-                }
-                alt="greentick"
-              />{' '}
-              &nbsp; aiushdfijhasdijfhbasdikfhbdifhb
-            </p>
-          </div>
-          <div className="col-md-4 col-lg-4 col-xl-4 px-md-4 px-lg-4 px-xl-4 px-5">
-            <p className="text-start text-md-center text-lg-center text-xl-center ms-4">
-              <img
-                className="social-icon"
-                style={{ maxWidth: '24px', marginTop: '-5px' }}
-                src={
-                  'https://takniik.netlify.app/static/media/green-tick-circle.07657c4138cbf83dfb2048edf3cdae4d.svg'
-                }
-                alt="greentick"
-              />{' '}
-              &nbsp; aiushdfijhasdijfhbasdikfhbdifhb
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+            <Link to={'/Contact'}>Get in touch</Link>
+          </Button>
+        </Box>
+      </Box>
+    </>
   );
 };
 

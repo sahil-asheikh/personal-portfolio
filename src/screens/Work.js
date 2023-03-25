@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from '../components/work/HeroSection';
 import ProjectItems from '../components/work/ProjectItems';
 import { useEffect } from 'react';
+import { Box } from '@chakra-ui/react';
 
 const Work = ({ theme }) => {
   useEffect(() => {
@@ -11,7 +12,9 @@ const Work = ({ theme }) => {
   return (
     <>
       <HeroSection />
-      <ProjectItems theme={theme} />
+      <Box mx={{ base: 2, md: 10 }}>
+        <ProjectItems theme={theme} />
+      </Box>
     </>
   );
 };
