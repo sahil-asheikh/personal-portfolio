@@ -79,5 +79,45 @@
     "projectLiveUrl": "https://takniik.com/",
     "works": ["Business Website", "Landing Page"],
     "tools": ["HTML5, CSS 3", "React.Js, JavaScript"]
+  },
+  {
+    "projectIndex": 2,
+    "title": "TechBitCoin - Crypto Trading Web Portal",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx",
+    "description": "I worked on a project to develop a secure web portal using Spring Boot to enable easy purchase and access to TechBit Crypto (Cryptocurrency) from a single platform. The main objective of the project was to make the process of purchasing and trading cryptocurrency simpler and more secure. One of the significant features of the platform is the implementation of a robust 3-level MLM referral system to promote the platform and increase user engagement. This referral system allowed users to invite their friends and family to the platform and earn a commission for every successful referral. To ensure secure and seamless transactions, I successfully optimized and integrated Coin payment gateway APIs, reducing the latency time by 80% from 10 seconds to 2 seconds. This ensured that users can make quick and hassle-free transactions on the platform without any delays or interruptions. Additionally, I revamped the user KYC verification process by integrating REST APIs and hierarchical authentication. This allowed for a more stringent verification process, reducing the number of non-verified users by 60% and enhancing the security of user data. The project utilized technologies such as Java, Spring-Boot, and MySQL to deliver these functionalities.",
+    "about": [
+      {
+        "title": "Project Flow",
+        "type": "plain",
+        "imgUrl": "https://cdn-proxy.slickplan.com/imgs/artwork/sample-process-flow.svg",
+        "description": "Based on the requirements, product goals, and core problems I have concluded this Project Flow for the client."
+      }
+    ],
+    "projectImages": [
+      {
+        "title": "1. Login and Sign up page for the web application",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1V6Six4PHVHMETRorMbdC4BydbErcqva7"
+      },
+      {
+        "title": "2. Dashboard of the Task Manager",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx"
+      },
+      {
+        "title": "3. Create/Add and Update Task Modal UIUX",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=156wYZMa47eFDub-0RLKsPBkIY3yo-enq"
+      },
+      {
+        "title": "4. Task Details and Drag & Drop functionality",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1Z-mRHcLGRksAuNjgfMo7cpnr_KmY4LDy"
+      }
+    ],
+    "conclusionTitle": "",
+    "conclusionDescription": "",
+    "client": "TechBitCoin",
+    "timeline": "October 2022 - November 2022",
+    "type": "REST API and Web Application",
+    "projectLiveUrl": "https://www.techbitcrypto.com/",
+    "works": ["Web Application", "API Development"],
+    "tools": ["Bootstrap, JavaScript", "Java, Spring Boot, Spring Security"]
   }
 ]
