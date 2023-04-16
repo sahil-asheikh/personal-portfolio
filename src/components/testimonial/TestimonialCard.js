@@ -1,6 +1,7 @@
 import { Box, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import FiveStar from '../../assets/images/fiveStars.png';
+import TestimonialDescription from './TestimonialDescription';
 
 const TestimonialCard = ({ theme, testimonialItem }) => {
   return (
@@ -40,9 +41,7 @@ const TestimonialCard = ({ theme, testimonialItem }) => {
             objectFit="cover"
             alt="logo"
           />
-          <Text fontSize={'18px'} m={1} mx={'auto'}>
-            {testimonialItem.testimonial}
-          </Text>
+          <TestimonialDescription description={testimonialItem.testimonial} />
         </Box>
       </Box>
     </>

@@ -83,32 +83,48 @@
   {
     "projectIndex": 2,
     "title": "TechBitCoin - Crypto Trading Web Portal",
-    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx",
+    "imgThumbnail": "https://drive.google.com/uc?export=view&id=1hgxqgL7cH0dxP9HhNDsjhF5sVJR6jXGM",
     "description": "I worked on a project to develop a secure web portal using Spring Boot to enable easy purchase and access to TechBit Crypto (Cryptocurrency) from a single platform. The main objective of the project was to make the process of purchasing and trading cryptocurrency simpler and more secure. One of the significant features of the platform is the implementation of a robust 3-level MLM referral system to promote the platform and increase user engagement. This referral system allowed users to invite their friends and family to the platform and earn a commission for every successful referral. To ensure secure and seamless transactions, I successfully optimized and integrated Coin payment gateway APIs, reducing the latency time by 80% from 10 seconds to 2 seconds. This ensured that users can make quick and hassle-free transactions on the platform without any delays or interruptions. Additionally, I revamped the user KYC verification process by integrating REST APIs and hierarchical authentication. This allowed for a more stringent verification process, reducing the number of non-verified users by 60% and enhancing the security of user data. The project utilized technologies such as Java, Spring-Boot, and MySQL to deliver these functionalities.",
     "about": [
       {
-        "title": "Project Flow",
-        "type": "plain",
-        "imgUrl": "https://cdn-proxy.slickplan.com/imgs/artwork/sample-process-flow.svg",
-        "description": "Based on the requirements, product goals, and core problems I have concluded this Project Flow for the client."
+        "title": "",
+        "type": "",
+        "imgUrl": "",
+        "description": ""
       }
     ],
     "projectImages": [
       {
-        "title": "1. Login and Sign up page for the web application",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1V6Six4PHVHMETRorMbdC4BydbErcqva7"
+        "title": "1. User Dashboard Panel",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1hgxqgL7cH0dxP9HhNDsjhF5sVJR6jXGM"
       },
       {
-        "title": "2. Dashboard of the Task Manager",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1YmfDwmox--MaVXbadP8cMEkw54dfSDNx"
+        "title": "2. Package Purchase Panel",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1aF0ZjORlUzk2IFQMDY4ktQ9m5fjJKBpt"
       },
       {
-        "title": "3. Create/Add and Update Task Modal UIUX",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=156wYZMa47eFDub-0RLKsPBkIY3yo-enq"
+        "title": "3. Referal Earning and Referal History Panel",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1SDsJwvcstVXUk5CXf8HovHii3VcmfGDv"
       },
       {
-        "title": "4. Task Details and Drag & Drop functionality",
-        "imgUrl": "https://drive.google.com/uc?export=view&id=1Z-mRHcLGRksAuNjgfMo7cpnr_KmY4LDy"
+        "title": "4. TechBitCoin Purchase History",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1WPMb_zJT1y1in35fsfffQT_wNoX0ALre"
+      },
+      {
+        "title": "5. All Users Data and Control Panel",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=18ixJH0TlXCOrrkiNMlRUtoKuCD8DTCtl"
+      },
+      {
+        "title": "6. All Users Package Purchased History Panel",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1_TjU4yHGAGexSRcuFz1VMcQXeXuEl_6g"
+      },
+      {
+        "title": "7. KYC Verificaiton Panel",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1IAMl39DOUs-DYN7gJAckJaukjZUjo_2o"
+      },
+      {
+        "title": "8. User Profile Panel",
+        "imgUrl": "https://drive.google.com/uc?export=view&id=1wK7js9u92o2pKfX2x4IPbWEeB7NzRkdD"
       }
     ],
     "conclusionTitle": "",

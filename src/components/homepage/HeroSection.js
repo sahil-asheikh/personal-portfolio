@@ -21,7 +21,7 @@ const HeroSection = ({ theme }) => {
             color={'grey'}
           >
             I'm a Full Stack Developer, specializing in
-            <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>
+            <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>{' '}
             <Text
               as={'span'}
               fontWeight={'bold'}
