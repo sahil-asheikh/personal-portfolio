@@ -35,7 +35,7 @@
     "client": "Betsol Softwares",
     "timeline": "July 2022 - August 2022",
     "type": "REST API and Web Application",
-    "projectLiveUrl": "",
+    "projectLiveUrl": "https://kanbanboard-web.netlify.app/",
     "works": ["Web Application", "API Development"],
     "tools": ["React.Js, JavaScript", "Spring Boot, Spring, Security, Java"]
   },
