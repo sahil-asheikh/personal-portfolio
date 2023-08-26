@@ -35,11 +35,11 @@ const SkillsItem = ({ theme, skillItem }) => {
           - {skillItem.subSkills}
         </Text>
       </Box>
-      <Box m={3}>
+      {/* <Box m={3}>
         <Text fontSize={'16px'} m={1} textAlign="justify">
           {skillItem.description}
         </Text>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

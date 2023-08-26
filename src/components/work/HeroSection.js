@@ -12,7 +12,12 @@ const HeroSection = ({ theme }) => {
         alignItems="center"
         h={{ base: '80vh', md: '80vh', lg: '80vh', xl: '80vh' }}
       >
-        <Box my={{ base: 'auto', md: 3 }} mx={'auto'} textAlign={'center'}>
+        <Box
+          my={{ base: 'auto', md: 3 }}
+          mx={'auto'}
+          textAlign={'center'}
+          pt={{ base: 'auto', md: '100px', lg: '150px', xl: '150px' }}
+        >
           <Text
             fontSize={{ base: '20px', md: '40px' }}
             fontWeight={'light'}

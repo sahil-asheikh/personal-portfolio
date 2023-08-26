@@ -14,7 +14,19 @@
   {
     "logo": "https://drive.google.com/uc?export=view&id=11V8dfgDJpYVIOHUN3YOaq4V0AD4ZA08C",
     "skillTitle": "Backend / REST-API Development",
-    "subSkills": "Java, Spring, Spring Boot",
+    "subSkills": "Java, Spring, Hibernate, Spring Boot",
+    "description": "Experienced Backend Developer skilled in Java and Spring Boot, developing Restful API services since 2020. I have developed microservices for Ecommerce, CRM, and Food Delivery applications, among others. My expertise ensures robust and scalable systems, enhancing operational efficiency and improving customer experience."
+  },
+  {
+    "logo": "",
+    "skillTitle": "",
+    "subSkills": "",
+    "description": ""
+  },
+  {
+    "logo": "https://drive.google.com/uc?export=view&id=1l9CRzwXRssLo9Mj3IqtbI7F1WYpvr72_",
+    "skillTitle": "DevOps and Cloud Tools and Technologies",
+    "subSkills": "AWS, Docker, Kubernetes, Terraform",
     "description": "Experienced Backend Developer skilled in Java and Spring Boot, developing Restful API services since 2020. I have developed microservices for Ecommerce, CRM, and Food Delivery applications, among others. My expertise ensures robust and scalable systems, enhancing operational efficiency and improving customer experience."
   }
 ]

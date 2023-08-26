@@ -1,4 +1,4 @@
-import { Box, SimpleGrid } from '@chakra-ui/react';
+import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 import SkillsItem from './Skills/SkillsItem';
 import SkillInfo from '../../assets/dataJson/skillInfo.json';
@@ -27,7 +27,26 @@ const Skills = ({ theme }) => {
                 mx={{ base: 0, md: 3, lg: 3, xl: 3 }}
               >
                 {skillInfo.map((skillItem, index) => (
-                  <SkillsItem key={index} theme={theme} skillItem={skillItem} />
+                  <>
+                    {skillItem.skillTitle === '' ||
+                    skillItem.skillTitle.length === 0 ||
+                    skillItem.skillTitle === null ? (
+                      <Text
+                        display={{
+                          base: 'none',
+                          md: 'block',
+                          lg: 'block',
+                          xl: 'block',
+                        }}
+                      ></Text>
+                    ) : (
+                      <SkillsItem
+                        key={index}
+                        theme={theme}
+                        skillItem={skillItem}
+                      />
+                    )}
+                  </>
                 ))}
               </SimpleGrid>
             </Box>
