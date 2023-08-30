@@ -11,6 +11,7 @@ import ProjectInfo from './screens/ProjectInfo';
 import Work from './screens/Work';
 import Footer from './components/commons/Footer';
 import { Box } from '@chakra-ui/react';
+import Affiliate from './screens/Affiliate';
 
 const StyledApp = styled.div`
   background: ${({ theme }) => theme.body};
@@ -67,6 +68,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Homepage theme={theme} />} />
               <Route path="/Work" element={<Work theme={theme} />} />
+              <Route path="/Affiliate" element={<Affiliate theme={theme} />} />
               <Route
                 path="/ProjectInfo/:projectIndex"
                 element={<ProjectInfo theme={theme} />}
