@@ -1,9 +1,23 @@
-import { Box, Text, Center, Image, SimpleGrid } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Center,
+  Image,
+  SimpleGrid,
+  Link,
+} from '@chakra-ui/react';
 import React from 'react';
 // import { Link } from 'react-router-dom';
-// import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 
-const AffiliateItem = ({ theme, imgThumbnail, title, description }) => {
+const AffiliateItem = ({
+  theme,
+  imgThumbnail,
+  title,
+  description,
+  amazonUrl,
+  flipkartUrl,
+}) => {
   return (
     <Center
       py={{ base: 0, md: 6, lg: 6, xl: 6 }}
@@ -32,10 +46,10 @@ const AffiliateItem = ({ theme, imgThumbnail, title, description }) => {
           my={3}
           // pt={20}
         >
-          <Box mx={6}>
+          <Box mx={6} alignSelf={'center'}>
             <Image
-              w={'100%'}
-              h={'100%'}
+              w={'80%'}
+              h={'80%'}
               maxH={'1000px'}
               src={imgThumbnail}
               layout={'fill'}
@@ -44,11 +58,52 @@ const AffiliateItem = ({ theme, imgThumbnail, title, description }) => {
           <Box
             py={{ base: 3, md: 9, lg: 9, xl: 9 }}
             textAlign={{ base: 'center', md: 'left', lg: 'left', xl: 'left' }}
+            alignSelf={'center'}
+            mx={2}
           >
-            <Text fontWeight={'bold'} fontSize={'16px'}>
-              {title}
-            </Text>
-            <Text fontSize={'16px'}>{description}</Text>
+            <>
+              <Text fontWeight={'bold'} fontSize={'16px'}>
+                {title}
+              </Text>
+              <Text fontSize={'14px'}>{description}</Text>
+              <Box mt={3}>
+                {amazonUrl === null || amazonUrl === '' ? (
+                  ''
+                ) : (
+                  <Link
+                    href={amazonUrl}
+                    target={'_blank'}
+                    color={'#ff9900'}
+                    w={'80%'}
+                    _hover={'none'}
+                    fontWeight={'bold'}
+                    my={2}
+                    borderRadius="none"
+                  >
+                    Amazon Link &nbsp;&nbsp;&nbsp;
+                    <ExternalLinkIcon />
+                  </Link>
+                )}
+                <br />
+                {flipkartUrl === null || flipkartUrl === '' ? (
+                  ''
+                ) : (
+                  <Link
+                    href={flipkartUrl}
+                    target={'_blank'}
+                    color={'#047BD5'}
+                    w={'80%'}
+                    _hover={'none'}
+                    fontWeight={'bold'}
+                    my={2}
+                    borderRadius="none"
+                  >
+                    Flipkart Link &nbsp;&nbsp;&nbsp;&nbsp;
+                    <ExternalLinkIcon />
+                  </Link>
+                )}
+              </Box>
+            </>
           </Box>
         </SimpleGrid>
       </Box>

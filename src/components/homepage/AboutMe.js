@@ -45,7 +45,7 @@ const AboutMe = ({ theme }) => {
                 textAlign={'justify'}
                 mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
               >
-                Bangalore based Full Stack Developer who creates well-designed
+                Bangalore based Software Developer Engineer who creates well-designed
                 websites and applications. A tech nerd, and have used his
                 programming powers mainly for good. Like many of his generation,
                 he was drawn to coding originally as an angsty teen trying to

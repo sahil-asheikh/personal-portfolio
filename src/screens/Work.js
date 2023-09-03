@@ -11,7 +11,7 @@ const Work = ({ theme }) => {
 
   return (
     <>
-      <HeroSection />
+      <HeroSection theme={theme} />
       <Box mx={{ base: 2, md: 10 }}>
         <ProjectItems theme={theme} />
       </Box>

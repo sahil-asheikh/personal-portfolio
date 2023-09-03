@@ -25,6 +25,8 @@ const AffiliateItems = ({ theme }) => {
                     imgThumbnail={affiliateItem.imgThumbnail}
                     title={affiliateItem.title}
                     description={affiliateItem.description}
+                    amazonUrl={affiliateItem.amazonUrl}
+                    flipkartUrl={affiliateItem.flipkartUrl}
                   />
                 </Box>
               ))}

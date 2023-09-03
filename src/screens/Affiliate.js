@@ -11,7 +11,7 @@ const Affiliate = ({ theme }) => {
 
   return (
     <>
-      <HeroSection />
+      <HeroSection theme={theme} />
       <Box mx={{ base: 2, md: 10 }}>
         <AffiliateItems theme={theme} />
       </Box>
