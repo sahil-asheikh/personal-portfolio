@@ -1,11 +1,4 @@
-import {
-  Box,
-  Text,
-  Center,
-  Image,
-  SimpleGrid,
-  Link,
-} from '@chakra-ui/react';
+import { Box, Text, Center, Image, SimpleGrid, Link } from '@chakra-ui/react';
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
@@ -44,6 +37,7 @@ const AffiliateItem = ({
           columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
           gap={{ base: '', md: 0 }}
           my={3}
+          textAlign={{ base: 'center', md: 'left', lg: 'left', xl: 'left' }}
           // pt={20}
         >
           <Box mx={6} alignSelf={'center'}>
@@ -52,12 +46,12 @@ const AffiliateItem = ({
               h={'80%'}
               maxH={'1000px'}
               src={imgThumbnail}
+              mx={{ base: 'auto', md: '', lg: '', xl: '' }}
               layout={'fill'}
             />
           </Box>
           <Box
             py={{ base: 3, md: 9, lg: 9, xl: 9 }}
-            textAlign={{ base: 'center', md: 'left', lg: 'left', xl: 'left' }}
             alignSelf={'center'}
             mx={2}
           >

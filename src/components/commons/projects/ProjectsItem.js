@@ -1,7 +1,7 @@
 import { Box, Text, Center, Stack, Image } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+// import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 const ProjectItem = ({ theme, projectIndex, imgThumbnail, title, type }) => {
   return (
@@ -32,8 +32,9 @@ const ProjectItem = ({ theme, projectIndex, imgThumbnail, title, type }) => {
           </Box>
           <Stack>
             <Text fontWeight={'semibold'} fontSize={'16px'}>
-              {title} &nbsp;
-              <ExternalLinkIcon w={'14px'} h={'14px'} />
+              {title}
+              {/* &nbsp;
+              <ExternalLinkIcon w={'14px'} h={'14px'} /> */}
             </Text>
             {/* <Text fontWeight={'thin'} fontSize={'12px'}>
               #{type}
