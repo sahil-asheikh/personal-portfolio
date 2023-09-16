@@ -74,9 +74,9 @@
     "conclusionTitle": "",
     "conclusionDescription": "",
     "client": "Takniik",
-    "timeline": "November 2022 - December 2022",
+    "timeline": "December 2022 - January 2023",
     "type": "Business Website",
-    "projectLiveUrl": "https://takniik.com/",
+    "projectLiveUrl": "https://takniik.netlify.app/",
     "works": ["Business Website", "Landing Page"],
     "tools": ["HTML5, CSS 3", "React.Js, JavaScript"]
   },

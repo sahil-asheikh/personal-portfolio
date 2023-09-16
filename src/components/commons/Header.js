@@ -70,14 +70,14 @@ const Header = ({ themeToggler, theme }) => {
             >
               <Link to={'/Work'}>Work</Link>
             </Text>
-            <Text
+            {/* <Text
               fontWeight={'semibold'}
               px={3}
               _hover={{ color: '#27AE60' }}
               color={pageName === 'About' ? '#27AE60' : ''}
             >
               <Link to={'/Affiliate'}>Affiliate</Link>
-            </Text>
+            </Text> */}
             <Text
               fontWeight={'semibold'}
               px={3}

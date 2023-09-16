@@ -32,7 +32,7 @@ const HeroSection = ({ theme }) => {
               fontWeight={'bold'}
               color={theme === 'light' ? '#010101' : '#F2F2F2'}
             >
-              Cloud, DevOps
+              Development, Cloud
             </Text>{' '}
             and{' '}
             <Text
@@ -40,7 +40,7 @@ const HeroSection = ({ theme }) => {
               fontWeight={'bold'}
               color={theme === 'light' ? '#010101' : '#F2F2F2'}
             >
-              Development
+              DevOps
             </Text>{' '}
           </Text>
           <ScrolltoMainText title={'Know more about me!'} theme={theme} />
