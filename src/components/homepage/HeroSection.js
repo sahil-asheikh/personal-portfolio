@@ -25,14 +25,14 @@ const HeroSection = ({ theme }) => {
             fontFamily={'Montserrat'}
             color={'grey'}
           >
-            I'm a Full Stack Developer, specializing in
+            I'm a Software Developer Engineer, specializing in
             <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>{' '}
             <Text
               as={'span'}
               fontWeight={'bold'}
               color={theme === 'light' ? '#010101' : '#F2F2F2'}
             >
-              Development, Cloud
+              DevOps, Cloud
             </Text>{' '}
             and{' '}
             <Text
@@ -40,7 +40,7 @@ const HeroSection = ({ theme }) => {
               fontWeight={'bold'}
               color={theme === 'light' ? '#010101' : '#F2F2F2'}
             >
-              DevOps
+              Development
             </Text>{' '}
           </Text>
           <ScrolltoMainText title={'Know more about me!'} theme={theme} />

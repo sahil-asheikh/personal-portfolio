@@ -45,11 +45,11 @@ const AboutMe = ({ theme }) => {
                 textAlign={'justify'}
                 mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
               >
-                Bangalore based Software Developer Engineer who creates well-designed
-                websites and applications. A tech nerd, and have used his
-                programming powers mainly for good. Like many of his generation,
-                he was drawn to coding originally as an angsty teen trying to
-                make his MySpace page look cool-but not too cool.
+                Bangalore based Software Developer Engineer who creates
+                well-designed websites and applications. A tech nerd, and have
+                used his programming powers mainly for good. Like many of his
+                generation, he was drawn to coding originally as an angsty teen
+                trying to make his MySpace page look cool-but not too cool.
                 <br />
                 <br />
                 Since those days have been pretty busy both in-house and as a
@@ -65,7 +65,25 @@ const AboutMe = ({ theme }) => {
                 up with a plan to solve the needs of his clients that makes
                 sense for their big-picture goals. Most recently, developed and
                 deployed a ReactJs and Spring Boot application on AWS, and
-                working as a Software Engineer at Betsol (India).
+                working as a Software Engineer at{' '}
+                <a
+                  as={'a'}
+                  href="https://betsol.com"
+                  rel="noreferrer"
+                  bg={'transparent'}
+                  target="_blank"
+                  me={3}
+                >
+                  <Text
+                    color={'#27AE60'}
+                    as={'a'}
+                    fontWeight={'bold'}
+                    textDecoration={'underline'}
+                  >
+                    Betsol (India)
+                  </Text>
+                </a>
+                .
                 <br />
                 <br />
                 Does your product team need a hand bringing your designs to
