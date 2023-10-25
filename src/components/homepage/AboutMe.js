@@ -62,9 +62,9 @@ const AboutMe = ({ theme }) => {
                 <br />
                 Loves to tackle a challenge head-on by analyzing it and coming
                 up with a plan to solve the needs of his clients that makes
-                sense for their big-picture goals. Most recently, developed,
-                deployed and managing ReactJs and Spring Boot applications on
-                AWS.
+                sense for their big-picture goals. Most recently, developed and
+                deployed a ReactJs and Spring Boot application on AWS, and
+                working as a Software Engineer at Betsol (India).
                 <br />
                 <br />
                 Does your product team need a hand bringing your designs to
