@@ -33,7 +33,7 @@ const AboutMe = ({ theme }) => {
             >
               <SectionHeading
                 theme={theme}
-                initialHeading={'Hi, I am'}
+                initialHeading={'Hey 👋, this is '}
                 highligtedText={'Sahil Sheikh'}
                 summaryText={''}
               />
@@ -45,27 +45,26 @@ const AboutMe = ({ theme }) => {
                 textAlign={'justify'}
                 mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
               >
-                Bangalore based Software Developer Engineer who creates well-designed
-                websites and applications. A tech nerd, and have used his
-                programming powers mainly for good. Like many of his generation,
-                he was drawn to coding originally as an angsty teen trying to
-                make his MySpace page look cool-but not too cool.
+                Bangalore based Software Engineer, currently managing Avaya's
+                Cloud Infrastructure also who creates well-designed websites and
+                portfolios. A tech nerd, and have used his programming powers
+                mainly for good. Like many of his generation, was drawn to
+                coding originally as an angsty teen trying to make my social
+                media page look cool but not too cool!
                 <br />
                 <br />
-                Since those days have been pretty busy both in-house and as a
-                freelancer, and with his YouTube channel where teaches people
-                how to develop. Have a variety of experience such as developing
-                custom website themes and templates, frontend development in
-                React, backend/RestAPIs/micro-services development in
-                Java/Spring Boot, and speaks fluent HTML, CSS, JavaScript,
-                React, and Spring Boot.
+                Since 2021 have been pretty busy in-house as a freelancer. Have
+                a variety of experience such as developing custom website, and
+                portfolios, frontend development in React and backend
+                development in Java/Spring Boot, and speaks fluent HTML, CSS,
+                JavaScript, React, and Spring Boot.
                 <br />
                 <br />
                 Loves to tackle a challenge head-on by analyzing it and coming
                 up with a plan to solve the needs of his clients that makes
-                sense for their big-picture goals. Most recently, developed and
-                deployed a ReactJs and Spring Boot application on AWS, and
-                working as a Software Engineer at Betsol (India).
+                sense for their big-picture goals. Most recently, developed,
+                deployed and managing ReactJs and Spring Boot applications on
+                AWS.
                 <br />
                 <br />
                 Does your product team need a hand bringing your designs to
