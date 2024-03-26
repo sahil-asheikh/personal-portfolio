@@ -1,32 +1,20 @@
 [
   {
-    "logo": "https://drive.google.com/uc?export=view&id=1u-OKBePqXkBlEhTHIBGCUrLgklkaCgAF",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/skills%2Freact.png?alt=media&token=179de42d-1430-4727-a35d-a5e68dca0c2c",
     "skillTitle": "Web Designing and Frontend Development",
     "subSkills": "React.Js, Material UI, Chakra UI, Vue.Js",
     "description": "Experienced Web Designing and Frontend Developer with proficiency in React JS, API implementation, and handling complex data structures. I create scalable and interactive user interfaces, resulting in enhanced user engagement and satisfaction. I have delivered high-quality solutions to clients, utilizing UI libraries like Material UI, Chakra UI, and other popular frameworks."
   },
   {
-    "logo": "https://drive.google.com/uc?export=view&id=11V8dfgDJpYVIOHUN3YOaq4V0AD4ZA08C",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/skills%2Fspringboot.png?alt=media&token=7d6fafed-60c4-4b89-8cc1-1c013b213851",
     "skillTitle": "Backend / REST-API Development",
     "subSkills": "Java, Spring, Hibernate, Spring Boot",
-    "description": "Experienced Backend Developer skilled in Java and Spring Boot, developing Restful API services since 2020. I have developed microservices for Ecommerce, CRM, and Food Delivery applications, among others. My expertise ensures robust and scalable systems, enhancing operational efficiency and improving customer experience."
+    "description": "Experienced in Backend Development; skilled in Java and Spring Boot, developing Restful API services since 2020. I have developed microservices for Ecommerce, CRM, and Food Delivery applications, among others. My expertise ensures robust and scalable systems, enhancing operational efficiency and improving customer experience."
   },
   {
-    "logo": "https://drive.google.com/uc?export=view&id=1kdo-DTutLMzIn9oXyxU_B3IVQ8E_DJ7f",
-    "skillTitle": "Cloud Computing and Technologies",
-    "subSkills": "AWS, Microsoft Azure, GCP",
-    "description": "Experienced Backend Developer skilled in Java and Spring Boot, developing Restful API services since 2020. I have developed microservices for Ecommerce, CRM, and Food Delivery applications, among others. My expertise ensures robust and scalable systems, enhancing operational efficiency and improving customer experience."
-  },
-  {
-    "logo": "",
-    "skillTitle": "",
-    "subSkills": "",
-    "description": ""
-  },
-  {
-    "logo": "https://drive.google.com/uc?export=view&id=1l9CRzwXRssLo9Mj3IqtbI7F1WYpvr72_",
-    "skillTitle": "DevOps Tools and Technologies",
-    "subSkills": "Docker, Kubernetes, Terraform",
-    "description": "Experienced Backend Developer skilled in Java and Spring Boot, developing Restful API services since 2020. I have developed microservices for Ecommerce, CRM, and Food Delivery applications, among others. My expertise ensures robust and scalable systems, enhancing operational efficiency and improving customer experience."
+    "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/skills%2Faws.png?alt=media&token=34b3da9a-4324-4746-a815-e62158661283",
+    "skillTitle": "Cloud Computing, DevOps Tools and Technologies",
+    "subSkills": "AWS, Docker, Kubernetes, Terraform",
+    "description": "Experienced in Cloud Computing and DevOps skilled in Linux, AWS, Scripting, Docker, Kubernetes, Terraform, etc. Designed robust and scalable infrastructure, enhancing efficiency and improving customer's operations."
   }
 ]

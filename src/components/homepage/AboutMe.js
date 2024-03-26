@@ -45,26 +45,36 @@ const AboutMe = ({ theme }) => {
                 textAlign={'justify'}
                 mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
               >
-                Bangalore based Software Engineer, currently managing Avaya's
-                Cloud Infrastructure also who creates well-designed websites and
-                portfolios. A tech nerd, and have used his programming powers
-                mainly for good. Like many of his generation, was drawn to
-                coding originally as an angsty teen trying to make my social
-                media page look cool but not too cool!
+                Welcome to my portfolio! I'm a Bangalore based freelance
+                software developer with a passion for crafting immersive digital
+                experiences. With four years of hands-on experience in the
+                field, I specialize in developing cutting-edge 3D animated
+                websites using React JS and the Spline Tool. My approach to web
+                development is driven by creativity, innovation, and a deep
+                understanding of user experience. By leveraging the power of
+                React JS, I ensure that each website I create is not only
+                visually stunning but also highly interactive and user-friendly.
                 <br />
                 <br />
-                Since 2021 have been pretty busy in-house as a freelancer. Have
-                a variety of experience such as developing custom website, and
-                portfolios, frontend development in React and backend
-                development in Java/Spring Boot, and speaks fluent HTML, CSS,
-                JavaScript, React, and Spring Boot.
+                What sets my work apart is my expertise in integrating 3D
+                animations seamlessly into the web environment. Whether it's
+                adding dynamic transitions, creating captivating visual effects,
+                or building entire scenes, I thrive on pushing the boundaries of
+                what's possible on the web.
                 <br />
                 <br />
-                Loves to tackle a challenge head-on by analyzing it and coming
-                up with a plan to solve the needs of his clients that makes
-                sense for their big-picture goals. Most recently, developed and
-                deployed a ReactJs and Spring Boot application on AWS, and
-                working as a Software Engineer at Betsol (India).
+                Collaboration is at the heart of my process. I work closely with
+                clients to understand their unique vision and translate it into
+                a bespoke digital experience that exceeds their expectations.
+                From concept to execution, I strive for perfection in every
+                detail, ensuring that the final product not only meets but
+                surpasses the desired objectives. Browse through my portfolio to
+                explore a diverse range of projects, each showcasing my
+                commitment to excellence and passion for innovation. Whether
+                you're looking to elevate your brand's online presence or create
+                an unforgettable user experience, I'm here to turn your vision
+                into reality. Let's collaborate and bring your ideas to life in
+                stunning 3D!
                 <br />
                 <br />
                 Does your product team need a hand bringing your designs to

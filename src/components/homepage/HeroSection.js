@@ -32,18 +32,13 @@ const HeroSection = ({ theme }) => {
               fontWeight={'bold'}
               color={theme === 'light' ? '#010101' : '#F2F2F2'}
             >
-              Cloud
-            </Text>{' '}
-            and{' '}
-            <Text
-              as={'span'}
-              fontWeight={'bold'}
-              color={theme === 'light' ? '#010101' : '#F2F2F2'}
-            >
-              Development
+              Animated 3D Website Development
             </Text>{' '}
           </Text>
-          <ScrolltoMainText title={'Know more about me!'} theme={theme} />
+          <ScrolltoMainText
+            title={'Click to know more about me!'}
+            theme={theme}
+          />
         </Box>
       </Stack>
       <ScrolltoMainBtn />
