@@ -8,7 +8,7 @@ const Footer = ({ theme }) => {
       px={{ base: 2, md: 10 }}
       mt={0}
       py={10}
-      bg={theme === 'light' ? '#FFFFFF' : '#090909'}
+      bg={theme === 'light' ? '#FFFFFF' : '#1A1A1A'}
       w={'100%'}
     >
       <Text

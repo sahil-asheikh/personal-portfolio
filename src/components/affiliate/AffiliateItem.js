@@ -20,7 +20,7 @@ const AffiliateItem = ({
       fontFamily={'Montserrat'}
     >
       <Box
-        bg={theme === 'light' ? '#FFFFFF' : '#090909'}
+        bg={theme === 'light' ? '#FFFFFF' : '#1A1A1A'}
         maxW={'100%'}
         minH={'310px'}
         w={'full'}

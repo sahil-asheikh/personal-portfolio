@@ -11,21 +11,22 @@ const ProjectItems = ({ theme }) => {
       ) : (
         <>
           <section id="main">
-            <SimpleGrid
-              columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
-              gap={{ base: '', md: 0 }}
-              my={20}
-              pt={20}
-            >
+            {/* <SimpleGrid
+                columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+                gap={{ base: '', md: 0 }}
+              > */}
+            <SimpleGrid columns={1} gap={{ base: '', md: 0 }}>
               {AllProjectDetails.map((projectItem, index) => (
                 <Box my={3} mx={{ base: 3, md: 0, lg: 0, xl: 0 }}>
                   <ProjectItem
                     key={index}
                     theme={theme}
-                    projectIndex={index}
+                    projectIndex={projectItem.projectIndex}
                     imgThumbnail={projectItem.imgThumbnail}
                     title={projectItem.title}
+                    shortDescription={projectItem.shortDescription}
                     type={projectItem.type}
+                    works={projectItem.works}
                   />
                 </Box>
               ))}

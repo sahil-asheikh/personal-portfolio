@@ -12,7 +12,7 @@ const TestimonialDescription = ({ description }) => {
     }
   };
   return (
-    <Text fontSize={'18px'} m={1} mx={'auto'}>
+    <Text fontSize={'14px'} m={1} mx={'auto'}>
       {showMore && description.length > 200
         ? description
         : description.substring(0, 400)}{' '}

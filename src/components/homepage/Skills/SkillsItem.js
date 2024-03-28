@@ -7,7 +7,8 @@ const SkillsItem = ({ theme, skillItem }) => {
       my={3}
       mx={{ base: 3, md: 1, lg: 1, xl: 1 }}
       fontFamily={'Montserrat'}
-      bg={theme === 'light' ? '#FFFFFF' : '#090909'}
+      rounded={'lg'}
+      bg={theme === 'light' ? '#FFFFFF' : '#1A1A1A'}
       _hover={{
         transition: 'all .25s ease-in-out',
         transform: 'translate3d(0px, -15px, 0px)',

@@ -15,13 +15,17 @@ const Testimonial = ({ theme }) => {
           summaryText={'(Testimonials)'}
         />
         <SimpleGrid
-          columns={{ base: 1, md: 1 }}
-          gap={{ base: '', md: 0 }}
-          my={6}
-          alignItems={'center'}
+          columns={{ base: 1, md: 4 }}
+          gap={{ base: '', md: '' }}
+          mt={6}
+          mb={3}
         >
           {TestimonialJson?.map((testimonialItem, index) => (
-            <TestimonialCard theme={theme} testimonialItem={testimonialItem} />
+            <TestimonialCard
+              key={index}
+              theme={theme}
+              testimonialItem={testimonialItem}
+            />
           ))}
         </SimpleGrid>
       </Box>

@@ -6,9 +6,9 @@ import InstagramDark from '../../assets/images/instagramDark.png';
 import InstagramLight from '../../assets/images/instagramLight.png';
 import YoutubeDark from '../../assets/images/youtubeDark.png';
 import YoutubeLight from '../../assets/images/youtubeLight.png';
+import Profile1 from '../../assets/images/profile2.jpg';
 import SectionHeading from '../commons/SectionHeading';
 // import ProfileBg from '../../assets/images/profilebg.png';
-import Clients from './Clients';
 
 const AboutMe = ({ theme }) => {
   return (
@@ -20,11 +20,26 @@ const AboutMe = ({ theme }) => {
       <Box pt={'1px'}>
         <Box my={20} pt={0}>
           <SimpleGrid
-            columns={{ base: 1, md: 1, lg: 1, xl: 1 }}
+            columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
             gap={{ base: 1, md: 2, lg: 2, xl: 2 }}
             my={6}
             alignItems={'center'}
           >
+            <Box
+              letterSpacing={1.1}
+              textAlign={{ base: 'center', md: 'left' }}
+              mx={{ base: 0, md: 6, lg: 6, xl: 6 }}
+              mt={6}
+            >
+              <Image
+                mx={'auto'}
+                w={'80%'}
+                h={'80%'}
+                src={Profile1}
+                layout={'fill'}
+                rounded={'xl'}
+              />
+            </Box>
             <Box
               letterSpacing={1.1}
               textAlign={{ base: 'center', md: 'left' }}
@@ -45,36 +60,9 @@ const AboutMe = ({ theme }) => {
                 textAlign={'justify'}
                 mx={{ base: 1, md: 6, lg: 6, xl: 6 }}
               >
-                Welcome to my portfolio! I'm a Bangalore based freelance
-                software developer with a passion for crafting immersive digital
-                experiences. With four years of hands-on experience in the
-                field, I specialize in developing cutting-edge 3D animated
-                websites using React JS and the Spline Tool. My approach to web
-                development is driven by creativity, innovation, and a deep
-                understanding of user experience. By leveraging the power of
-                React JS, I ensure that each website I create is not only
-                visually stunning but also highly interactive and user-friendly.
-                <br />
-                <br />
-                What sets my work apart is my expertise in integrating 3D
-                animations seamlessly into the web environment. Whether it's
-                adding dynamic transitions, creating captivating visual effects,
-                or building entire scenes, I thrive on pushing the boundaries of
-                what's possible on the web.
-                <br />
-                <br />
-                Collaboration is at the heart of my process. I work closely with
-                clients to understand their unique vision and translate it into
-                a bespoke digital experience that exceeds their expectations.
-                From concept to execution, I strive for perfection in every
-                detail, ensuring that the final product not only meets but
-                surpasses the desired objectives. Browse through my portfolio to
-                explore a diverse range of projects, each showcasing my
-                commitment to excellence and passion for innovation. Whether
-                you're looking to elevate your brand's online presence or create
-                an unforgettable user experience, I'm here to turn your vision
-                into reality. Let's collaborate and bring your ideas to life in
-                stunning 3D!
+                A software developer who is passionate about creating beautiful,
+                animated and joyful digital experiences. Besides design, I love
+                music, games and travelling.
                 <br />
                 <br />
                 Does your product team need a hand bringing your designs to
@@ -185,7 +173,6 @@ const AboutMe = ({ theme }) => {
                   />
                 </a>
               </Box>
-              <Clients theme={theme} />
             </Box>
           </SimpleGrid>
         </Box>

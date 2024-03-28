@@ -3,6 +3,7 @@
     "projectIndex": 0,
     "title": "Kanbanboard Portal - RESTful APIs",
     "imgThumbnail": "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/projects%2Fkanban%2Fdashboard.png?alt=media&token=72fea23f-3de3-407d-90f3-827472702741",
+    "shortDescription": "Created Kanban Board web portal with React JS and Spring Boot for efficient team task management.",
     "description": "I developed a web portal called Kanban Board using React JS and Spring Boot. The goal of the project was to create a tool that could manage and assign work to team members, and be reviewed and managed by the admin and managers. The frontend of the portal was developed using React JS, while the RESTFul APIs were developed using Spring Boot. With this web portal, users can easily track and organize their work, ensuring that projects are completed efficiently and effectively. The Kanban Board is a valuable resource for teams looking to streamline their workflow and increase productivity.",
     "about": [
       {
@@ -43,6 +44,7 @@
     "projectIndex": 1,
     "title": "Takniik - Portfolio and Business Website",
     "imgThumbnail": "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/projects%2Ftakniik%2Fhero%20and%20service%20section.png?alt=media&token=27e17a0f-0c04-4e42-a2a9-f155f8583882",
+    "shortDescription": "Crafted Takniik's portfolio site with React JS, highlighting services, testimonials, and a user-friendly blog panel. Client pleased.",
     "description": "I developed a portfolio website for Takniik, a startup that provides development and design services to other businesses. Built using React JS, features a page that showcases the company's services and includes customer testimonials. Also, implemented a blog panel that allows the admin to easily post and manage multiple blogs. The goal of the project was to create a professional and engaging website for Takniik that effectively communicates the company's offerings and establishes its credibility in the industry. Worked closely with the client to understand their needs and ensure that the final product met their expectations. Overall, the project was a success and the client was very satisfied with the result.",
     "about": [""],
     "projectImages": [
@@ -84,6 +86,7 @@
     "projectIndex": 2,
     "title": "TechBitCoin - Crypto Trading Web Portal",
     "imgThumbnail": "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/projects%2Ftechbitcrypto%2FDashboard.png?alt=media&token=8b10b2b3-a99e-45d3-abcc-b74fff75f7cd",
+    "shortDescription": "Developed secure Spring Boot portal for TechBit Crypto, simplifying cryptocurrency purchase/trade, integrating 3-level MLM referral system.",
     "description": "Develop a secure portal using Spring Boot to enable easy purchase and access to TechBit Crypto (Cryptocurrency) from a single platform. The main objective of the project was to make the process of purchasing and trading cryptocurrency simpler and more secure. One of the significant features of the platform is the implementation of a robust 3-level MLM referral system to promote the platform and increase user engagement. This referral system allowed users to invite their friends and family to the platform and earn a commission for every successful referral. To ensure secure and seamless transactions, I successfully optimized and integrated Coin payment gateway APIs, reducing the latency time by 30%. This ensured that users can make quick and hassle-free transactions on the platform without any delays or interruptions. Additionally, I revamped the user KYC verification process by integrating REST APIs and hierarchical authentication. This allowed for a more stringent verification process, reducing the number of non-verified users by 60% and enhancing the security of user data. The project utilized technologies such as Java, Spring-Boot, and MySQL to deliver these functionalities.",
     "about": [
       {

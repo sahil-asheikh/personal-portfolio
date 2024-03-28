@@ -14,7 +14,7 @@ const Cta = ({ theme }) => {
         mb={0}
         py={9}
         mx={'auto'}
-        bg={theme === 'light' ? '#FFFFFF' : '#090909'}
+        bg={theme === 'light' ? '#FFFFFF' : '#1A1A1A'}
         textAlign="center"
         display={'flex'}
         alignItems="center"
