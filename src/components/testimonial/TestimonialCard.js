@@ -6,10 +6,14 @@ import React from 'react';
 const TestimonialCard = ({ theme, testimonialItem }) => {
   return (
     <>
-      <Box as="div" minH={'300px'} my={3} py={9}>
+      <Box
+        as="div"
+        my={{ base: 0, md: 3, lg: 3, xl: 3 }}
+        py={{ base: 3, md: 9, lg: 9, xl: 9 }}
+      >
         <Box
           as="div"
-          maxW="270px"
+          maxW={{ base: '300px', md: '270px', lg: '270px', xl: '270px' }}
           mx={'auto'}
           p={3}
           rounded={'xl'}

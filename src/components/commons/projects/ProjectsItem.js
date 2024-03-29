@@ -1,7 +1,7 @@
-import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Text, Center, Stack, Image, SimpleGrid } from '@chakra-ui/react';
+import { Box, Center, SimpleGrid } from '@chakra-ui/react';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ProjectThumbnail from './ProjectThumbnail';
+import ProjectThumbnailText from './ProjectThumbnailText';
 // import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 const ProjectItem = ({
@@ -49,85 +49,27 @@ const ProjectItem = ({
           >
             {projectIndex === 0 || projectIndex % 2 === 0 ? (
               <>
-                <Box>
-                  <Image
-                    w={'100%'}
-                    h={'100%'}
-                    src={imgThumbnail}
-                    layout={'fill'}
-                    rounded={'xl'}
-                  />
-                </Box>
-                <Stack p={6} mx={3} mt={'auto'}>
-                  <Text fontSize={'16px'} mb={6}>
-                    #{type}
-                  </Text>
-                  <Text fontWeight={'semibold'} fontSize={'18px'}>
-                    {title}
-                  </Text>
-                  <Text fontSize={'16px'}>{shortDescription}</Text>
-                  <Text fontSize={'16px'} mt={6}>
-                    {works[0]}
-                  </Text>
-                  <Link to={'/ProjectInfo/' + projectIndex}>
-                    <Text
-                      w={'100%'}
-                      maxW={'200px'}
-                      mt={6}
-                      align={'center'}
-                      fontWeight={'semibold'}
-                      fontSize={'18px'}
-                      border={
-                        theme === 'light'
-                          ? '1px solid #1A1A1A'
-                          : '1px solid #FFFFFF'
-                      }
-                      borderRadius={'15px'}
-                    >
-                      View Work &nbsp;
-                      <ChevronRightIcon w={'16px'} h={'16px'} />
-                    </Text>
-                  </Link>
-                </Stack>
+                <ProjectThumbnail imgThumbnail={imgThumbnail} />
+                <ProjectThumbnailText
+                  theme={theme}
+                  projectIndex={projectIndex}
+                  title={title}
+                  shortDescription={shortDescription}
+                  type={type}
+                  works={works}
+                />
               </>
             ) : (
               <>
-                <Stack p={6} mx={3} mt={'auto'}>
-                  <Text fontSize={'16px'} mb={6}>
-                    #{type}
-                  </Text>
-                  <Text fontWeight={'semibold'} fontSize={'18px'}>
-                    {title}
-                  </Text>
-                  <Text fontSize={'16px'}>{shortDescription}</Text>
-                  <Text fontSize={'16px'} mt={6}>
-                    {works[0]}
-                  </Text>
-                  <Link to={'/ProjectInfo/' + projectIndex}>
-                    <Text
-                      w={'100%'}
-                      maxW={'200px'}
-                      mt={6}
-                      align={'center'}
-                      fontWeight={'semibold'}
-                      fontSize={'18px'}
-                      border={'1px solid #FFFFFF'}
-                      borderRadius={'15px'}
-                    >
-                      View Work &nbsp;
-                      <ChevronRightIcon w={'16px'} h={'16px'} />
-                    </Text>
-                  </Link>
-                </Stack>
-                <Box>
-                  <Image
-                    w={'100%'}
-                    h={'100%'}
-                    src={imgThumbnail}
-                    layout={'fill'}
-                    rounded={'xl'}
-                  />
-                </Box>
+                <ProjectThumbnailText
+                  theme={theme}
+                  projectIndex={projectIndex}
+                  title={title}
+                  shortDescription={shortDescription}
+                  type={type}
+                  works={works}
+                />
+                <ProjectThumbnail imgThumbnail={imgThumbnail} />
               </>
             )}
           </SimpleGrid>
@@ -142,42 +84,15 @@ const ProjectItem = ({
             xl: 'none',
           }}
         >
-          <Box>
-            <Image
-              w={'100%'}
-              h={'100%'}
-              src={imgThumbnail}
-              layout={'fill'}
-              rounded={'xl'}
-            />
-          </Box>
-          <Stack p={6} mx={3} mt={'auto'}>
-            <Text fontSize={'16px'} mb={6}>
-              #{type}
-            </Text>
-            <Text fontWeight={'semibold'} fontSize={'18px'}>
-              {title}
-            </Text>
-            <Text fontSize={'16px'}>{shortDescription}</Text>
-            <Text fontSize={'16px'} mt={6}>
-              {works[0]}
-            </Text>
-            <Link to={'/ProjectInfo/' + projectIndex}>
-              <Text
-                w={'100%'}
-                maxW={'200px'}
-                mt={6}
-                align={'center'}
-                fontWeight={'semibold'}
-                fontSize={'18px'}
-                border={'1px solid #FFFFFF'}
-                borderRadius={'15px'}
-              >
-                View Work &nbsp;
-                <ChevronRightIcon w={'16px'} h={'16px'} />
-              </Text>
-            </Link>
-          </Stack>
+          <ProjectThumbnail imgThumbnail={imgThumbnail} />
+          <ProjectThumbnailText
+            theme={theme}
+            projectIndex={projectIndex}
+            title={title}
+            shortDescription={shortDescription}
+            type={type}
+            works={works}
+          />
         </Box>
       </Box>
       {/* </Link> */}
