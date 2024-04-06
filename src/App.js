@@ -77,6 +77,20 @@ function App() {
             </Routes>
           </Box>
           <Footer theme={theme} />
+          <div class="area">
+            <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </BrowserRouter>
       </StyledApp>
     </ThemeProvider>
