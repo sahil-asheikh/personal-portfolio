@@ -5,6 +5,7 @@ export const lightTheme = {
   text: '#000000',
   borderColor: 'rgb(0, 0, 0, 0.7)',
   bgSecondary: '#F5F5F5',
+  animateSecondaryBg: '#c3c3c3',
 };
 
 export const darkTheme = {
@@ -12,6 +13,7 @@ export const darkTheme = {
   text: '#FFFFFF',
   borderColor: 'rgb(255, 255, 255, 0.7)',
   bgSecondary: '#2D2D2D',
+  animateSecondaryBg: '#333333',
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -59,10 +61,11 @@ export const GlobalStyles = createGlobalStyle`
     outline:none!important;
     shadow: none;
   }
+
   .area {
     background: ${({ theme }) => theme.body};
     background: -webkit-linear-gradient(to left, ${({ theme }) =>
-      theme.bgSecondary}, ${({ theme }) => theme.body});
+      theme.animateSecondaryBg}, ${({ theme }) => theme.body});
     width: 100%;
   }
   
@@ -81,7 +84,7 @@ export const GlobalStyles = createGlobalStyle`
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: ${({ theme }) => theme.animateSecondaryBg};
     animation: animate 25s linear infinite;
     bottom: -150px;
   }
